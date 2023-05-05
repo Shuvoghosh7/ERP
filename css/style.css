@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -88,7 +89,7 @@
     text-align: center;
 }
 
-.nav-link:focus {
+.menu-link:focus {
     border-bottom: 2px solid #0F7EC2;
 }
 
@@ -184,7 +185,7 @@
     height: 30px;
 }
 
-.card-input-date p{
+.card-input-date p {
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
@@ -196,13 +197,80 @@
 
 
 /* chart-container style start*/
-.chart-container{
+.chart-container {
     display: grid;
-    grid-template-columns: 43% 27% 27%;
-    gap: 5px;
-    
+    grid-template-columns: 47% 25% 25%;
+    gap: 10px;
+    margin: 5px 20px;
 }
 
+.chart1 {
+    background: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+}
+
+.chart2 {
+    background: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+}
+
+select {
+    padding: 0px 1px 0px 0px;
+    width: 160px;
+    height: 30px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 2e-06) 0%, rgba(0, 0, 0, 0.02) 100%), #F5F5F5;
+    border-radius: 10px;
+}
+
+.select {
+    padding: 0px 1px 0px 0px;
+    width: 100px;
+    height: 30px;
+}
+
+.performance {
+    background: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+}
+
+.performance-member img {
+    width: 32px;
+    height: 35.2px;
+    border-radius: 50%;
+}
+
+.performance-member-details p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #162141;
+}
+
+.performance-member-details h6 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: -14px;
+}
+
+.data-table p {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.Project-table-heading {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #424242;
+}
 
 @media screen and (max-width: 768px) {
     .sidebar-content {
@@ -215,12 +283,21 @@
         height: 100vh;
         transition: all 0.4s ease-in-out 0.5s
     }
+
     .card-contaniner {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         padding: 24px;
     }
+
+    .chart-container {
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        gap: 10px;
+        margin: 5px 20px;
+    }
+    
 
 }
 
@@ -231,4 +308,7 @@
         gap: 10px;
         padding: 24px;
     }
+
+
+    
 }

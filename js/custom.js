@@ -3,6 +3,9 @@ $(document).ready(function(){
         $(".sidebar-content").show();
     });
 
+    $('#table').DataTable();
+     
+
 })
 
 
