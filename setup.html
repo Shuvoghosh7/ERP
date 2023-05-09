@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/setup.css">
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css">
+</head>
+
+<body>
+    <main id="main-content">
+        <!-- sidebar section  -->
+        <section class="sidebar-content">
+            <div>
+                <a class="nav-link" href="index.html">
+                    <div class="top-link-icon">
+                        <img src="assets/image 1.svg" alt="" class="sidebar-icon-image">
+                        <span class="ms-1"> Offshore IT</span>
+                    </div>
+                </a>
+                <hr class="solid-divider">
+                <a class="nav-link nav-sidevar-link mt-3" href="#">
+                    <div class="link-icon">
+                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
+                        <span class="sidebar-link-text ms-1 "> Dashboard</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="index.html">
+                    <div class="link-icon">
+                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
+                        <span class="sidebar-link-text ms-1"> Assign Details</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="index.html">
+                    <div class="link-icon">
+                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
+                        <span class="sidebar-link-text ms-1"> Damage Image</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="index.html">
+                    <div class="link-icon">
+                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
+                        <span class="sidebar-link-text ms-1"> Checked By Projects</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="index.html">
+                    <div class="link-icon">
+                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
+                        <span class="sidebar-link-text ms-1"> QC Projects</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="index.html">
+                    <div class="link-icon">
+                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
+                        <span class="sidebar-link-text ms-1"> Final Check Projects</span>
+                    </div>
+                </a>
+            </div>
+            <div class="live-chat">
+                <p>Live Chat <span>(10)</span></p>
+                <img src="assets/animation_500_le8y4owf 1.svg" alt="">
+            </div>
+
+
+        </section>
+        <section class="main-content-part">
+
+            <nav class="navbar navbar-expand-lg navbar-light navbar-menu">
+                <a class="navbar-brand d-lg-none" href="#">Navbar</a>
+                <!-- <button class="btn side-menu-btn">
+                    <i class="fas fa-stream"></i>
+                  </button> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Accounts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Lead</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Attendance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Human
+                                Resource</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Leave</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Payroll</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="mr-lg-3 notification-content">
+                            <a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/Vector.png" alt="">
+                                <img src="assets/Vector (1).png" alt="" class="notification-icon">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="d-flex justify-content-between notification-item">
+                                    <div>
+                                        <p>Notification <span>(2)</span></p>
+                                    </div>
+                                    <div>
+                                        <p>total</p>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <div class="d-lg-flex d-md-flex justify-content-start align-items-center ">
+                                        <img src="assets/RICSU 1.png" alt="" class="notification-image">
+                                        <p class="pl-3">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="position-lg-relative right-3">
+                            <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/RICSU 1.png" alt="" class="loging-user">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Action</button>
+                                <button class="dropdown-item" type="button">Another action</button>
+                                <button class="dropdown-item" type="button">Something else here</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+            <!-- nan-munu -->
+
+
+            <div id="overlay">
+                <div id="content">
+                    <div class="d-flex justify-content-between align-items-center title">
+                        <p>Create</p>
+                        <p id="close-content">
+                            <i class="fa-solid fa-xmark close-icon"></i>
+                        </p>
+                    </div>
+                    <div class="from-content">
+                        <form>
+                            <div>
+                                <label for="">Host <span class="text-danger">*</span></label> <br>
+                                <input type="text" class="from-input" placeholder="Host" required>
+                            </div>
+                            <div class="mt-3">
+                                <label for="">User Name <span class="text-danger">*</span></label> <br>
+                                <input type="text" class="from-input" placeholder="Host" required>
+                            </div>
+                            <div class="mt-3">
+                                <label for="">Password <span class="text-danger">*</span></label> <br>
+                                <input type="password" name="" id="" class="from-input">
+                            </div>
+                            <div class="mt-3">
+                                <label for="">Users Type <span class="text-danger">*</span></label> <br>
+                                <div class="d-flex">
+                                    <div>
+                                        <input type="radio" id="Label" name="label" value="Label" class="hide-select-client">
+                                        <label for="html">Label</label><br>
+                                    </div>
+                                    <div class="ml-3">
+                                        <input type="radio" id="Label" name="label" value="Label" class="show-select-client">
+                                        <label for="html">Label</label><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3 Slelect-Client">
+                                <label for="">Slelect Client <span class="text-danger">*</span></label> <br>
+                                <input type="text" class="from-input" placeholder="Host" required>
+                            </div>
+                            <div class="mt-3">
+                                <label for="">Status <span class="text-danger">*</span></label> <br>
+                                <input type="text" class="from-input" placeholder="Host" required>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!-- data table start  -->
+            <div class="mt-5 mx-4 data-table">
+                <div class="mb-5 d-flex justify-content-between align-items-center">
+                    <p>FTP List</p>
+                    <p>
+                        <button id="show-content" class="btn btn-primary">Add New</button>
+                    </p>
+
+                </div>
+
+                <!-- Project Summary datatable start -->
+                <div class="table-parrent">
+                    <table id="example" class="display" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th class="Project-table-heading">SL</th>
+                                <th class="Project-table-heading">Host</th>
+                                <th class="Project-table-heading">User Name</th>
+                                <th class="Project-table-heading">Password</th>
+                                <th class="Project-table-heading">User Type</th>
+                                <th class="Project-table-heading">Status</th>
+                                <th class="Project-table-heading text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>141.223.8035</td>
+                                <td>Jena</td>
+                                <td>pbsdeUdFsc</td>
+                                <td>Specific</td>
+                                <td>Active</td>
+                                <td class="text-center">:</td>
+                               
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>141.223.8035</td>
+                                <td>Jena</td>
+                                <td>pbsdeUdFsc</td>
+                                <td>Specific</td>
+                                <td>Active</td>
+                                <td class="text-center">:</td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>141.223.8035</td>
+                                <td>Jena</td>
+                                <td>pbsdeUdFsc</td>
+                                <td>Specific</td>
+                                <td>Active</td>
+                                <td class="text-center">:</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- data table end  -->
+        </section>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

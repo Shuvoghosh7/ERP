@@ -306,11 +306,6 @@
     width: 100%;
 }
 
-.notification-menu {
-    position: relative;
-    right: 25px;
-
-}
 
 .notification-item {
     padding: 0 10px;
@@ -328,10 +323,11 @@
     .menu-link:focus {
         border-bottom: none;
     }
-
+  
+    
     #main-content {
         display: grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 40% 60%;
         height: 100vh;
         transition: all 0.4s ease-in-out 0.5s
     }
@@ -352,13 +348,6 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
         margin: 5px 20px;
-    }
-
-    .notification-menu {
-        position: relative;
-        right: 0;
-        bottom: 7px;
-
     }
 
     .notification-item {
