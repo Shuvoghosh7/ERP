@@ -26,10 +26,10 @@
 }
 
 .title {
-  background-color: rgb(73, 68, 166);
+  background-color: #0F7EC2;
   color: white;
   text-align: center;
-  padding: 10px 15px;
+  padding:20px;
   font-size: 18px;
   font-family: 'Inter';
   font-style: normal;

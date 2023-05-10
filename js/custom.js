@@ -42,7 +42,9 @@
 // });
 
 $(document).ready(function() {
+  //Data Table
     $('#example').DataTable();
+
   //  setup from 
     $('#show-content').click(function() {
       $('#overlay').fadeIn(500);
@@ -60,4 +62,16 @@ $(document).ready(function() {
       $(".Slelect-Client").show()
     })
 
+    // All Project show and hide table ans image foulder
+    $(".icon-table").click(function(){
+      $(".project-image-folder").hide()
+      $(".project-show-table").show()
+    })
+    $(".icon-picture").click(function(){
+      $(".project-show-table").hide()
+      $(".project-image-folder").show()
+    })
+
+
+    
   });

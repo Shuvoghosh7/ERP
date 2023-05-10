@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/setup.css">
+    <link rel="stylesheet" href="css/projectDetails.css">
     <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -71,7 +71,7 @@
 
 
         </section>
-          <!-- sidebar section  end-->
+        <!-- sidebar section  end-->
         <section class="main-content-part">
             <!-- nan-munu start -->
             <nav class="navbar navbar-expand-lg navbar-light navbar-menu">
@@ -161,123 +161,143 @@
                 </div>
             </nav>
             <!-- nan-munu end -->
-            <!-- slider data form start  -->
-            <div id="overlay">
-                <div id="content">
-                    <div class="d-flex justify-content-between align-items-center title">
-                        <div>Create</div>
-                        <div id="close-content">
-                            <i class="fa-solid fa-xmark close-icon"></i>
+
+            <div class="mx-4 mt-3">
+                <div class="all-project-title mb-3">
+                    All Project
+                </div>
+
+                <div class="all-project-container">
+                    <!-- all project sidebar start -->
+                    <div class="all-project-sidebar text-center">
+                        <div class="mb-2 mt-2">
+                            <a href="" class="nav-link active">Backup</a>
                         </div>
+                        <div class="mb-2">
+                            <a href="" class="nav-link active">Unassign</a>
+                        </div>
+                        <div class="mb-2">
+                            <a href="" class="nav-link active">Assign</a>
+                        </div>
+                        <div class="mb-2">
+                            <a href="" class="nav-link active">Complete</a>
+                        </div>
+                        <div class="mb-2">
+                            <a href="" class="nav-link active">Incomplete</a>
+                        </div>
+                        <div class="mb-2">
+                            <a href="" class="nav-link active">Assign Checking</a>
+                        </div>
+                        <div class="mb-2">
+                            <a href="" class="nav-link active">Complete Checking</a>
+                        </div>
+                        <div class="mb-2">
+                            <a href="" class="nav-link active">Assign QC</a>
+                        </div>
+                        <div class="mb-2">
+                            <a href="" class="nav-link active">Complete QC</a>
+                        </div>
+                        <div class="mb-2">
+                            <a href="" class="nav-link active">Corrections</a>
+                        </div>
+
+
                     </div>
-                    <div class="from-content">
-                        <form>
-                            <div>
-                                <label for="">Host <span class="text-danger">*</span></label> <br>
-                                <input type="text" class="from-input" placeholder="Host" required>
-                            </div>
-                            <div class="mt-3">
-                                <label for="">User Name <span class="text-danger">*</span></label> <br>
-                                <input type="text" class="from-input" placeholder="Host" required>
-                            </div>
-                            <div class="mt-3">
-                                <label for="">Password <span class="text-danger">*</span></label> <br>
-                                <input type="password" name="" id="" class="from-input">
-                            </div>
-                            <div class="mt-3">
-                                <label for="">Users Type <span class="text-danger">*</span></label> <br>
-                                <div class="d-flex">
-                                    <div>
-                                        <input type="radio" id="Label" name="label" value="Label"
-                                            class="hide-select-client">
-                                        <label for="html">Label</label><br>
-                                    </div>
-                                    <div class="ml-3">
-                                        <input type="radio" id="Label" name="label" value="Label"
-                                            class="show-select-client">
-                                        <label for="html">Label</label><br>
-                                    </div>
+                    <!-- all project sidebar end -->
+
+                    <!-- all project main contenter start -->
+                    <div class="all-project-content ">
+                        <!-- all project main content sidebar start  -->
+                        <div class="d-flex justify-content-between align-items-center project-nav">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <a href="project.html"><img src="assets/All Project/vector.png" alt=""
+                                            class="mr-3 nav-icon"></a>
+                                </div>
+                                <div>
+                                    <img src="assets/All Project/vector2.png" alt="" class="mr-3 nav-icon2">
+                                </div>
+                                <div class="project-dri">
+                                    Backup
                                 </div>
                             </div>
-                            <div class="mt-3 Slelect-Client">
-                                <label for="">Slelect Client <span class="text-danger">*</span></label> <br>
-                                <input type="text" class="from-input" placeholder="Host" required>
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="search-container">
+                                        <form>
+                                            <input type="text" placeholder="Search.." name="search">
+
+                                        </form>
+                                    </div>
+                                    <div class="ml-2">
+                                        <img src="assets/All Project/list-icon.png" alt="" class="icon-table">
+                                        <img src="assets/All Project/p-list-2.png" alt="" class="icon-picture">
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="mt-3">
-                                <label for="">Status <span class="text-danger">*</span></label> <br>
-                                <select name="Status" id="active"  class="from-input">
-                                    <option value="Active"  class="select-input">Active</option>
-                                    <option value="Inactive"  class="select-input">Inactive</option>
-                                  </select>
+                        </div>
+                        <!-- all project main content sidebar end  -->
+
+                        <!-- project show in picture start -->
+                        <div class="project-image-folder mx-4 mt-4 ">
+
+                            <div>
+                                <img src="assets/All Project/FileManager - List View Item.png" alt=""
+                                    class="project-images">
+                            </div>
+                            <div>
+                                <img src="assets/All Project/FileManager - List View Item.png" alt=""
+                                    class="project-images">
+                            </div>
+                            <div>
+                                <img src="assets/All Project/FileManager - List View Item.png" alt=""
+                                    class="project-images">
+                            </div>
+                            <div>
+                                <img src="assets/All Project/FileManager - List View Item.png" alt=""
+                                    class="project-images">
+                            </div>
+                            <div>
+                                <img src="assets/All Project/FileManager - List View Item.png" alt=""
+                                    class="project-images">
                             </div>
 
-                        </form>
+                        </div>
+                        <!-- project show in picture end -->
+
+                        <!-- project show in table start -->
+                        <div class="mx-4 mt-4 project-show-table">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">SL</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Date Modified</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Size</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- project show in table end -->
+
                     </div>
-
+                    <!-- all project main contenter end -->
                 </div>
+
+
             </div>
-             <!-- slider data form end  -->
 
-            <!-- data table start  -->
-            <div class="mt-5 mx-4 data-table">
-                <div class="mb-5 d-flex justify-content-between align-items-center">
-                    <p>FTP List</p>
-                    <p>
-                        <button id="show-content" class="btn btn-primary">Add New</button>
-                    </p>
-
-                </div>
-
-                
-                <div class="table-parrent">
-                    <table id="example" class="display" style="width:100%">
-                        <thead>
-                            <tr>
-                                <th class="Project-table-heading">SL</th>
-                                <th class="Project-table-heading">Host</th>
-                                <th class="Project-table-heading">User Name</th>
-                                <th class="Project-table-heading">Password</th>
-                                <th class="Project-table-heading">User Type</th>
-                                <th class="Project-table-heading">Status</th>
-                                <th class="Project-table-heading text-center">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>001</td>
-                                <td>141.223.8035</td>
-                                <td>Jena</td>
-                                <td>pbsdeUdFsc</td>
-                                <td>Specific</td>
-                                <td>Active</td>
-                                <td class="text-center">:</td>
-
-                            </tr>
-                            <tr>
-                                <td>001</td>
-                                <td>141.223.8035</td>
-                                <td>Jena</td>
-                                <td>pbsdeUdFsc</td>
-                                <td>Specific</td>
-                                <td>Active</td>
-                                <td class="text-center">:</td>
-                            </tr>
-                            <tr>
-                                <td>001</td>
-                                <td>141.223.8035</td>
-                                <td>Jena</td>
-                                <td>pbsdeUdFsc</td>
-                                <td>Specific</td>
-                                <td>Active</td>
-                                <td class="text-center">:</td>
-                            </tr>
-
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <!-- data table end  -->
         </section>
     </main>
 
