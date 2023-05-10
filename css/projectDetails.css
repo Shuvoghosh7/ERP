@@ -38,11 +38,21 @@
 .all-project-sidebar {
     background-color: white;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .all-project-content {
     background-color: white;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.project-side-details {
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    display: none;
+    padding: 10px 15px;
 }
 
 .search-icon {
@@ -82,24 +92,81 @@
     margin-top: 4px;
 }
 
-.project-image-folder {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
-}
+
+
 
 .project-images {
     width: 155px;
     height: 135px;
 }
 
-.icon-picture{
+.icon-picture {
     cursor: pointer;
 }
-.icon-table{
+
+.icon-table {
     cursor: pointer;
 }
-.project-show-table{
+
+.project-show-table {
     display: none;
-    
+
+}
+
+.cleckbox-lebel {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #424242;
+}
+
+.image-container {
+    background: #FFFFFF;
+    width: 196px;
+    height: 180px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.project-image {
+    width: 50px;
+    height: 45px;
+    margin-top: 40px;
+}
+
+.project-details-icon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.project-image-folder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.close-button {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.image-container-details {
+    background: #FFFFFF;
+    width: 180px;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.details-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #424242;
 }

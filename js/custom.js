@@ -72,6 +72,15 @@ $(document).ready(function() {
       $(".project-image-folder").show()
     })
 
-
+   $(".project-details-icon").click(function(){
+    $(".project-side-details").fadeIn(500);
+    $(".all-project-container").css("grid-template-columns","20% 60% 20%")
+    $(".project-image-folder").css('grid-template-columns', 'repeat(3, 1fr)')
+   })
     
+   $(".close-button").click(function(){
+    $(".project-side-details").hide();
+    $(".all-project-container").css("grid-template-columns","20% 80%")
+    $(".project-image-folder").css('grid-template-columns', 'repeat(4, 1fr)')
+   })
   });
