@@ -2,24 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/manager-deshboard.css">
+
     <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css">
-
-
 </head>
 
 <body>
 
     <main id="main-content">
-        <!-- sidebar section  -->
+        <!-- sidebar section start -->
         <section class="sidebar-content">
             <div>
                 <a class="nav-link" href="index.html">
@@ -29,40 +30,46 @@
                     </div>
                 </a>
                 <hr class="solid-divider">
-                <a class="nav-link nav-sidevar-link mt-3" href="index.html">
+                <a class="nav-link nav-sidevar-link mt-3" href="#">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
-                        <span class="sidebar-link-text ms-1 "> Dashboard</span>
+                        <span class="sidebar-link-text ml-1 "> Dashboard</span>
                     </div>
                 </a>
                 <a class="nav-link nav-sidevar-link" href="index.html">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
-                        <span class="sidebar-link-text ms-1"> Assign Details</span>
+                        <span class="sidebar-link-text ml-1">Projects</span>
                     </div>
                 </a>
                 <a class="nav-link nav-sidevar-link" href="index.html">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
-                        <span class="sidebar-link-text ms-1"> Damage Image</span>
+                        <span class="sidebar-link-text ml-1">Assign Details</span>
                     </div>
                 </a>
                 <a class="nav-link nav-sidevar-link" href="index.html">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
-                        <span class="sidebar-link-text ms-1"> Checked By Projects</span>
+                        <span class="sidebar-link-text ml-1"> Checked By Projects</span>
                     </div>
                 </a>
                 <a class="nav-link nav-sidevar-link" href="index.html">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
-                        <span class="sidebar-link-text ms-1"> QC Projects</span>
+                        <span class="sidebar-link-text ml-1">QC Projects</span>
                     </div>
                 </a>
                 <a class="nav-link nav-sidevar-link" href="index.html">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
-                        <span class="sidebar-link-text ms-1"> Final Check Projects</span>
+                        <span class="sidebar-link-text ml-1">Final Check Projects</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="index.html">
+                    <div class="link-icon">
+                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
+                        <span class="sidebar-link-text ml-1">Penalty</span>
                     </div>
                 </a>
             </div>
@@ -73,10 +80,9 @@
 
 
         </section>
-
-        <!-- main content section  -->
+        <!-- sidebar section  end-->
         <section class="main-content-part">
-            <!-- nav-munu -->
+            <!-- nan-munu start -->
             <nav class="navbar navbar-expand-lg navbar-light navbar-menu">
                 <a class="navbar-brand d-lg-none" href="#">Navbar</a>
                 <!-- <button class="btn side-menu-btn">
@@ -91,7 +97,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link active menu-link mr-2" aria-current="page" href="/project.html">Project</a>
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Project</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Client</a>
@@ -124,7 +130,7 @@
 
                     </ul>
                     <div class="d-flex align-items-center justify-content-center">
-                         <div class="mr-lg-3 notification-content">
+                        <div class="mr-lg-3 notification-content">
                             <a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="assets/Vector.png" alt="">
                                 <img src="assets/Vector (1).png" alt="" class="notification-icon">
@@ -147,9 +153,9 @@
                             </div>
 
                         </div>
-                       
+
                         <div class="position-lg-relative right-3">
-                            <a type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="assets/RICSU 1.png" alt="" class="loging-user">
                             </a>
                             <div class="dropdown-menu dropdown-menu-right">
@@ -157,142 +163,167 @@
                                 <button class="dropdown-item" type="button">Another action</button>
                                 <button class="dropdown-item" type="button">Something else here</button>
                             </div>
-                          
+
                         </div>
                     </div>
 
                 </div>
             </nav>
-            <!-- nan-munu -->
+            <!-- nav-munu end -->
 
-
-            <!-- card section start -->
-            <div class="card-contaniner">
-                <!-- card-1  -->
-                <div class="card-content">
-                    <div class="d-flex justify-content-start">
-                        <img src="assets/card/Frame 629447.png" alt="" class="card-icom-img">
-                        <p class="card-title">Working Schedule</p>
-                    </div>
-                    <div>
-                        <p class="time-table">Daily</p>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center card-date">
-                        <p>Entry: <span class="card1-time ms-1"> 07:00 AM</span></p>
-                        <p>Exit: <span class="card1-time ms-1">03:00 PM</span></p>
-
-                    </div>
-                </div>
-
-                <!-- card-2  -->
-                <div class="card-content">
-                    <div class="d-flex justify-content-start">
-                        <img src="assets/card/Frame2.png" alt="" class="card-icom-img">
-                        <p class="card-title">Missing</p>
-                    </div>
-                    <div>
-                        <p class="time-table">Monthly</p>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center card-date">
-                        <p>Late: <span class="card2-time ms-1">3 Days</span></p>
-                        <p>Absent: <span class="card2-time ms-1">2 Days</span></p>
-
-                    </div>
-                </div>
-                <!-- card-3  -->
-                <div class="card-content">
-                    <div class="d-flex justify-content-start">
-                        <img src="assets/card/Frame3.png" alt="" class="card-icom-img">
-                        <p class="card-title">Over Time</p>
-                    </div>
-                    <div>
-                        <p class="time-table">5 hr</p>
-                    </div>
-                    <div class="d-flex justify-content-between  card-date card-input-date">
-                        <input type="date" name="" id="">
-                        <p>To</p>
-                        <input type="date" name="" id="">
-
-                    </div>
-                </div>
-                <!-- card-3  -->
-                <div class="card-content">
-                    <div class="d-flex justify-content-start">
-                        <img src="assets/card/Frame3.png" alt="" class="card-icom-img">
-                        <p class="card-title">Penalty</p>
-                    </div>
-                    <div>
-                        <p class="time-table">5 hr</p>
-                    </div>
-                    <div class="d-flex justify-content-between  card-date card-input-date">
-                        <input type="date" name="" id="">
-                        <p>To</p>
-                        <input type="date" name="" id="">
-
-                    </div>
-                </div>
-            </div>
-            <!-- card section end -->
-
-            <!-- chart container start -->
-            <div class="chart-container">
-                <div class="chart1">
-                    <div class="d-lg-flex justify-content-between">
-                        <p>Project History</p>
-                        <select id="cars" name="cars" class="select-Project">
-                            <option value="volvo">GL</option>
-                            <option value="saab">Saab</option>
-                        </select>
-                    </div>
-                    <canvas id="myChart" style="width:100%;"></canvas>
-                </div>
-                <div class="chart2">
-                    <div class="mb-1">
-                        Attendance (Monthly) 
-                    </div>
-                    <canvas id="myPieChart" style="width:100%;"></canvas>
-                   
-                </div>
-                <div class="performance">
-                    <div class="d-lg-flex justify-content-between">
-                        <p>Performance (Instant)</p>
-                        <select id="cars" name="cars" class="select-Performance">
-                            <option value="volvo">Top</option>
-                            <option value="saab">Saab</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <div class="d-flex justify-content-start align-items-center">
-                            <div class="performance-member">
-                                <img src="assets/per/RICSU 1.png" alt="">
-                            </div>
-                            <div class="ms-3 performance-member-details">
-                                <p>Jane Cooper <span>(0025)</span></p>
-                                <h6>tim.jennings@example.com</h6>
-                            </div>
+            <div>
+                <!-- card section start -->
+                <div class="card-contaniner">
+                    <!-- card-1  -->
+                    <div class="card-content">
+                        <div class="d-flex justify-content-start">
+                            <img src="assets/Manager-deshboard/Frame 629447.png" alt="" class="card-icom-img">
+                            <p class="card-title">Total Image Done</p>
+                        </div>
+                        <div>
+                            <p class="time-table">1,60,540</p>
+                        </div>
+                        <div class="d-flex justify-content-between  card-date card-input-date">
+                            <input type="date" name="" id="">
+                            <p>To</p>
+                            <input type="date" name="" id="">
 
                         </div>
-                        <div class="d-flex justify-content-start align-items-center">
-                            <div class="performance-member">
-                                <img src="assets/per/RICSU 1.png" alt="">
+                    </div>
+                    <!-- card-2  -->
+                    <div class="card-content">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-start">
+                                <img src="assets/Manager-deshboard/Frame 629447 (1).png" alt="" class="card-icom-img">
+                                <p class="card-title">Active Design</p>
                             </div>
-                            <div class="ms-3 performance-member-details">
-                                <p>Jane Cooper <span>(0025)</span></p>
-                                <h6>tim.jennings@example.com</h6>
+                            <div>
+                                <img src="assets/Manager-deshboard/Vector.png" alt="" class="line-image">
                             </div>
+                        </div>
+                        <div>
+                            <p class="time-table">75</p>
+                        </div>
+                        <div class="d-flex justify-content-between  card-date card-input-date">
+                            <p>Morning: 65</p>
+                            <div class="card-bottom-icon">
+                                <img src="assets/Manager-deshboard/Medium.png" alt="">
+                            </div>
+                            <p>Over Time: <span class="number-color">10</span></p>
+
+                        </div>
+                    </div>
+                    <!-- card-3  -->
+                    <div class="card-content">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-start">
+                                <img src="assets/Manager-deshboard/Frame 629447 (2).png" alt="" class="card-icom-img">
+                                <p class="card-title">Total Project</p>
+                            </div>
+                            <div>
+                                <img src="assets/Manager-deshboard/Vector33.png" alt="" class="line-image">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="time-table">75</p>
+                        </div>
+                        <div class="d-flex justify-content-between  card-date card-input-date">
+                            <p>Test Project: <span class="number-color">75</span></p>
+
+                            <p>Urgent Project: <span class="text-danger">05</span></p>
+
+                        </div>
+                    </div>
+                    <!-- card-4  -->
+                    <div class="card-content">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-start">
+                                <img src="assets/Manager-deshboard/Frame 629447 (2).png" alt="" class="card-icom-img">
+                                <p class="card-title">Other</p>
+                            </div>
+                            <div>
+                                <img src="assets/Manager-deshboard/Vector3.png" alt="" class="line-image">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="time-table">75</p>
+                        </div>
+                        <div class="d-flex justify-content-between  card-date card-input-date">
+                            <p>Feedbacks: <span class="number-color">0</span></p>
+
+                            <p>Correction: <span class="text-danger">05</span></p>
 
                         </div>
                     </div>
 
-                </div>
 
+
+                </div>
+                <!-- card section end -->
+                <!-- chart container start -->
+                <div class="chart-container">
+                    <div class="chart1">
+                        <div class="d-lg-flex justify-content-between">
+                            <p>Project History</p>
+                            <select id="cars" name="cars" class="select-Project">
+                                <option value="volvo">GL</option>
+                                <option value="saab">Saab</option>
+                            </select>
+                        </div>
+                        <canvas id="myChart" style="width:100%;"></canvas>
+                    </div>
+                    <div class="chart2">
+                        <div class="mb-1">
+                            Attendance (Monthly)
+                        </div>
+                        <canvas id="myPieChart" style="width:100%;"></canvas>
+
+                    </div>
+                    <div class="performance">
+                        <div class="d-lg-flex justify-content-between">
+                            <p>Performance (Instant)</p>
+                            <select id="cars" name="cars" class="select-Performance">
+                                <option value="volvo">Top</option>
+                                <option value="saab">Saab</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <div class="d-flex justify-content-start align-items-center">
+                                <div class="performance-member">
+                                    <img src="assets/per/RICSU 1.png" alt="">
+                                </div>
+                                <div class="ms-3 performance-member-details">
+                                    <p>Jane Cooper <span>(0025)</span></p>
+                                    <h6>tim.jennings@example.com</h6>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center">
+                                <div class="performance-member">
+                                    <img src="assets/per/RICSU 1.png" alt="">
+                                </div>
+                                <div class="ms-3 performance-member-details">
+                                    <p>Jane Cooper <span>(0025)</span></p>
+                                    <h6>tim.jennings@example.com</h6>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- chart container end -->
             </div>
-            <!-- chart container end -->
+
+
+
+
 
             <!-- data table start  -->
             <div class="mt-5 mx-4 data-table">
-                <p>Project Summary</p>
+                <p class="mb-5">Project Summary</p>
                 <!-- Project Summary datatable start -->
                 <div class="table-parrent">
                     <table id="example" class="display" style="width:100%">
@@ -301,15 +332,15 @@
                                 <th class="Project-table-heading">SL</th>
                                 <th class="Project-table-heading">Date</th>
                                 <th class="Project-table-heading">Day</th>
-                                <th class="Project-table-heading">Client Job</th>
-                                <th class="Project-table-heading">File Type</th>
-                                <th class="Project-table-heading">Total Qty</th>
-                                <th class="Project-table-heading">Start Time</th>
-                                <th class="Project-table-heading">End Time</th>
-                                <th class="Project-table-heading">Total Time</th>
-                                <th class="Project-table-heading">Heading 1</th>
-                                <th class="Project-table-heading">Heading 12</th>
-                                <th class="Project-table-heading">Heading 3</th>
+                                <th class="Project-table-heading">Total Project</th>
+                                <th class="Project-table-heading">Assign Project</th>
+                                <th class="Project-table-heading">Unassign Project</th>
+                                <th class="Project-table-heading">In Progress Project</th>
+                                <th class="Project-table-heading">Production Done</th>
+                                <th class="Project-table-heading">Check Done</th>
+                                <th class="Project-table-heading">Final Checking</th>
+                                <th class="Project-table-heading">Del</th>
+
                             </tr>
                         </thead>
                         <tbody>
@@ -323,9 +354,9 @@
                                 <td>400</td>
                                 <td>500</td>
                                 <td>300</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
+                                <td>10</td>
+                                <td>8</td>
+
                             </tr>
                             <tr>
                                 <td>001</td>
@@ -337,9 +368,9 @@
                                 <td>400</td>
                                 <td>500</td>
                                 <td>300</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
+                                <td>10</td>
+                                <td>5</td>
+
                             </tr>
                             <tr>
                                 <td>001</td>
@@ -351,9 +382,9 @@
                                 <td>400</td>
                                 <td>500</td>
                                 <td>300</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
+                                <td>5</td>
+                                <td>2</td>
+
                             </tr>
 
 
@@ -372,16 +403,16 @@
                 </div>
             </div>
             <!-- data table end  -->
-        </section>
 
+        </section>
     </main>
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-
     <script>
         var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
         var yValues = [55, 49, 44, 24, 15];
@@ -401,7 +432,9 @@
                 title: {
                     display: true,
                     text: "World Wine Production 2018"
-                }
+                },
+                responsive: true,
+
             }
         });
     </script>
@@ -430,12 +463,11 @@
                 title: {
                     display: true,
                     text: "World Wide Wine Production 2018"
-                }
+                },
+                responsive: true,
             }
         });
     </script>
-
-
 </body>
 
 </html>
