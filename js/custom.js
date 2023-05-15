@@ -120,7 +120,11 @@ $(document).ready(function () {
     $('#group-modal-overlay').fadeOut();
   })
 
-  
+
+  // client_project_Details sidebar
+  $("#report-link").click(function () {
+    $(".client-sumarry").slideToggle("slow");
+  })
 
 });
 

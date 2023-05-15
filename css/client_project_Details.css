@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+#report-text {
+    color: black;
+}
+
+#report {
+    background-color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.client-sumarry {
+    display: none;
+    margin: 0 20px;
+}
+
+#Client_Summary_text {
+    color: black;
+}
+
+#active-sidebar-icon-image {
+    background-color: #0F7EC2;
+    opacity: 0.5;
+    pointer-events: none;
+    margin-top: -5px;
+}
+
+.client-project-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+.report-icon{
+    float:right;
+
+}
+
+.report-icon img{
+    width: 8px;
+    height: 8px;
+}
