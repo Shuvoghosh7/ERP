@@ -8,11 +8,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -65,7 +68,7 @@
                 </a>
             </div>
             <div class="live-chat">
-                <p>Live Chat <span>(10)</span></p>
+                <p id="open_chat">Live Chat <span>(10)</span></p>
                 <img src="assets/animation_500_le8y4owf 1.svg" alt="">
             </div>
 
@@ -162,10 +165,134 @@
             </nav>
             <!-- nan-munu end -->
 
-            <div>
-                all commom
+
+
+            <!-- chat start  -->
+
+            <div id="chat_content" class="hidden_chat">
+                <div class="d-flex justify-content-between align-items-center chat-title">
+                    <div>Your Chat</div>
+                    <div class="chat-close-btn"><img src="assets/chat/vector.png" alt=""></div>
+                </div>
+
+                <div class="mt-2">
+                    <form>
+                        <div class="d-flex justify-content-center  px-3">
+                            <div class="search">
+                                <input type="text" class="search-input" placeholder="Search..." name="">
+                                <a href="#" class="search-icon">
+                                    <img src="assets/chat/Shape2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="mt-1 create-group">
+                                <img src="assets/All Project/list-icon.png" alt="" class="ml-2">
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="chat-body">
+                    <div class="ml-3 mt-3">
+                        <p>pinned</p>
+                    </div>
+                    <hr>
+
+                    <!-- chat member 1 -->
+                    <div class="mx-4 d-flex justify-content-between align-items-center mb-4" id="chat-details">
+                        <div class="chat-person-images d-flex align-items-center">
+                            <img src="assets/RICSU 1.png" alt="">
+                            <div class="chat-person-name ml-3">
+                                <p>Lorem ipsum</p>
+                                <h6>Lorem ipsum dolor sit.</h6>
+                            </div>
+                        </div>
+
+                        <div class="chat-time">
+                            <p>11.11</p>
+                            <div class="massage-number">
+                                <h6>5</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
-            
+
+            <!-- chat end  -->
+
+            <!-- chat details start for a person -->
+
+            <div class="person-chat">
+
+                <div class="person-chat-content mt-5">
+                    <div class="d-flex justify-content-between align-items-center chat-title">
+                        <div class="d-flex align-items-center mt-3">
+                            <p class="chat-back-btn">
+                            <p class="chat-back-btn">
+                                < </p>
+                                    <p class="ml-3"> Lorem</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="mr-3 close-chat-details-btn">
+                                -
+                            </div>
+                            <div class="close-chat-details-btn">
+                                <img src="assets/chat/vector.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mx-3 mt-4 chat-left">
+                        <span class="chat-details-time">Jan 12,2023, 4.55pm</span>
+                        <div class="chat-details-person-images">
+                            <img src="assets/RICSU 1.png" alt="">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="chat-right mx-3">
+                        <div>
+                            <div class="chat-right-imgage">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <img src="assets/RICSU 1.png" alt="">
+                            </div>
+                            <p class="chat-seen">seen</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- chat details start for a person -->
+
+            <!-- upload file module  start-->
+            <div id="group-modal-overlay">
+                <div id="group-modal">
+                    <div class="d-flex justify-content-between align-items-center group-title">
+                        <h5>Create Group</h5>
+                        <span id="group-modal-close" class="modal-group-icon">&times;</span>
+                    </div>
+
+                    <form action="" class="mx-3 my-3">
+                        <label>Group Name <span class="text-danger">*</span></label> <br>
+                        <input type="text" name="" id="" class="group-input mb-3" placeholder="Enter Group Name"> <br>
+                        <label>Select Member <span class="text-danger">*</span></label> <br>
+                        <select id="multiple-select" class="group-input">
+                            <option value="1">Books</option>
+                            <option value="2">Pan</option>
+                        </select>
+
+                    </form>
+                    <hr class="my-3">
+                    <div class="d-flex justify-content-end mr-3 pb-3">
+                        <button class="group-cencle-button">Cencle</button>
+                        <button class="group-save-button">upload</button>
+                    </div>
+                </div>
+            </div>
+            <!-- upload file module end  -->
+
         </section>
     </main>
 
@@ -174,6 +301,9 @@
     <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js"></script>
+
+
 </body>
 
 </html>

@@ -51,42 +51,76 @@ $(document).ready(function () {
     // $('.day-name').text(`Month: ${fullName}`);
   });
 
-  setInterval(function(){
+  setInterval(function () {
     var currentDate = new Date();
     var formattedTime = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
-  $('#currentDate').text(formattedTime);
+    $('#currentDate').text(formattedTime);
   })
 
 
   // my work moual 
 
-  $("#openModal-instruction").click(function() {
+  $("#openModal-instruction").click(function () {
     $("#modal-instruction").show();
   });
 
   // Close the modal when the close button or outside the modal content is clicked
-  $(".instruction-close-btn,.close-modual-btn, #modal").click(function() {
+  $(".instruction-close-btn,.close-modual-btn, #modal").click(function () {
     $("#modal-instruction").hide();
   });
-  
-  $("#note-openModal").click(function() {
+
+  $("#note-openModal").click(function () {
     $("#note-modal").show();
   });
 
   // Close the modal when the close button or outside the modal content is clicked
-  $(".note-close-btn,close-modual-btn, #note-modal").click(function() {
+  $(".note-close-btn,close-modual-btn, #note-modal").click(function () {
     $("#note-modal").hide();
   });
 
 
-//  upload file module my work 
-  $('#modal-trigger').click(function() {
+  //  upload file module my work 
+  $('#modal-trigger').click(function () {
     $('#modal-overlay').fadeIn();
   });
-  
-  $('#modal-close').click(function() {
+
+  $('#modal-close').click(function () {
     $('#modal-overlay').fadeOut();
   });
+
+
+  // live chat
+  $('#open_chat').click(function () {
+    $('#chat_content').slideDown(600);
+  });
+
+  $('.chat-close-btn').click(function () {
+    $('#chat_content').slideUp(600);
+  });
+
+  $("#chat-details").click(function () {
+    $(".person-chat").show();
+  })
+
+  $(".close-chat-details-btn").click(function () {
+    $(".person-chat").hide();
+    $('#chat_content').hide();
+  })
+  $(".chat-back-btn").click(function () {
+    $(".person-chat").hide();
+  })
+
+
+  //create Group
+  $(".create-group").click(function () {
+    $('#group-modal-overlay').fadeIn();
+  })
+
+  $("#group-modal-close").click(function () {
+    $('#group-modal-overlay').fadeOut();
+  })
+
+  
 
 });
 

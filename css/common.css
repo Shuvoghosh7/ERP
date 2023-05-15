@@ -1,0 +1,292 @@
+#open_chat {
+    cursor: pointer;
+}
+
+.hidden_chat {
+    display: none;
+}
+
+#chat_content {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(238, 236, 236);
+    box-sizing: border-box;
+    /* overflow-y: scroll; */
+}
+
+.chat-close-btn {
+    cursor: pointer;
+}
+
+.person-chat {
+    display: none;
+}
+
+.person-chat-content {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(238, 236, 236);
+    box-sizing: border-box;
+
+}
+
+.chat-title {
+    background-color: #0F7EC2;
+    padding: 13px;
+    color: white;
+}
+
+.search {
+    width: 100%;
+    margin-top: 5px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+
+.search-input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    margin-top: 5px;
+    caret-color: transparent;
+    line-height: 20px;
+    transition: width 0.4s linear;
+    padding: 0 10px;
+}
+
+.search .search-input {
+    width: 100%;
+    caret-color: #536bf6;
+    font-size: 19px;
+    font-weight: 300;
+    color: black;
+    transition: width 0.4s linear;
+}
+
+.search-icon {
+    height: 34px;
+    width: 34px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    bottom: 30px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.chat-body {
+    height: 100%;
+    overflow-y: scroll;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+}
+
+
+.chat-body::-webkit-scrollbar {
+    width: 0px
+}
+
+/* .chat-body::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  .chat-body::-webkit-scrollbar-thumb {
+    background-color: #888;
+  } */
+.chat-person-images img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.chat-person-name h6 {
+    margin-top: -13px;
+
+}
+
+.massage-number {
+    margin-top: -14px;
+    text-align: center;
+    background-color: #0F7EC2;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.massage-number h6 {
+    position: relative;
+    top: 5px;
+    color: white;
+}
+
+#chat-details {
+    cursor: pointer;
+}
+
+.close-chat-details-btn {
+    cursor: pointer;
+
+}
+
+.chat-details-person-images {
+    display: flex;
+    align-items: center;
+
+}
+
+.chat-details-person-images img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+
+}
+
+.chat-details-person-images p {
+    margin-top: 15px;
+    margin-left: 10px;
+    background-color: rgb(201, 196, 196);
+    border-radius: 20px;
+    padding: 4px;
+
+}
+
+.chat-details-time {
+    display: flex;
+    justify-content: center;
+
+}
+
+.chat-left {
+    float: left;
+}
+
+.chat-right {
+    float: right;
+}
+
+.chat-right-imgage {
+    display: flex;
+    align-items: center;
+}
+
+.chat-right-imgage p {
+    background-color: rgb(94, 11, 220);
+    border-radius: 20px;
+    padding: 4px;
+    color: white;
+}
+
+.chat-right-imgage img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.chat-seen {
+    float: right;
+    margin-top: -10px;
+    margin-right: 22px;
+}
+
+.chat-back-btn {
+    cursor: pointer;
+}
+
+
+#group-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+#group-modal {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#group-modal-close {
+    display: block;
+    cursor: pointer;
+    color: white;
+}
+.modal-group-icon{
+    font-size: 30px;
+    margin-top: -5px;
+}
+.group-title {
+    background-color: #0F7EC2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.group-cencle-button{
+    background-color: rgb(228, 223, 223);
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+}
+.group-save-button{
+    background-color:#0F7EC2;
+    padding:7px;
+    border-radius: 10px; 
+    color: white;
+    margin-left: 20px;
+    border: none;
+}
+.group-input{
+    width: 100%;
+    height: 40px;
+    border: 3px solid rgba(0, 0, 0, 0.08);
+}
+#multiple-select{
+
+}
+@media screen and (max-width: 768px) {
+    #chat_content {
+        position: fixed;
+        bottom: 0;
+        right: 10px;
+        width: 60%;
+        height: 100%;
+
+    }
+
+    .person-chat-content {
+        position: fixed;
+        bottom: 0;
+        right: 10px;
+        width: 60%;
+        height: 100%;
+
+
+    }
+
+}
