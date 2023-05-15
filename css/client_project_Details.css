@@ -4,19 +4,23 @@
     color: black;
 }
 
-#report {
+#report-link {
     background-color: white;
     margin-right: 10px;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 .client-sumarry {
     display: none;
-    margin: 0 20px;
+   
 }
 
-#Client_Summary_text {
+#Client_Summary_text:hover {
+    background-color: white;
     color: black;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #active-sidebar-icon-image {

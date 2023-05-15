@@ -16,7 +16,9 @@
     box-sizing: border-box;
     /* overflow-y: scroll; */
 }
-
+.create-group{
+cursor: pointer;
+}
 .chat-close-btn {
     cursor: pointer;
 }

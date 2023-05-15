@@ -7,7 +7,7 @@
 
 #main-content {
     display: grid;
-    grid-template-columns: 23% 77%;
+    grid-template-columns: 20% 80%;
     height: 100vh;
     transition: all 0.4s ease-in-out 0.5s
 }
