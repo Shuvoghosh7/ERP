@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/setup.css">
     <link rel="stylesheet" href="css/client_project_Details.css">
     <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -35,7 +36,7 @@
                         <span class="sidebar-link-text ml-2 "> Dashboard</span>
                     </div>
                 </a>
-               
+
                 <!-- setup dropdown menu start  -->
                 <div id="Setup">
                     <a class="nav-link" id="setup-link">
@@ -50,7 +51,7 @@
                     </a>
                 </div>
                 <div class="setup-menu">
-                    <a class="nav-link nav-sidevar-link" href="FTP_LIST.html" id="setup-menu-link">
+                    <a class="nav-link nav-sidevar-link" href="#" id="setup-menu-link">
                         <div class="link-icon ml-3">
                             <span class="sidebar-link-text ml-2" id="setup-link-text"> FTP List</span>
                         </div>
@@ -75,8 +76,8 @@
                             <span class="sidebar-link-text ml-2" id="setup-link-text"> Instruction Path</span>
                         </div>
                     </a>
-                    
-                   
+
+
                 </div>
                 <!-- setup dropdown menu end  -->
                 <a class="nav-link nav-sidevar-link" href="index.html">
@@ -127,20 +128,19 @@
                         <span class="sidebar-link-text ml-2">Invoice List</span>
                     </div>
                 </a>
-  
+
                 <!-- report dropdown memu start  -->
                 <div id="report">
                     <a class="nav-link" id="report-link">
                         <div class="link-icon">
                             <img src="assets/Shape.svg" alt="" class="sidebar-icon-image"
                                 id="active-sidebar-icon-image">
-                            <samp class="sidebar-link-text ml-2">
-                                Report
-                            </samp>
+                            <span class="sidebar-link-text ml-2">
+                                Setup
+                            </span>
                             <span class="report-icon"><img src="assets/icon22.png" alt=""></span>
                         </div>
                     </a>
-               
                 </div>
                 <div class="client-sumarry">
                     <a class="nav-link nav-sidevar-link" href="#" id="setup-menu-link">
@@ -163,8 +163,8 @@
                             <span class="sidebar-link-text ml-2" id="setup-link-text"> Loss Client</span>
                         </div>
                     </a>
-                  
-                   
+
+
                 </div>
                 <!-- report dropdown memu end  -->
 
@@ -267,62 +267,116 @@
             </nav>
             <!-- nan-munu end -->
 
+            <!-- slider data form start  -->
+            <div id="overlay">
+                <div id="content">
+                    <div class="d-flex justify-content-between align-items-center title">
+                        <div>Create</div>
+                        <div id="close-content">
+                            <i class="fa-solid fa-xmark close-icon"></i>
+                        </div>
+                    </div>
+                    <div class="from-content">
+                        <form>
+                            <div>
+                                <label for="">Host <span class="text-danger">*</span></label> <br>
+                                <input type="text" class="from-input" placeholder="Host" required>
+                            </div>
+                            <div class="mt-3">
+                                <label for="">User Name <span class="text-danger">*</span></label> <br>
+                                <input type="text" class="from-input" placeholder="Host" required>
+                            </div>
+                            <div class="mt-3">
+                                <label for="">Password <span class="text-danger">*</span></label> <br>
+                                <input type="password" name="" id="" class="from-input">
+                            </div>
+                            <div class="mt-3">
+                                <label for="">Users Type <span class="text-danger">*</span></label> <br>
+                                <div class="d-flex">
+                                    <div>
+                                        <input type="radio" id="Label" name="label" value="Label"
+                                            class="hide-select-client">
+                                        <label for="html">Label</label><br>
+                                    </div>
+                                    <div class="ml-3">
+                                        <input type="radio" id="Label" name="label" value="Label"
+                                            class="show-select-client">
+                                        <label for="html">Label</label><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3 Slelect-Client">
+                                <label for="">Slelect Client <span class="text-danger">*</span></label> <br>
+                                <input type="text" class="from-input" placeholder="Host" required>
+                            </div>
+                            <div class="mt-3">
+                                <label for="">Status <span class="text-danger">*</span></label> <br>
+                                <select name="Status" id="active" class="from-input">
+                                    <option value="Active" class="select-input">Active</option>
+                                    <option value="Inactive" class="select-input">Inactive</option>
+                                </select>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!-- slider data form end  -->
+
             <!-- data table start  -->
             <div class="mt-5 mx-4 data-table">
-                <div>
-                    <p class="client-project-title">Client Project Sumary</p>
+                <div class="mb-3">
+                    <p>FTP List</p>
                 </div>
+                <hr>
+                <div class="Add_FTP">
+                    <button id="show-content" class="btn btn-primary ">Add New</button>
+                </div>
+
 
                 <div class="table-parrent">
                     <table id="example" class="display" style="width:100%">
                         <thead>
                             <tr>
                                 <th class="Project-table-heading">SL</th>
-                                <th class="Project-table-heading">Client Name</th>
-                                <th class="Project-table-heading">Work Order</th>
-                                <th class="Project-table-heading">Quantity Of Image</th>
-                                <th class="Project-table-heading">Finacial Statement</th>
-                                <th class="Project-table-heading">Due</th>
-                                <th class="Project-table-heading text-center">Paid</th>
-                                <th class="Project-table-heading text-center">Discount</th>
-                                <th class="Project-table-heading text-center">Damage Image</th>
+                                <th class="Project-table-heading">Host</th>
+                                <th class="Project-table-heading">User Name</th>
+                                <th class="Project-table-heading">Password</th>
+                                <th class="Project-table-heading">User Type</th>
+                                <th class="Project-table-heading">Status</th>
+                                <th class="Project-table-heading text-center">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="text-center">001</td>
-                                <td class="text-center">Lorem, ipsum</td>
-                                <td class="text-center">100</td>
-                                <td class="text-center">10</td>
-                                <td class="text-center">-</td>
-                                <td class="text-center">$150.00</td>
-                                <td class="text-center">$150.00</td>
-                                <td class="text-center">$150.00</td>
-                                <td class="text-center">10</td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">001</td>
-                                <td class="text-center">Lorem, ipsum</td>
-                                <td class="text-center">100</td>
-                                <td class="text-center">10</td>
-                                <td class="text-center">-</td>
-                                <td class="text-center">$150.00</td>
-                                <td class="text-center">$150.00</td>
-                                <td class="text-center">$150.00</td>
-                                <td class="text-center">10</td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">001</td>
-                                <td class="text-center">Lorem, ipsum</td>
-                                <td class="text-center">100</td>
-                                <td class="text-center">10</td>
-                                <td class="text-center">-</td>
-                                <td class="text-center">$150.00</td>
-                                <td class="text-center">$150.00</td>
-                                <td class="text-center">$150.00</td>
-                                <td class="text-center">10</td>
-                            </tr>
+                                <td>001</td>
+                                <td>141.223.8035</td>
+                                <td>Jena</td>
+                                <td>pbsdeUdFsc</td>
+                                <td>Specific</td>
+                                <td>Active</td>
+                                <td class="text-center">:</td>
 
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>141.223.8035</td>
+                                <td>Jena</td>
+                                <td>pbsdeUdFsc</td>
+                                <td>Specific</td>
+                                <td>Active</td>
+                                <td class="text-center">:</td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>141.223.8035</td>
+                                <td>Jena</td>
+                                <td>pbsdeUdFsc</td>
+                                <td>Specific</td>
+                                <td>Active</td>
+                                <td class="text-center">:</td>
+                            </tr>
 
 
                         </tbody>

@@ -50,6 +50,11 @@
   cursor: pointer;
 }
 
+.Add_FTP{
+ display: flex;
+ justify-content: end;
+ margin-bottom: 20px;
+}
 @media screen and (max-width: 768px) {
   #content {
     position: absolute;

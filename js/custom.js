@@ -124,7 +124,16 @@ $(document).ready(function () {
   // client_project_Details sidebar
   $("#report-link").click(function () {
     $(".client-sumarry").slideToggle("slow");
+    // $(this).addClass("active_Link")
+    // $("#report-link-text").css('color', '#0F7EC2')
+   
   })
+  $("#setup-link").click(function () {
+    $(".setup-menu").slideToggle("slow");
+    // $(this).addClass("active_Link")
+    // $("#setup-link-text").css('color', '#0F7EC2')
+  })
+  
 
 });
 

@@ -1,34 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
-#report-text {
-    color: black;
+
+#setup-link-text{
+    color:#0F7EC2;
+}
+.setup-menu{
+    display: none;
+    background-color: #131010;
 }
 
-#report-link {
+#setup-menu-link:hover{
     background-color: white;
-    margin-right: 10px;
+    cursor: pointer; 
+}
+
+.active_Link{
+    background-color: white;
     cursor: pointer;
-    border-radius: 8px;
+    border-bottom: 2px solid gray;
+    color:#0F7EC2;
+   
 }
 
 .client-sumarry {
     display: none;
-   
+    background-color: #131010;
 }
 
-#Client_Summary_text:hover {
-    background-color: white;
-    color: black;
-    padding: 10px;
-    border-radius: 10px;
-}
 
-#active-sidebar-icon-image {
+/* #active-sidebar-icon-image {
     background-color: #0F7EC2;
     opacity: 0.5;
     pointer-events: none;
     margin-top: -5px;
-}
+} */
 
 .client-project-title {
     font-family: 'Inter';

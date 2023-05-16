@@ -7,7 +7,7 @@
 
 #main-content {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 23% 77%;
     height: 100vh;
     transition: all 0.4s ease-in-out 0.5s
 }
@@ -24,6 +24,8 @@
     justify-content: space-between;
     position: sticky;
     left: 0;
+    height: 100vh;
+    overflow-y: scroll;
    
 }
 
@@ -79,6 +81,7 @@
 
 .nav-sidevar-link {
     margin-bottom: 13px;
+    color: #FAFAFA;
 }
 
 /* sidebar style end */
