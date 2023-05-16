@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+.active_sidebar_manu{
+    background-color: #c01c1c;
+    color: #0F7EC2;  
+}
 #main-content {
     display: grid;
     grid-template-columns: 23% 77%;
@@ -25,13 +29,31 @@
     position: sticky;
     left: 0;
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: scroll;  
+   
    
 }
+
+.sidebar-content::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  .sidebar-content::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .sidebar-content::-webkit-scrollbar-thumb {
+    background:#B67ED6; 
+  }
+  
+
 
 .sidebar-icon-image {
     width: 18px;
     height: 18px;
+    margin-top: -5px;
 }
 
 .top-link-icon {

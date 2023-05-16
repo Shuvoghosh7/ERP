@@ -135,6 +135,7 @@ $(document).ready(function () {
   })
   
 
+
 });
 
 // function getFullDayName(dayName) {

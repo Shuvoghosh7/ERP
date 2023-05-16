@@ -16,6 +16,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css">
 
 
+
+
+
 </head>
 
 <body>
@@ -271,51 +274,123 @@
             <div id="overlay">
                 <div id="content">
                     <div class="d-flex justify-content-between align-items-center title">
-                        <div>Create</div>
+                        <div>Create project</div>
                         <div id="close-content">
                             <i class="fa-solid fa-xmark close-icon"></i>
                         </div>
                     </div>
                     <div class="from-content">
                         <form>
-                            <div>
-                                <label for="">Host <span class="text-danger">*</span></label> <br>
-                                <input type="text" class="from-input" placeholder="Host" required>
-                            </div>
-                            <div class="mt-3">
-                                <label for="">User Name <span class="text-danger">*</span></label> <br>
-                                <input type="text" class="from-input" placeholder="Host" required>
-                            </div>
-                            <div class="mt-3">
-                                <label for="">Password <span class="text-danger">*</span></label> <br>
-                                <input type="password" name="" id="" class="from-input">
-                            </div>
-                            <div class="mt-3">
-                                <label for="">Users Type <span class="text-danger">*</span></label> <br>
+                            <div class="">
+                                <label for="">Client Type<span class="text-danger">*</span></label> <br>
                                 <div class="d-flex">
                                     <div>
-                                        <input type="radio" id="Label" name="label" value="Label"
-                                            class="hide-select-client">
-                                        <label for="html">Label</label><br>
+                                        <input type="radio" id="Client_Type" name="Client_Type" value="Label">
+                                        <label for="html">Regular</label><br>
                                     </div>
                                     <div class="ml-3">
-                                        <input type="radio" id="Label" name="label" value="Label"
-                                            class="show-select-client">
-                                        <label for="html">Label</label><br>
+                                        <input type="radio" id="Client_Type" name="Client_Type" value="Label">
+                                        <label for="html">Trial</label><br>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-3 Slelect-Client">
-                                <label for="">Slelect Client <span class="text-danger">*</span></label> <br>
-                                <input type="text" class="from-input" placeholder="Host" required>
-                            </div>
                             <div class="mt-3">
-                                <label for="">Status <span class="text-danger">*</span></label> <br>
+                                <label for="">Project Category<span class="text-danger">*</span></label> <br>
+                                <div class="d-flex">
+                                    <div>
+                                        <input type="radio" id="Project_Category" name="Project_Category" value="Label">
+                                        <label for="html">Regular</label><br>
+                                    </div>
+                                    <div class="ml-3">
+                                        <input type="radio" id="Project_Category" name="Project_Category" value="Label">
+                                        <label for="html">Trial</label><br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-3">
+                                <label for="">Select Client <span class="text-danger">*</span></label> <br>
                                 <select name="Status" id="active" class="from-input">
                                     <option value="Active" class="select-input">Active</option>
                                     <option value="Inactive" class="select-input">Inactive</option>
                                 </select>
                             </div>
+
+                            <div class="mt-3">
+                                <label for="">Project Type<span class="text-danger">*</span></label> <br>
+                                <div class="d-flex">
+                                    <div>
+                                        <input type="radio" id="Project_Type" name="Project_Type" value="Label">
+                                        <label for="html">New</label><br>
+                                    </div>
+                                    <div class="ml-3">
+                                        <input type="radio" id="Project_Type" name="Project_Type" value="Label">
+                                        <label for="html">Exjsting</label><br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-3">
+                                <label for="">Project Name <span class="text-danger">*</span></label> <br>
+                                <input type="text" class="from-input" placeholder="Enter Project Name" required>
+                            </div>
+                            <div class="mt-3">
+                                <label for="">Project Code <span class="text-danger">*</span>
+                                    <span>(OCP168)</span></label> <br>
+                                <input type="text" class="from-input" placeholder="Enter Project Code" required>
+                            </div>
+
+                            <div class="mt-3">
+                                <label for="">Project Submission Date & Time <span class="text-danger">*</span></label>
+                                <br>
+                                <input type="text" class="from-input" placeholder="Project Submission Date & Time" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                            </div>
+                            <div class="mt-3">
+                                <label for="">Select Billing <span class="text-danger">*</span></label> <br>
+                                <select name="Status" id="active" class="from-input">
+                                    <option value="Active" class="select-input">Active</option>
+                                    <option value="Inactive" class="select-input">Inactive</option>
+                                </select>
+                            </div>
+                            <div class="mt-3">
+                                <label for="">Select Final Verification <span class="text-danger">*</span></label> <br>
+                                <select name="Status" id="active" class="from-input">
+                                    <option value="Active" class="select-input">Active</option>
+                                    <option value="Inactive" class="select-input">Inactive</option>
+                                </select>
+                            </div>
+
+                            <div class="mt-3">
+                                <label for="">Service List <span class="text-danger">*</span></label> <br>
+                                <select iname="Status" id="active" class="from-input">
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+
+                                </select>
+                            </div>
+
+                            <div class="mt-3">
+                                <label for="">Select Property <span class="text-danger">*</span></label> <br>
+                                <select iname="Status" id="active" class="from-input">
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+
+                                </select>
+                            </div>
+
+                            <div class="mt-3">
+                                <label for="">Instruction <span class="text-danger">*</span>
+                                </label> <br>
+                                <textarea name="" id="" class="from-textarea"
+                                    placeholder="Enter Instruction"></textarea>
+                            </div>
+
+                            <div class="mt-3">
+                                <label for="">Discount(%) <span class="text-danger">*</span> </label> <br>
+                                <input type="text" class="from-input" placeholder="Enter Discount Persent" required>
+                            </div>
+
+
 
                         </form>
                     </div>
@@ -327,7 +402,7 @@
             <!-- data table start  -->
             <div class="mt-5 mx-4 data-table">
                 <div class="mb-3">
-                    <p>FTP List</p>
+                    <p>Project List</p>
                 </div>
                 <hr>
                 <div class="Add_FTP">
@@ -340,22 +415,22 @@
                         <thead>
                             <tr>
                                 <th class="Project-table-heading">SL</th>
-                                <th class="Project-table-heading">Host</th>
-                                <th class="Project-table-heading">User Name</th>
-                                <th class="Project-table-heading">Password</th>
-                                <th class="Project-table-heading">User Type</th>
+                                <th class="Project-table-heading">Client Type</th>
+                                <th class="Project-table-heading">Client</th>
+                                <th class="Project-table-heading">Project Code</th>
+                                <th class="Project-table-heading">Submit Date Time</th>
                                 <th class="Project-table-heading">Status</th>
                                 <th class="Project-table-heading text-center">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>001</td>
-                                <td>141.223.8035</td>
-                                <td>Jena</td>
-                                <td>pbsdeUdFsc</td>
-                                <td>Specific</td>
-                                <td>Active</td>
+                                <td class="text-center">001</td>
+                                <td class="text-center">141.223.8035</td>
+                                <td class="text-center">Jena</td>
+                                <td class="text-center">pbsdeUdFsc</td>
+                                <td class="text-center">Specific</td>
+                                <td class="text-center">Active</td>
                                 <td class="text-center">:</td>
 
                             </tr>

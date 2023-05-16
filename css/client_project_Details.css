@@ -28,12 +28,12 @@
 }
 
 
-/* #active-sidebar-icon-image {
+#active-sidebar-icon-image {
     background-color: #0F7EC2;
     opacity: 0.5;
     pointer-events: none;
     margin-top: -5px;
-} */
+}
 
 .client-project-title {
     font-family: 'Inter';
