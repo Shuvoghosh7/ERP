@@ -1,26 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 
-#setup-link-text{
-    color:#0F7EC2;
-}
 .setup-menu{
     display: none;
     background-color: #131010;
+    cursor: pointer;
 }
 
-#setup-menu-link:hover{
+
+.setup-menu a:hover{
     background-color: white;
     cursor: pointer; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
 }
 
-.active_Link{
+.client-sumarry a:hover{
     background-color: white;
-    cursor: pointer;
-    border-bottom: 2px solid gray;
-    color:#0F7EC2;
-   
+    cursor: pointer; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
 }
+
 
 .client-sumarry {
     display: none;
@@ -28,11 +35,24 @@
 }
 
 
-#active-sidebar-icon-image {
-    background-color: #0F7EC2;
-    opacity: 0.5;
-    pointer-events: none;
-    margin-top: -5px;
+
+#Setup a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FAFAFA;
+    cursor: pointer;
+}
+#report a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FAFAFA;
+    cursor: pointer;
 }
 
 .client-project-title {

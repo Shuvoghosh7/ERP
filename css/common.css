@@ -268,9 +268,7 @@ cursor: pointer;
     height: 40px;
     border: 3px solid rgba(0, 0, 0, 0.08);
 }
-#multiple-select{
 
-}
 @media screen and (max-width: 768px) {
     #chat_content {
         position: fixed;

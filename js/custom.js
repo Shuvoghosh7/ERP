@@ -124,16 +124,24 @@ $(document).ready(function () {
   // client_project_Details sidebar
   $("#report-link").click(function () {
     $(".client-sumarry").slideToggle("slow");
-    // $(this).addClass("active_Link")
-    // $("#report-link-text").css('color', '#0F7EC2')
-   
   })
   $("#setup-link").click(function () {
     $(".setup-menu").slideToggle("slow");
-    // $(this).addClass("active_Link")
-    // $("#setup-link-text").css('color', '#0F7EC2')
   })
   
+
+  $("#clientD_btn1").click(function(){
+    $(".client_desboard_dropdown").toggle()
+  })
+  $("#clientD_btn2").click(function(){
+    $(".client_desboard_dropdown2").toggle()
+  })
+  $("#clientD_btn3").click(function(){
+    $(".client_desboard_dropdown3").toggle()
+  })
+  $("#clientD_btn4").click(function(){
+    $(".client_desboard_dropdown4").toggle()
+  })
 
 
 });
