@@ -7,10 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/project.css">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/setup.css">
+    <link rel="stylesheet" href="css/Favorite_Number.css">
     <link rel="stylesheet" href="css/client_project_Details.css">
-    <link rel="stylesheet" href="css/clientDashboard.css">
     <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -25,28 +24,26 @@
         <!-- sidebar section start -->
         <section class="sidebar-content">
             <div class="mx-3 side_nav">
-                <a class="nav-link active" href="index.html">
+                <a class="nav-link" href="index.html">
                     <div class="top-link-icon">
                         <img src="assets/image 1.svg" alt="" class="sidebar-icon-image">
                         <span class="ms-1"> Offshore IT</span>
                     </div>
                 </a>
                 <hr class="solid-divider">
-
-                <a class="nav-link mt-3 active_sidnav" href="#">
+                <a class="nav-link nav-sidevar-link mt-3" href="#">
                     <div class="link-icon">
-                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image active-sidebar-icon-image">
-                        <span class=" ml-2"> Dashboard</span>
+                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
+                        <span class="sidebar-link-text ml-2 "> Dashboard</span>
                     </div>
                 </a>
 
-
                 <!-- setup dropdown menu start  -->
                 <div id="Setup">
-                    <a class="nav-link" id="setup-link">
+                    <a class="nav-link active_Link" id="setup-link">
                         <div class="link-icon">
                             <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
-                            <span class=" ml-2">
+                            <span class="ml-2" id="setup-link-text">
                                 Setup
                             </span>
                             <span class="report-icon"><img src="assets/icon22.png" alt=""></span>
@@ -64,7 +61,7 @@
                             <span class="sidebar-link-text ml-2" id="setup-link-text"> Currency</span>
                         </div>
                     </a>
-                    <a class="nav-link nav-sidevar-link" href="Favorite_Number.html" id="setup-menu-link">
+                    <a class="nav-link nav-sidevar-link" href="#" id="setup-menu-link">
                         <div class="link-icon ml-3">
                             <span class="sidebar-link-text ml-2" id="setup-link-text"> Favorite Number</span>
                         </div>
@@ -83,49 +80,49 @@
 
                 </div>
                 <!-- setup dropdown menu end  -->
-                <a class="nav-link nav-sidevar-link" href="index.html">
+                <a class="nav-link nav-sidevar-link" href="#">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
                         <span class="sidebar-link-text ml-2"> Client List</span>
                     </div>
                 </a>
-                <a class="nav-link nav-sidevar-link" href="index.html">
+                <a class="nav-link nav-sidevar-link" href="#">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
                         <span class="sidebar-link-text ml-2">Upload File</span>
                     </div>
                 </a>
-                <a class="nav-link nav-sidevar-link" href="uploadImages.html">
+                <a class="nav-link nav-sidevar-link active_sidnav" href="#">
                     <div class="link-icon">
-                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
+                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image active-sidebar-icon-image">
                         <span class="sidebar-link-text ml-2">Upload Image</span>
                     </div>
                 </a>
-                <a class="nav-link nav-sidevar-link" href="index.html">
+                <a class="nav-link nav-sidevar-link" href="#">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
                         <span class="sidebar-link-text ml-2">Project List</span>
                     </div>
                 </a>
-                <a class="nav-link nav-sidevar-link" href="index.html">
+                <a class="nav-link nav-sidevar-link" href="#">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
                         <span class="sidebar-link-text ml-2">Project Billing Quantity</span>
                     </div>
                 </a>
-                <a class="nav-link nav-sidevar-link" href="index.html">
+                <a class="nav-link nav-sidevar-link" href="#">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
                         <span class="sidebar-link-text ml-2">Payment For Approval</span>
                     </div>
                 </a>
-                <a class="nav-link nav-sidevar-link" href="index.html">
+                <a class="nav-link nav-sidevar-link" href="#">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
                         <span class="sidebar-link-text ml-2">Project For Invoice</span>
                     </div>
                 </a>
-                <a class="nav-link nav-sidevar-link" href="index.html">
+                <a class="nav-link nav-sidevar-link" href="#">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
                         <span class="sidebar-link-text ml-2">Invoice List</span>
@@ -136,14 +133,14 @@
                 <div id="report">
                     <a class="nav-link" id="report-link">
                         <div class="link-icon">
-                            <img src="assets/Shape.svg" alt="" class="sidebar-icon-image"
-                                id="active-sidebar-icon-image">
-                            <span class="sidebar-link-text ml-2">
-                                Setup
-                            </span>
+                            <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
+                            <samp class=" ml-2" id="setup-link-text">
+                                Report
+                            </samp>
                             <span class="report-icon"><img src="assets/icon22.png" alt=""></span>
                         </div>
                     </a>
+
                 </div>
                 <div class="client-sumarry">
                     <a class="nav-link nav-sidevar-link" href="#" id="setup-menu-link">
@@ -272,250 +269,29 @@
 
 
             <div>
-                <!-- card section start -->
-                <div class="card-contaniner">
-                    <!-- card-1  -->
-                    <div class="client-card-content">
-                        <div class="d-flex justify-content-start">
-                            <img src="assets/Manager-deshboard/Frame 629447.png" alt="" class="card-icom-img">
-                            <p class="card-title">Clients</p>
-                        </div>
-                        <div>
-                            <p class="time-table">1,60,540</p>
-                        </div>
-                        <div class="d-flex justify-content-between  client-drop-button">
-                            <div class="clientD_btn" id="clientD_btn1">
-                                Total Client
-                            </div>
-                            <div class="card-bottom-icon">
-                                <img src="assets/Manager-deshboard/Medium.png" alt="">
-                            </div>
+                <p class="fev_title">Upload Image</p>
+            </div>
+            <hr class="mx-3">
 
-                        </div>
-                        <div class="client_desboard_dropdown common_client">
-                            <div class="Invoice_link mb-2">
-                                <a href="" class="active_text">Total Client</a>
-                            </div>
-                            <div class="mb-2">
-                                <a href="">Total Active Client</a>
-                            </div>
-                            <div class="mb-1">
-                                <a href="">Total Inactive Client</a>
-                            </div>
-                        </div>
+            <div class="d-flex justify-content-center">
+                <form>
+
+                    <div>
+                        <label for="">Slelect Client <span class="text-danger">*</span></label> <br>
+                        <select name="Status" id="active" class="fav_input">
+                            <option value="Active" class="select-input">Active</option>
+                            <option value="Inactive" class="select-input">Inactive</option>
+                        </select>
                     </div>
 
-                    <!-- card-2  -->
-                    <div class="client-card-content">
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex justify-content-start">
-                                <img src="assets/Manager-deshboard/Frame 629447 (1).png" alt="" class="card-icom-img">
-                                <p class="card-title">Statement</p>
-                            </div>
-                            <div>
-                                <img src="assets/Manager-deshboard/Vector.png" alt="" class="line-image">
-                            </div>
-                        </div>
-                        <div>
-                            <p class="time-table">75</p>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <div class="clientD_btn" id="clientD_btn2">
-                                Total Invoice Sent
-                            </div>
-                            <div class="card-bottom-icon">
-                                <img src="assets/Manager-deshboard/Medium.png" alt="">
-                            </div>
-
-                        </div>
-                        <div class="client_desboard_dropdown2 common_client">
-
-                            <div class="Invoice_link mb-2">
-                                <a href="" class="active_text">Total Invoice Sent</a>
-                            </div>
-
-                            <div class="mb-2">
-                                <a href="">Total Payment Received</a>
-                            </div>
-                            <div>
-                                <a href="" class="mb-1">Total Payment pending</a>
-                            </div>
-                        </div>
-
+                    <div class="mt-4">
+                        <label>Path <span class="text-danger">*</span></label><br>
+                        <input type="text" name="" id="" placeholder="Enter Ftp path" class="fav_input"> <br>
                     </div>
-                    <!-- card-3  -->
-                    <div class="client-card-content">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex justify-content-start">
-                                <img src="assets/Manager-deshboard/Frame 629447 (1).png" alt="" class="card-icom-img">
-                                <p class="card-title">Total Cost</p>
-                            </div>
-                            <div>
-                                <img src="assets/Manager-deshboard/Vector33.png" alt="" class="line-image">
-                            </div>
-                        </div>
-                        <div>
-                            <p class="time-table">75</p>
-                        </div>
-
-                        <div class="d-flex justify-content-between ">
-                            <div class="clientD_btn" id="clientD_btn3">
-                                This Year
-                            </div>
-                            <div class="card-bottom-icon">
-                                <img src="assets/Manager-deshboard/Medium.png" alt="">
-                            </div>
-
-                        </div>
-                        <div class="client_desboard_dropdown3 common_client">
-
-                            <div class="Invoice_link mb-2">
-                                <a href="" class="active_text">This Year</a>
-                            </div>
-
-                            <div class="mb-2">
-                                <a href="">Converted Test Clients</a>
-                            </div>
-                            <div class="mb-2">
-                                <a href="">Test Clients On Hold</a>
-                            </div>
-                            <div class="mb-2">
-                                <a href="" class="mb-1">Test Cancele</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- card-4  -->
-                    <div class="client-card-content">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex justify-content-start">
-                                <img src="assets/Manager-deshboard/Frame 629447 (1).png" alt="" class="card-icom-img">
-                                <p class="card-title">Imagery Overflow</p>
-                            </div>
-                            <div>
-                                <img src="assets/Manager-deshboard/Vector33.png" alt="" class="line-image">
-                            </div>
-                        </div>
-                        <div>
-                            <p class="time-table">06</p>
-                        </div>
-
-                        <div class="d-flex justify-content-between ">
-                            <div class="clientD_btn" id="clientD_btn4">
-                                Total Images Process
-                            </div>
-                            <div class="card-bottom-icon">
-                                <img src="assets/Manager-deshboard/Medium.png" alt="">
-                            </div>
-
-                        </div>
-                        <div class="client_desboard_dropdown4 common_client">
-
-                            <div class="Invoice_link mb-2">
-                                <a href="" class="active_text">This Year</a>
-                            </div>
-
-                            <div class="mb-2">
-                                <a href="">Converted Test Clients</a>
-                            </div>
-                            <div class="mb-2">
-                                <a href="">Test Clients On Hold</a>
-                            </div>
-                            <div class="mb-2">
-                                <a href="" class="mb-1">Test Cancele</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <!-- card section end -->
+                    <button class="btn btn-primary mt-3" type="submit">Submit</button>
+                </form>
             </div>
 
-
-            <!-- data table start  -->
-            <div class="mt-4 mx-4 data-table">
-                <p class="mb-4">Project Summary</p>
-                <hr class="mb-4">
-                <!-- Project Summary datatable start -->
-                <div class="table-parrent ">
-                    <table id="example" class="display" style="width:100%">
-                        <thead>
-                            <tr>
-                                <th class="Project-table-heading">SL</th>
-                                <th class="Project-table-heading">Date</th>
-                                <th class="Project-table-heading">Day</th>
-                                <th class="Project-table-heading">Total Project</th>
-                                <th class="Project-table-heading">Assign Project</th>
-                                <th class="Project-table-heading">Unassign Project</th>
-                                <th class="Project-table-heading">In Progress Project</th>
-                                <th class="Project-table-heading">Production Done</th>
-                                <th class="Project-table-heading">Check Done</th>
-                                <th class="Project-table-heading">Final Checking</th>
-                                <th class="Project-table-heading">Del</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>001</td>
-                                <td>16.01.2023</td>
-                                <td>Monday</td>
-                                <td>500</td>
-                                <td>200</td>
-                                <td>300</td>
-                                <td>400</td>
-                                <td>500</td>
-                                <td>300</td>
-                                <td>10</td>
-                                <td>8</td>
-
-                            </tr>
-                            <tr>
-                                <td>001</td>
-                                <td>16.01.2023</td>
-                                <td>Monday</td>
-                                <td>500</td>
-                                <td>200</td>
-                                <td>300</td>
-                                <td>400</td>
-                                <td>500</td>
-                                <td>300</td>
-                                <td>10</td>
-                                <td>5</td>
-
-                            </tr>
-                            <tr>
-                                <td>001</td>
-                                <td>16.01.2023</td>
-                                <td>Monday</td>
-                                <td>500</td>
-                                <td>200</td>
-                                <td>300</td>
-                                <td>400</td>
-                                <td>500</td>
-                                <td>300</td>
-                                <td>5</td>
-                                <td>2</td>
-
-                            </tr>
-
-
-                        </tbody>
-                        <!-- <tfoot>
-                            <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
-                            </tr>
-                        </tfoot> -->
-                    </table>
-                </div>
-            </div>
-            <!-- data table end  -->
         </section>
     </main>
 
