@@ -58,13 +58,11 @@ $(document).ready(function () {
   })
 
 
-  // my work moual 
-
+  // my work moual start
   $("#openModal-instruction").click(function () {
     $("#modal-instruction").show();
   });
 
-  // Close the modal when the close button or outside the modal content is clicked
   $(".instruction-close-btn,.close-modual-btn, #modal").click(function () {
     $("#modal-instruction").hide();
   });
@@ -72,12 +70,10 @@ $(document).ready(function () {
   $("#note-openModal").click(function () {
     $("#note-modal").show();
   });
-
-  // Close the modal when the close button or outside the modal content is clicked
   $(".note-close-btn,close-modual-btn, #note-modal").click(function () {
     $("#note-modal").hide();
   });
-
+ // my work moual end
 
   //  upload file module my work 
   $('#modal-trigger').click(function () {
@@ -89,7 +85,7 @@ $(document).ready(function () {
   });
 
 
-  // live chat
+  // live chat start
   $('#open_chat').click(function () {
     $('#chat_content').slideDown(600);
   });
@@ -110,7 +106,6 @@ $(document).ready(function () {
     $(".person-chat").hide();
   })
 
-
   //create Group
   $(".create-group").click(function () {
     $('#group-modal-overlay').fadeIn();
@@ -120,16 +115,19 @@ $(document).ready(function () {
     $('#group-modal-overlay').fadeOut();
   })
 
+// live chat end 
 
-  // client_project_Details sidebar
+
+  // client_project_Details sidebar nav menu start
   $("#report-link").click(function () {
     $(".client-sumarry").slideToggle("slow");
   })
   $("#setup-link").click(function () {
     $(".setup-menu").slideToggle("slow");
   })
-  
+  // client_project_Details sidebar nav menu end
 
+  // client_project dashboard card dropdown start
   $("#clientD_btn1").click(function(){
     $(".client_desboard_dropdown").toggle()
   })
@@ -142,7 +140,7 @@ $(document).ready(function () {
   $("#clientD_btn4").click(function(){
     $(".client_desboard_dropdown4").toggle()
   })
-
+// client_project dashboard card dropdown end
 
 });
 
