@@ -14,7 +14,7 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css">
- 
+
 
 </head>
 
@@ -22,7 +22,7 @@
     <main id="main-content">
         <!-- sidebar section start -->
         <section class="sidebar-content">
-            <div>
+            <div class="side_nav">
                 <a class="nav-link" href="index.html">
                     <div class="top-link-icon">
                         <img src="assets/image 1.svg" alt="" class="sidebar-icon-image">
@@ -30,40 +30,42 @@
                     </div>
                 </a>
                 <hr class="solid-divider">
-                <a class="nav-link nav-sidevar-link mt-3" href="#">
+
+                <a class="nav-link mt-3 active_sidnav" href="#">
+                    <div class="link-icon">
+                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image active-sidebar-icon-image">
+                        <span class=" ml-2"> Dashboard</span>
+                    </div>
+                </a>
+                <a class="nav-link " href="#">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
-                        <span class="sidebar-link-text ms-1 "> Dashboard</span>
+                        <span class="ml-2"> Assign Details</span>
                     </div>
                 </a>
                 <a class="nav-link nav-sidevar-link" href="#">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
-                        <span class="sidebar-link-text ms-1"> Assign Details</span>
+                        <span class="ml-2"> Damage Image</span>
                     </div>
                 </a>
                 <a class="nav-link nav-sidevar-link" href="#">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
-                        <span class="sidebar-link-text ms-1"> Damage Image</span>
+                        <span class=" ml-2">Checked By Projects</span>
+                    </div>
+                </a>
+
+                <a class="nav-link nav-sidevar-link" href="#">
+                    <div class="link-icon">
+                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
+                        <span class=" ml-2"> QC Projects</span>
                     </div>
                 </a>
                 <a class="nav-link nav-sidevar-link" href="#">
                     <div class="link-icon">
                         <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
-                        <span class="sidebar-link-text ms-1"> Checked By Projects</span>
-                    </div>
-                </a>
-                <a class="nav-link nav-sidevar-link" href="#">
-                    <div class="link-icon">
-                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
-                        <span class="sidebar-link-text ms-1"> QC Projects</span>
-                    </div>
-                </a>
-                <a class="nav-link nav-sidevar-link" href="#">
-                    <div class="link-icon">
-                        <img src="assets/Shape.svg" alt="" class="sidebar-icon-image">
-                        <span class="sidebar-link-text ms-1"> Final Check Projects</span>
+                        <span class="ml-2"> Final Check Projects</span>
                     </div>
                 </a>
             </div>
@@ -78,7 +80,7 @@
         <section class="main-content-part">
             <!-- nan-munu start -->
             <nav class="navbar navbar-expand-lg navbar-light navbar-menu">
-                <a class="navbar-brand d-lg-none" href="#">Navbar</a>
+                <a class="navbar-brand d-lg-none" href="#"> Offshore IT</a>
                 <!-- <button class="btn side-menu-btn">
                     <i class="fas fa-stream"></i>
                   </button> -->
@@ -193,15 +195,18 @@
 
                 <div class="chat-body">
                     <div class="ml-3 mt-3">
-                        <p>pinned</p>
+                        <p class="pinned">Pinned</p>
                     </div>
                     <hr>
 
                     <!-- chat member 1 -->
-                    <div class="mx-4 d-flex justify-content-between align-items-center mb-4" id="chat-details">
+                    <div class="mx-4 d-flex justify-content-between align-items-center mb-4 chat_person_name" >
                         <div class="chat-person-images d-flex align-items-center">
-                            <img src="assets/RICSU 1.png" alt="">
-                            <div class="chat-person-name ml-3">
+                            <div>
+                                <img src="assets/card/Frame 629447.png" alt="" class="hover-image">
+                                <img src="assets/RICSU 1.png" alt="" class="">
+                            </div>
+                            <div class="chat-person-name ml-3" id="chat-details">
                                 <p>Lorem ipsum</p>
                                 <h6>Lorem ipsum dolor sit.</h6>
                             </div>
@@ -224,12 +229,13 @@
             <div class="person-chat">
 
                 <div class="person-chat-content mt-5">
-                    <div class="d-flex justify-content-between align-items-center chat-title">
+                    <div class="d-flex justify-content-between align-items-center chat-title2">
                         <div class="d-flex align-items-center mt-3">
+            
                             <p class="chat-back-btn">
-                            <p class="chat-back-btn">
-                                < </p>
-                                    <p class="ml-3"> Lorem</p>
+                                <i class="fa-solid fa-less-than fa-sm" style="color: #fafafa;"></i>
+                            </p>
+                            <p class="ml-3 person_name">Lorem ipsum</p>
                         </div>
                         <div class="d-flex align-items-center">
                             <div class="mr-3 close-chat-details-btn">
@@ -298,7 +304,7 @@
     <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   
+
 
 
 </body>
