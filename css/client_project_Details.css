@@ -7,6 +7,27 @@
     cursor: pointer;
 }
 
+#Setup a.active_side_nav{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: white;
+    color: black;
+    border: 3px solid rgba(1, 1, 1, 0.08);
+    
+}
+#report a.active_side_nav{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: white;
+    color: black;
+    border: 3px solid rgba(1, 1, 1, 0.08);
+}
 .setup-menu a.active_side_nav{
     font-family: 'Inter';
     font-style: normal;
@@ -15,7 +36,7 @@
     line-height: 24px;
     background-color: white;
     color: black;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .setup-menu a:hover{
