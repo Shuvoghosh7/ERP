@@ -62,11 +62,9 @@ $(document).ready(function () {
   $("#openModal-instruction").click(function () {
     $("#modal-instruction").show();
   });
-
   $(".instruction-close-btn,.close-modual-btn, #modal").click(function () {
     $("#modal-instruction").hide();
   });
-
   $("#note-openModal").click(function () {
     $("#note-modal").show();
   });
