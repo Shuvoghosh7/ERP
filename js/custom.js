@@ -73,7 +73,8 @@ $(document).ready(function () {
   });
  // my work moual end
 
-  //  upload file module my work 
+
+  //common  upload file module my work 
   $('#modal-trigger').click(function () {
     $('#modal-overlay').fadeIn();
   });

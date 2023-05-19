@@ -167,6 +167,9 @@
     border-bottom: 2px solid #0F7EC2;
 }
 
+.active_top_nav{
+    border-bottom: 2px solid #0F7EC2;
+}
 .notification-icon {
     position: relative;
     top: -5px;
@@ -1116,6 +1119,7 @@
     cursor: pointer;
     width: 35px;
     height: 35px;
+   
 }
 
 .chat-close-btn {
@@ -1428,7 +1432,21 @@
 
 /* chat css end  */
 
-
+/* checked by project details css */
+.check_project_dropdown{
+   
+    
+}
+.check_project_dropdown a{
+    color: white;
+    padding: 0 5px;
+    text-align: center;
+    
+}
+.check_project_dropdown a:hover{
+    background-color:transparent;
+    color: white;
+}
 
 @media screen and (max-width: 768px) {
     .menu-link:focus {
