@@ -1433,8 +1433,9 @@
 /* chat css end  */
 
 /* checked by project details css */
+
 .check_project_dropdown{
-   
+    cursor: pointer;
     
 }
 .check_project_dropdown a{
@@ -1446,6 +1447,11 @@
 .check_project_dropdown a:hover{
     background-color:transparent;
     color: white;
+}
+.damage_image_td{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
