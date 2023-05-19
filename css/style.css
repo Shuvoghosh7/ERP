@@ -5,10 +5,7 @@
     margin: 0;
 }
 
-.active_sidebar_manu{
-    background-color: #c01c1c;
-    color: #0F7EC2;  
-}
+
 #main-content {
     display: grid;
     grid-template-columns: 23% 77%;
@@ -31,6 +28,7 @@
     height: 100vh;
     overflow-y: scroll;  
     cursor: pointer;
+    color: white;
     
    
 }

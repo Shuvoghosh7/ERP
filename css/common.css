@@ -41,6 +41,9 @@
     height: 100%;
     background-color: rgb(238, 236, 236);
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
@@ -324,6 +327,10 @@
     font-size: 18px;
 }
 
+#chat_textarea{
+    height: 50px;
+}  
+
 @media screen and (max-width: 768px) {
     #chat_content {
         position: fixed;
@@ -340,8 +347,7 @@
         right: 10px;
         width: 60%;
         height: 100%;
-
-
+      
     }
 
 }

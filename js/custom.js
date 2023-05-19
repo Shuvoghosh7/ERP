@@ -118,27 +118,18 @@ $(document).ready(function () {
 // live chat end 
 
 
-  // client_project_Details sidebar nav menu start
-  $("#report-link").click(function () {
-    $(".client-sumarry").slideToggle("slow");
+  // client_project_Deashboard sidebar nav menu start
+  $(".dropdowns_menu").click(function () {
+    $(this).find(".dropdowns_sub_menu").slideToggle("slow");
+    $(this).find(".fa-caret-right").toggleClass("caret_icont");
+    
   })
-  $("#setup-link").click(function () {
-    $(".setup-menu").slideToggle("slow");
-  })
-  // client_project_Details sidebar nav menu end
+  // client_project_Deashboard sidebar nav menu start
+
 
   // client_project dashboard card dropdown start
-  $("#clientD_btn1").click(function(){
-    $(".client_desboard_dropdown").toggle()
-  })
-  $("#clientD_btn2").click(function(){
-    $(".client_desboard_dropdown2").toggle()
-  })
-  $("#clientD_btn3").click(function(){
-    $(".client_desboard_dropdown3").toggle()
-  })
-  $("#clientD_btn4").click(function(){
-    $(".client_desboard_dropdown4").toggle()
+  $(".clientD_btn").click(function(){
+    $(this).find(".client_desboard_dropdown").toggle()
   })
 // client_project dashboard card dropdown end
 

@@ -9,43 +9,9 @@
     overflow: hidden;
 }
 
-.client_desboard_dropdown2 {
-    position: fixed;
-    width: 17%;
-    height: 100px;
-    z-index: 999;
-    display: none;
-    background: white;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-}
-.client_desboard_dropdown3{
-    position: fixed;
-    width: 17%;
-    height: 150px;
-    z-index: 999;
-    display: none;
-    background: white;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-   
-}
-.client_desboard_dropdown4{
-    position: fixed;
-    width: 17%;
-    height: 150px;
-    z-index: 999;
-    display: none;
-    background: white;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-   
-}
 
-.clientD_btn {
+
+.card_drop_btn{
     border: 1px solid rgba(0, 0, 0, 0.08);
     width: 82%;
 
@@ -54,12 +20,12 @@
     width: 100px;
     height: 36px;
 }
-.common_client a {
+.card_drop_menu_link a {
     text-decoration: none;
     color: #000000;
 }
 
-.common_client a:hover {
+.card_drop_menu_link a:hover {
     text-decoration: none;
     color: #000000;
 }
@@ -69,7 +35,7 @@
     padding: 7px 0;
 }
 
-.common_client a.active_text {
+.card_drop_menu_link a.active_text {
     color: #FFFFFF;
     padding:10px;
 }
