@@ -684,7 +684,7 @@
 
 .search-icon {
     position: relative;
-    margin-right: 120px;
+    /* margin-right: 120px; */
 }
 
 .search-container button {
@@ -1299,6 +1299,7 @@
 .chat-right-imgage {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .chat-right-imgage p {
@@ -1306,6 +1307,7 @@
     border-radius: 20px;
     padding: 4px;
     color: white;
+    margin-top: 18px;
 }
 
 .chat-right-imgage img {
