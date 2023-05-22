@@ -553,7 +553,7 @@
 
 
 /* FTP List page css start  */
-#overlay {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -564,7 +564,7 @@
     overflow: hidden;
 }
 
-#content {
+.content {
     position: absolute;
     top: 50%;
     right: -500px;
@@ -892,7 +892,7 @@
 /* styles.css */
 
 /* modal-instruction */
-#modal-instruction {
+.modal-instruction {
     display: none;
     position: fixed;
     z-index: 1;
@@ -939,14 +939,14 @@
     font-size: 20px;
 }
 
-#openModal-instruction {
+.openModal-instruction {
     color: #0F7EC2;
     text-decoration: underline;
     cursor: pointer;
 }
 
 /* note-modal */
-#note-modal {
+.note-modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -958,7 +958,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#note-openModal {
+.note-openModal {
     color: #0F7EC2;
     text-decoration: underline;
     cursor: pointer;
@@ -1014,7 +1014,7 @@
 }
 
 /* upload file  */
-#modal-overlay {
+.modal-overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -1024,6 +1024,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
 }
+
 
 #modal {
     background-color: #fff;
@@ -1096,7 +1097,7 @@
 
 
 /* chat css start  */
-#open_chat {
+.open_chat {
     cursor: pointer;
 }
 
@@ -1104,7 +1105,7 @@
     display: none;
 }
 
-#chat_content {
+.chat_content {
     position: fixed;
     bottom: 0;
     right: 50px;
@@ -1251,7 +1252,7 @@
     color: white;
 }
 
-#chat-details {
+.chat-details {
     cursor: pointer;
 }
 
@@ -1331,7 +1332,7 @@
     cursor: pointer;
 }
 
-#group-modal-overlay {
+.group-modal-overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -1352,7 +1353,7 @@
     transform: translateY(-50%);
 }
 
-#group-modal-close {
+.group-modal-close {
     display: block;
     cursor: pointer;
     color: white;
