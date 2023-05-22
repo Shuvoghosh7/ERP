@@ -754,16 +754,18 @@
 
 .image-container {
     background: #FFFFFF;
-    width: 176px;
-    height: 160px;
+    width: 190px;
+    height: 190px;
     border: 1px solid rgba(0, 0, 0, 0.08);
     text-align: center;
+  
 }
 
 .project-image {
-    width: 50px;
-    height: 45px;
-    margin-top: 40px;
+    width:120px;
+    height: 120px;
+    object-fit:contain;
+
 }
 
 .project-details-icon {
@@ -787,7 +789,7 @@
 .image-container-details {
     background: #FFFFFF;
     width: 180px;
-    height: 150px;
+    height: 180px;
     border: 1px solid rgba(0, 0, 0, 0.08);
     text-align: center;
 }
@@ -822,6 +824,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    
 }
 
 .day {

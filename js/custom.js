@@ -59,12 +59,15 @@ $(document).ready(function () {
 
   //common  upload file module my work 
   $('.modal-trigger').click(function () {
-    $('.modal-overlay').fadeIn();
+    $('.modal-overlay').fadeIn().hasClass("checkClass");
   });
 
   $('.modal-close').click(function () {
     $('.modal-overlay').fadeOut();
   }); 
+
+ 
+
 
 
 
