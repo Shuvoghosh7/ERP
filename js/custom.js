@@ -2,18 +2,79 @@
 $(document).ready(function () {
   //Data Table
   $('#example').DataTable();
+  $('#table_data').DataTable({
+    searching: false,
+    paging: false,
+    info: false
+  });
 
 
 
   // All Project show and hide table ans image foulder
   $(".icon-table").click(function () {
-    $(".project-image-folder").hide()
-    $(".project-show-table").show()
-  })
-  $(".icon-picture").click(function () {
-    $(".project-show-table").hide()
-    $(".project-image-folder").show()
-  })
+    $(this).addClass("icon-table-active")
+    $(".icon-picture").removeClass("icon-table-active")
+    $('#productContainer').removeClass('project-image-folder').addClass('table-view');
+    $('#productContainer .image-container').hide();
+    $('#productContainer  table').remove();
+    var table = $('<table></table>');
+    table.attr({
+      'id': 'table_data',
+      'class': 'display datatable', // Add 'datatable' class
+    });
+    var tableHead = '<thead>' +
+      '<tr>' +
+      '<th>SL</th>' +
+      '<th>Name</th>' +
+      '<th>Data Modified</th>' +
+      '<th>Type</th>' +
+      '<th>Size</th>' +
+      '<th></th>' +
+      '</tr>' +
+      '</thead>';
+    table.append(tableHead);
+
+    $('#productContainer .image-container').each(function (index) {
+      var imgSrc = $(this).find('img').attr('src');
+      var name = $(this).find('p').text();
+      var DataModified = $(this).find('h2').text();
+      var Type = $(this).find('h3').text();
+      var Size = $(this).find('h4').text();
+
+      var row = '<tbody>' + '<tr>' +
+        '<td>' + (index + 1) + '</td>' +
+        '<td><img src="' + imgSrc + '" alt="Product" class="project-table-images"><span></span> ' + name + ' </td>' +
+        '<td>' + DataModified + '</td>' +
+        '<td>' + Type + '</td>' +
+        '<td>' + Size + '</td>' +
+        '<td> <input type="checkbox" id="checkbox1" class="cheeck-box"></td>' +
+        '</tr>' +
+        ' </tbody >';
+      table.append(row);
+    });
+
+    $('#productContainer').append(table);
+    // Initialize DataTables
+    $('#table_data').DataTable({
+      searching: false,
+      paging: false,
+      info: false
+    });
+  });
+
+ 
+
+  $('.icon-picture').click(function () {
+    $(this).addClass("icon-table-active")
+    $(".icon-table").removeClass("icon-table-active")
+    $('#productContainer').removeClass('table-view').addClass('project-image-folder');
+    $('#productContainer .image-container').show();
+    $('#productContainer table').remove(); 
+  });
+
+  $('.cheeck-box').on('click', function () {
+    $(this).closest('.image-container').toggleClass('image-container-active');
+  });
 
   $(".project-details-icon").click(function () {
     $(".project-side-details").fadeIn(500);
@@ -64,9 +125,9 @@ $(document).ready(function () {
 
   $('.modal-close').click(function () {
     $('.modal-overlay').fadeOut();
-  }); 
+  });
 
- 
+
 
 
 
@@ -122,7 +183,7 @@ $(document).ready(function () {
 
 
 
-  
+
 
 });
 
