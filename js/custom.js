@@ -12,8 +12,8 @@ $(document).ready(function () {
 
   // All Project show and hide table ans image foulder
   $(".icon-table").click(function () {
-    $(this).addClass("icon-table-active")
-    $(".icon-picture").removeClass("icon-table-active")
+    $(this).addClass("icon-togle-active")
+    $(".icon-picture").removeClass("icon-togle-active")
     $('#productContainer').removeClass('project-image-folder').addClass('table-view');
     $('#productContainer .image-container').hide();
     $('#productContainer  table').remove();
@@ -65,8 +65,8 @@ $(document).ready(function () {
  
 
   $('.icon-picture').click(function () {
-    $(this).addClass("icon-table-active")
-    $(".icon-table").removeClass("icon-table-active")
+    $(this).addClass("icon-togle-active")
+    $(".icon-table").removeClass("icon-togle-active")
     $('#productContainer').removeClass('table-view').addClass('project-image-folder');
     $('#productContainer .image-container').show();
     $('#productContainer table').remove(); 

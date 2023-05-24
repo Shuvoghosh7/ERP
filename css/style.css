@@ -787,7 +787,11 @@
     height: 16px;
     cursor: pointer;
 }
-
+.mywork-details-icon{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
 .project-image-folder {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1556,9 +1560,9 @@
 }
 
 
-.icon-table-active{
+.icon-togle-active{
     background-color: #bbbebf;
-    padding: 3px 5px;
+    padding: 0.5px 5px;
 }
 @media screen and (max-width: 768px) {
     .menu-link:focus {
