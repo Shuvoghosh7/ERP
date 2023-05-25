@@ -29,8 +29,6 @@
     overflow-y: scroll;
     cursor: pointer;
     color: white;
-
-
 }
 
 .sidebar-content::-webkit-scrollbar {

@@ -88,6 +88,7 @@ $(document).ready(function () {
     $(".project-image-folder").css('grid-template-columns', 'repeat(4, 1fr)')
   })
 
+  
   // my work show date active 
   $('.day').click(function () {
     $('.day').removeClass('active');
