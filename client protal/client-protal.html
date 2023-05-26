@@ -10,10 +10,10 @@
 
     <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1"></script>
+
+
 </head>
 
 <body>
@@ -201,9 +201,12 @@
                     </div>
                     <div class="card_item3">
                         <div class="card_iteme_grid">
+
                             <div class="card_item3_content1">
-                                <img src="assets/Frame 629540.png" alt="">
+
+                                <canvas id="myDatasetsChart" class="pie_chart"></canvas>
                             </div>
+
 
                             <div>
                                 <div class="d-flex justify-content-between  align-items-center project_list_text">
@@ -256,8 +259,8 @@
                                         <img src="assets/less.png" alt="">
                                     </div>
                                 </div>
-                                 <!-- project list 4 -->
-                                 <div class="d-flex justify-content-between  align-items-center project_list_text mt-3">
+                                <!-- project list 4 -->
+                                <div class="d-flex justify-content-between  align-items-center project_list_text mt-3">
                                     <div class="d-flex">
                                         <div>
                                             <img src="assets/icon4.png" alt="" class="card3_icon">
@@ -289,6 +292,55 @@
         <script src="custom.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
         <script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+        <script>
+            var yValues = [55, 49, 44, 24, 15];
+            var barColors = [
+                "#b91d47",
+                "#00aba9",
+                "#2b5797",
+                "#e8c3b9",
+                "#1e7145"
+            ];
+
+            new Chart("myDatasetsChart", {
+                type: "doughnut",
+                data: {
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                },
+                plugins: [{
+                    id: 'text',
+                    beforeDraw: function (chart, a, b) {
+                        var width = chart.width,
+                            height = chart.height,
+                            ctx = chart.ctx;
+
+                        ctx.restore();
+                        var fontSize = (height / 114).toFixed(2);
+                        ctx.font = fontSize + "em sans-serif";
+                        ctx.textBaseline = "middle";
+
+                        var text = "5000",
+                            textX = Math.round((width - ctx.measureText(text).width) / 2),
+                            textY = height / 2;
+
+                        ctx.fillText(text, textX, textY);
+                        ctx.save();
+                    }
+                }]
+
+            });
+        </script>
+
+
 
 
 

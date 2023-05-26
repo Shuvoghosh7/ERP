@@ -421,6 +421,7 @@
         ];
 
         new Chart("myPieChart", {
+
             type: "doughnut",
             data: {
                 labels: xValues,
@@ -430,6 +431,9 @@
                 }]
             },
             options: {
+                legend: {
+                    display: false
+                },
                 title: {
                     display: true,
                     text: "World Wide Wine Production 2018"
