@@ -24,32 +24,57 @@ $(document).ready(function () {
         $('#' + modalId).toggle()
     });
 
-  
+
     $('#example').DataTable();
 
-
-    $("[data-toggle='overlay']").click(function() {
+    //   billing info 
+    $("[data-toggle='overlay']").click(function () {
         var target = $(this).data("target");
         $('#' + target).fadeIn(500);
         $('#' + target + ' .content-info').animate({ right: 0 }, 500);
-      });
-      
-      $('.overlay-info .close-content').click(function () {
+    });
+
+    $('.overlay-info .close-content').click(function () {
         var target = $(this).closest('.overlay-info').attr('id');
         $('#' + target).fadeOut(500);
         $('#' + target + ' .content-info').animate({ right: -500 }, 500);
+    });
+
+    // ftp list 
+    $("[data-toggle='ftp-overlay']").click(function () {
+        var target = $(this).data("target");
+        $('#' + target).fadeIn(500);
+        $('#' + target + ' .content-info').animate({ right: 0 }, 500);
+    });
+
+    $('.overlay-info .ftp-close-content').click(function () {
+        var target = $(this).closest('.overlay-info').attr('id');
+        $('#' + target).fadeOut(500);
+        $('#' + target + ' .content-info').animate({ right: -500 }, 500);
+    });
+    // ftp list 
+    $("[data-toggle='ftp-add-new']").click(function () {
+        var target = $(this).data("target");
+        $('#' + target).fadeIn(500);
+        $('#' + target + ' .content-info').animate({ right: 0 }, 500);
+    });
+
+    $('.overlay-info .ftp-close-content').click(function () {
+        var target = $(this).closest('.overlay-info').attr('id');
+        $('#' + target).fadeOut(500);
+        $('#' + target + ' .content-info').animate({ right: -500 }, 500);
+    });
+
+
+
+    $(".open-modal").click(function() {
+        var target = $(this).data("target");
+        $("#" + target).show();
       });
-
-   /* $(".dropdown-item").click(function(){
-    $('.overlay-info').fadeIn(500);
-    $('.content-info').animate({ right: 0 }, 500);
-   })
-
-   $('.close-content').click(function () {
-    $('.overlay-info').fadeOut(500);
-    $('.content-info').animate({ right: -500 }, 500);
-  }); */
-
+    
+      $(".close-modal, .cancle").click(function() {
+        $(this).closest(".modal").hide();
+      });
 
 
 })
