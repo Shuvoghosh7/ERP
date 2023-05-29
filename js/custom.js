@@ -2,11 +2,7 @@
 $(document).ready(function () {
   //Data Table
   $('#example').DataTable();
-  $('#table_data').DataTable({
-    searching: false,
-    paging: false,
-    info: false
-  });
+
 
 
 
