@@ -7,58 +7,7 @@ $(document).ready(function () {
 
 
   // All Project show and hide table ans image foulder
-  $(".icon-table").click(function () {
-    $(this).addClass("icon-togle-active")
-    $(".icon-picture").removeClass("icon-togle-active")
-    $('#productContainer').removeClass('project-image-folder').addClass('table-view');
-    $('#productContainer').removeClass('project-view-image-folder').addClass('table-view');
-    $('#productContainer .image-container').hide();
-    $('#productContainer  table').remove();
-    var table = $('<table></table>');
-    table.attr({
-      'id': 'table_data',
-      'class': 'display datatable', // Add 'datatable' class
-    });
-    var tableHead = '<thead>' +
-      '<tr>' +
-      '<th>SL</th>' +
-      '<th>Name</th>' +
-      '<th>Data Modified</th>' +
-      '<th>Type</th>' +
-      '<th>Size</th>' +
-      '<th></th>' +
-      '</tr>' +
-      '</thead>';
-    table.append(tableHead);
-
-    $('#productContainer .image-container').each(function (index) {
-      var imgSrc = $(this).find('img').attr('src');
-      var name = $(this).find('p').text();
-      var DataModified = $(this).find('h2').text();
-      var Type = $(this).find('h3').text();
-      var Size = $(this).find('h4').text();
-
-      var row = '<tbody>' + '<tr>' +
-        '<td>' + (index + 1) + '</td>' +
-        '<td><img src="' + imgSrc + '" alt="Product" class="project-table-images"><span></span> ' + name + ' </td>' +
-        '<td>' + DataModified + '</td>' +
-        '<td>' + Type + '</td>' +
-        '<td>' + Size + '</td>' +
-        '<td> <input type="checkbox" id="checkbox1" class="cheeck-box"></td>' +
-        '</tr>' +
-        ' </tbody >';
-      table.append(row);
-    });
-
-    $('#productContainer').append(table);
-    // Initialize DataTables
-    $('#table_data').DataTable({
-      searching: false,
-      paging: false,
-      info: false
-    });
-    $('#productContainer').css('overflow-x', 'scroll');
-  });
+  
 
  
 
@@ -75,7 +24,7 @@ $(document).ready(function () {
     $(this).closest('.image-container').toggleClass('image-container-active');
   });
 
-
+ 
 
   $(".close-button").click(function () {
     $(".project-side-details").hide();
@@ -83,7 +32,6 @@ $(document).ready(function () {
     $(".project-image-folder").css('grid-template-columns', 'repeat(4, 1fr)')
   })
 
-  
   $(".close-button").click(function () {
     $(".project-side-details").hide();
     $(".project-view-content").css("grid-template-columns", "100%")
