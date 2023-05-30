@@ -84,6 +84,16 @@ $(document).ready(function () {
     $(".project-image-folder").css('grid-template-columns', 'repeat(4, 1fr)')
   })
 
+  $(".project-details-icon").click(function () {
+    $(".project-side-details").fadeIn(500);
+    $(".project-view-content").css("grid-template-columns", "80% 20% ")
+    $(".project-image-folder").css('grid-template-columns', 'repeat(3, 1fr)')
+  })
+  $(".close-button").click(function () {
+    $(".project-side-details").hide();
+    $(".project-view-content").css("grid-template-columns", "100%")
+    $(".project-image-folder").css('grid-template-columns', 'repeat(4, 1fr)')
+  })
   
   // my work show date active 
   $('.day').click(function () {
@@ -179,8 +189,8 @@ $(document).ready(function () {
   // client_project dashboard card dropdown end
 
 
-
-
+  
+  
 
 });
 
