@@ -1583,6 +1583,10 @@
     background-color: #bbbebf;
     padding: 0.5px 5px;
 }
+.client_select{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
 @media screen and (max-width: 768px) {
     .menu-link:focus {
         border-bottom: none;

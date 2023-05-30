@@ -98,7 +98,7 @@ $(document).ready(function () {
     $(".files-details-icon").click(function(){
       $(".fiels-side-details").fadeIn(500);
       $(".upload_file_continer").css("grid-template-columns", "75% 23%")
-      $(".files-image-folder").css('grid-template-columns', 'repeat(4, 1fr)')
+      $(".files-image-folder").css('grid-template-columns', 'repeat(3, 1fr)')
 
       if (window.matchMedia("(max-width: 768px)").matches) {
         $(".upload_file_continer").css("grid-template-columns", "100%");

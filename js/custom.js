@@ -185,11 +185,7 @@ $(document).ready(function () {
   // client_project_Deashboard sidebar nav menu start
 
 
-  // client_project dashboard card dropdown start
-  $(".clientD_btn").click(function () {
-    $(this).find(".client_desboard_dropdown").toggle()
-  })
-  // client_project dashboard card dropdown end
+  
 
 
   

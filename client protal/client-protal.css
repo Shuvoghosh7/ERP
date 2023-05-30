@@ -696,8 +696,9 @@ th {
 .upload_file_continer{
     display: grid;
     grid-template-columns: 100%;
-    gap: 30px;
+    gap: 10px;
     height: 100vh;
+   
 }
 .files-nav {
     background: #FAFAFA;
@@ -816,6 +817,7 @@ th {
         grid-template-columns: 100%;
         gap: 10px;
         height: 100vh;
+         
     }
     .files-image-folder {
         display: grid;
