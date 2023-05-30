@@ -834,6 +834,12 @@
     color: white;
     border-radius: 5px;
 }
+.project-view-image-folder {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
 /* project Details end  */
 
 /* My work css start  */

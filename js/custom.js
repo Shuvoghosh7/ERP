@@ -11,6 +11,7 @@ $(document).ready(function () {
     $(this).addClass("icon-togle-active")
     $(".icon-picture").removeClass("icon-togle-active")
     $('#productContainer').removeClass('project-image-folder').addClass('table-view');
+    $('#productContainer').removeClass('project-view-image-folder').addClass('table-view');
     $('#productContainer .image-container').hide();
     $('#productContainer  table').remove();
     var table = $('<table></table>');
@@ -64,6 +65,7 @@ $(document).ready(function () {
     $(this).addClass("icon-togle-active")
     $(".icon-table").removeClass("icon-togle-active")
     $('#productContainer').removeClass('table-view').addClass('project-image-folder');
+    $('#productContainer').removeClass('table-view').addClass('project-view-image-folder');
     $('#productContainer .image-container').show();
     $('#productContainer table').remove(); 
   });
@@ -87,12 +89,12 @@ $(document).ready(function () {
   $(".project-details-icon").click(function () {
     $(".project-side-details").fadeIn(500);
     $(".project-view-content").css("grid-template-columns", "80% 20% ")
-    $(".project-image-folder").css('grid-template-columns', 'repeat(3, 1fr)')
+    $(".project-view-image-folder").css('grid-template-columns', 'repeat(4, 1fr)')
   })
   $(".close-button").click(function () {
     $(".project-side-details").hide();
     $(".project-view-content").css("grid-template-columns", "100%")
-    $(".project-image-folder").css('grid-template-columns', 'repeat(4, 1fr)')
+    $(".project-view-image-folder").css('grid-template-columns', 'repeat(5, 1fr)')
   })
   
   // my work show date active 
