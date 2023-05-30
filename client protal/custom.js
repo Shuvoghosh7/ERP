@@ -123,13 +123,13 @@ $(document).ready(function () {
     $(".icon-table").click(function () {
       $(this).addClass("icon-togle-active")
       $(".icon-picture").removeClass("icon-togle-active")
-      $('#productContainer').removeClass('files-image-folder').addClass('table-view');
-      $('#productContainer .files-image-container').hide();
-      $('#productContainer  table').remove();
+      $('#uploadFileContainer').removeClass('files-image-folder').addClass('table-view');
+      $('#uploadFileContainer .files-image-container').hide();
+      $('#uploadFileContainer  table').remove();
       var table = $('<table></table>');
       table.attr({
         'id': 'table_data',
-        'class': 'display responsive datatable', // Add 'datatable' class
+        'class': 'display responsive datatable', 
       });
       var tableHead = '<thead>' +
         '<tr>' +
@@ -143,7 +143,7 @@ $(document).ready(function () {
         '</thead>';
       table.append(tableHead);
   
-      $('#productContainer .files-image-container').each(function (index) {
+      $('#uploadFileContainer .files-image-container').each(function (index) {
         var imgSrc = $(this).find('img').attr('src');
         var name = $(this).find('p').text();
         var DataModified = $(this).find('h2').text();
@@ -162,7 +162,7 @@ $(document).ready(function () {
         table.append(row);
       });
   
-      $('#productContainer').append(table);
+      $('#uploadFileContainer').append(table);
       // Initialize DataTables
       $('#table_data').DataTable({
         searching: false,
@@ -170,15 +170,15 @@ $(document).ready(function () {
         info: false
       });
 
-      $('#productContainer').css('overflow-x', 'scroll');
+      $('#uploadFileContainer').css('overflow-x', 'scroll');
     });
 
     $('.icon-picture').click(function () {
       $(this).addClass("icon-togle-active")
       $(".icon-table").removeClass("icon-togle-active")
-      $('#productContainer').removeClass('table-view').addClass('files-image-folder');
-      $('#productContainer .files-image-container').show();
-      $('#productContainer table').remove(); 
+      $('#uploadFileContainer').removeClass('table-view').addClass('files-image-folder');
+      $('#uploadFileContainer .files-image-container').show();
+      $('#uploadFileContainer table').remove(); 
     });
   
     $('.cheeck-box').on('click', function () {

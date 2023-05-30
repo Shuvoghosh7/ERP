@@ -57,6 +57,7 @@ $(document).ready(function () {
       paging: false,
       info: false
     });
+    $('#productContainer').css('overflow-x', 'scroll');
   });
 
  
