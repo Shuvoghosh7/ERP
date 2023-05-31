@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="client-protal.css">
+
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1"></script>
+
+
+</head>
+
+<body>
+
+
+    <div class="client-container">
+        <div class="client-left-div">
+            <!-- client profile and logout button -->
+            <div class="profile-containers">
+                <div class="text-center client-profile" data-id="dropdown_id">
+                    <img src="assets/RICSU 1.png" alt="">
+                    <p class="mt-3 client-profile-button" data-id="dropdown_id">
+                        jacob Jones
+                        <span class="ml-3">
+                            <i class="fa-solid fa-caret-down fa-sm mt-2" style="color: #edeff2;"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="dropdown-container px-lg-4" id="dropdown_id">
+                    <div class="modal-contents">
+                        <div class="d-lg-flex align-items-center mx-lg-3 py-3 client_email_info">
+                            <div>
+                                <img src="assets/RICSU 1.png" alt="" class="email_image">
+                            </div>
+                            <div class="ml-lg-3">
+                                <h6>jacob Jones</h6>
+                                <small class="client-email">jacobJones@gmail.com</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view_profile">
+                        <p>View Profile</p>
+                        <p>Log out</p>
+                    </div>
+                </div>
+
+                <div class="client_country">United States</div>
+                <hr class="solid-divider" />
+            </div>
+
+            <!-- client profile and logout button end -->
+
+            <!-- client profile sidevar -->
+            <div class="client_side_nav_container">
+                <div class="clicent_side_nav mt-4">
+                    <a class="nav-link mt-3 active_sidnav" href="client-protal.html">
+                        <div class="link-icon">
+                            <span> Dashboard</span>
+                        </div>
+                    </a>
+                    <a class="nav-link mt-2" href="BillingInfo.html">
+                        <div class="link-icon">
+                            <span class="">Billing Info</span>
+                        </div>
+                    </a>
+                    <a class="nav-link mt-2" href="ftp-list.html">
+                        <div class="link-icon">
+                            <span class="">FTP List</span>
+                        </div>
+                    </a>
+                    <a class="nav-link mt-2" href="upload-files.html">
+                        <div class="link-icon">
+                            <span class="">Upload File</span>
+                        </div>
+                    </a>
+                    <a class="nav-link mt-2" href="upload-image.html">
+                        <div class="link-icon">
+                            <span class="">Upload Image</span>
+                        </div>
+                    </a>
+
+                    <a class="nav-link mt-2" href="project_tracking.html">
+                        <div class="link-icon">
+                            <span class="">Project Tracking</span>
+                        </div>
+                    </a>
+                    <a class="nav-link mt-2" href="invoice-management.html">
+                        <div class="link-icon">
+                            <span class="">Invoice Management</span>
+                        </div>
+                    </a>
+                    <a class="nav-link mt-2" href="payment-management.html">
+                        <div class="link-icon">
+                            <span class="">Payment Management</span>
+                        </div>
+                    </a>
+                    <a class="nav-link mt-2" href="marketing-expart.html">
+                        <div class="link-icon">
+                            <span class="">Marketing Expart</span>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="live-chat">
+                    <p class="ml-2">Live Chat <span>(10)</span></p>
+                    <img src="assets/animation_500_le8y4owf 1.png" alt="" class="mr-2">
+                </div>
+            </div>
+
+        </div>
+        <!-- client profile sidevar end -->
+
+        <div class="client-right-div">
+            <!-- top nav var  -->
+            <nav class="client_top_navbar">
+                <div class="d-flex align-items-center">
+                    <button class="btn side-menu-btn d-lg-none">
+                        <i class="fas fa-stream"></i>
+                    </button>
+                    <ul class="client_navbar__menu">
+                        <li>
+                            <img src="assets/image 1.png" alt="" class="client_top_nav_icon">
+                            <span class="client_top_nav_text">Offshore IT</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar__logo">
+                    <a class="notification" data-notfication_id="dropdown_notification">
+                        <img src="assets/Vector.png" alt="" class="notification-icon1">
+                        <img src="assets/Vect.png" alt="" class="notification-icon2">
+                    </a>
+
+                </div>
+            </nav>
+
+            <div class="dropdown-notification px-lg-4" id="dropdown_notification">
+
+                <div class="d-flex justify-content-between notification-item mt-3">
+                    <div>
+                        <p>Notification <span>(2)</span></p>
+                    </div>
+                    <div>
+                        <p>total</p>
+                    </div>
+                </div>
+                <div>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime, magnam rem totam tenetur
+                    dolorum aspernatur! Minus, et architecto! Mollitia ducimus dolorem, quidem facilis tenetur omnis
+                    magnam odio saepe vitae.
+                </div>
+
+            </div>
+            <!-- top nav var  end -->
+
+
+            <div class="welcome_section">
+                <div class="wellcome_massage">
+                    <h6>Hello! <span class="welcome_client">Robertson</span></h6>
+                    <h4>Welcome to Dashboard</h4>
+                    <hr class="welcome_divider">
+                </div>
+
+                <div class="card_container mb-5">
+                    <div class="card_item1 text-center">
+                        <div class="cart1_content">
+                            <h4>Bangladesh</h4>
+                            <h6>Monday 22th Feb</h6>
+                            <p class="mt-4">10:20 <span class="time_schedule">PM</span></p>
+                        </div>
+                        <div class="cart1_content mt-3">
+                            <h4>Bangladesh</h4>
+                            <h6>Monday 22th Feb</h6>
+                            <p class="mt-4">10:20 <span class="time_schedule">PM</span></p>
+                        </div>
+                    </div>
+                    <div class="card_item2 text-center">
+                        <div class="card_item2_content1">
+                            <h6>Total Received</h6>
+                            <h4>80,500.00<span class="amount_type">$</span></h4>
+                            <h5>+10% since last month</h5>
+                        </div>
+                        <div class="card_item2_content2">
+                            <div>
+                                <img src="assets/Ellipse 63.png" alt="">
+                                <span class="paid">Paid</span>
+                            </div>
+                            <h4>1,500.00 <span class="amount_type">$</span></h4>
+
+                        </div>
+                        <div class="card_item2_content3 mt-4">
+                            <div>
+                                <img src="assets/Ellipse 64.png" alt="">
+                                <span class="due">Due</span>
+                            </div>
+                            <h4>1,500.00 <span class="amount_type">$</span></h4>
+                        </div>
+
+                    </div>
+                    <div class="card_item3">
+                        <div class="card_iteme_grid">
+
+                            <div class="card_item3_content1">
+
+                                <canvas id="myDatasetsChart" class="pie_chart"></canvas>
+                            </div>
+
+
+                            <div>
+                                <div class="d-flex justify-content-between  align-items-center project_list_text">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="assets/icon1.png" alt="" class="card3_icon">
+                                        </div>
+
+                                        <div class="ml-2 card3_content_text">
+                                            <h6>Project up Next</h6>
+                                            <h4>500</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="ml-5">
+                                        <img src="assets/less.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- project list 2 -->
+                                <div class="d-flex justify-content-between  align-items-center project_list_text mt-3">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="assets/icon2.png" alt="" class="card3_icon">
+                                        </div>
+
+                                        <div class="ml-2 card3_content_text">
+                                            <h6>Ready Project</h6>
+                                            <h4>2000</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="ml-5">
+                                        <img src="assets/less.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- project list 3 -->
+                                <div class="d-flex justify-content-between  align-items-center project_list_text mt-3">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="assets/icon3.png" alt="" class="card3_icon">
+                                        </div>
+
+                                        <div class="ml-2 card3_content_text">
+                                            <h6>In Progress Project</h6>
+                                            <h4>500</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="ml-5">
+                                        <img src="assets/less.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- project list 4 -->
+                                <div class="d-flex justify-content-between  align-items-center project_list_text mt-3">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="assets/icon4.png" alt="" class="card3_icon">
+                                        </div>
+
+                                        <div class="ml-2 card3_content_text">
+                                            <h6>Completed Project</h6>
+                                            <h4>2000</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="ml-5">
+                                        <img src="assets/less.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+        <script src="custom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+        <script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+        <script>
+            var yValues = [55, 49, 44, 24, 15];
+            var barColors = [
+                "#b91d47",
+                "#00aba9",
+                "#2b5797",
+                "#e8c3b9",
+                "#1e7145"
+            ];
+
+            new Chart("myDatasetsChart", {
+                type: "doughnut",
+                data: {
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                },
+                plugins: [{
+                    id: 'text',
+                    beforeDraw: function (chart, a, b) {
+                        var width = chart.width,
+                            height = chart.height,
+                            ctx = chart.ctx;
+
+                        ctx.restore();
+                        var fontSize = (height / 114).toFixed(2);
+                        ctx.font = fontSize + "em sans-serif";
+                        ctx.textBaseline = "middle";
+
+                        var text = "5000",
+                            textX = Math.round((width - ctx.measureText(text).width) / 2),
+                            textY = height / 2;
+
+                        ctx.fillText(text, textX, textY);
+                        ctx.save();
+                    }
+                }]
+
+            });
+        </script>
+
+
+
+
+
+
+</body>
+
+</html>
