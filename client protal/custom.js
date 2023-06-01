@@ -5,13 +5,11 @@ $(document).ready(function () {
     if (isLeftnavhidden) {
       // make small left nav bar
       $(".client-left-div").hide();
-      $(".client-container").css("grid-template-columns", "100%")
-      
+      $(".client-container").css("grid-template-columns", "100%");
     } else {
       // reset left nav bar
       $(".client-left-div").show();
       $(".client-container").css("grid-template-columns", "35% 65%");
-    
     }
   });
 
@@ -199,4 +197,6 @@ $(document).ready(function () {
       .closest(".files-image-container")
       .toggleClass("image-container-active");
   });
+
+  $("#mySelect").select2();
 });

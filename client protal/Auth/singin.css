@@ -51,6 +51,7 @@
   font-size: 15px;
   color: #0f1222;
 }
+
 .login_input label {
   font-family: "Inter";
   font-style: normal;
@@ -84,7 +85,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  color: #0F1222;
+  color: #0f1222;
 }
 @media (max-width: 767px) {
 }
