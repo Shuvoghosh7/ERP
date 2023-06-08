@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap");
+.singup_form_content {
+  width: 650px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 70px 20px rgba(0, 0, 0, 0.55);
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 40px;
+}
 .singup_container {
   display: flex;
   justify-content: center;
@@ -7,8 +16,6 @@
   min-height: 100vh;
 }
 .singup_content {
-  width: 50%;
-  background-color: white;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -17,8 +24,8 @@
   margin-top: 50px;
 }
 .singup_log img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 .singup_log p {
   font-family: "Inter";
@@ -53,7 +60,7 @@
 }
 
 .label {
-  width: 150px; /* Adjust the width as needed */
+  width: 150px;
   margin-right: 10px;
   display: flex;
   justify-content: end;
@@ -77,21 +84,24 @@
   height: 35px;
   border: 2px solid rgba(0, 0, 0, 0.08);
 }
+.input-select {
+  padding-left: 30px;
+  width: 80%;
+  height: 35px;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+}
+.input-file {
+  width: 80%;
+  height: 35px;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+}
 .singup_textarea {
   padding-left: 30px;
   width: 80%;
   height: 60px;
   border: 2px solid rgba(0, 0, 0, 0.08);
 }
-.input-select {
-  width: 80%;
-  height: 35px;
-  border: 2px solid rgba(0, 0, 0, 0.08);
-}
-.select2 {
-  width: 80% !important;
-  border: 2px solid rgba(0, 0, 0, 0.08) !important;
-}
+
 .Password_format {
   font-size: 13px;
   text-align: center;
@@ -134,16 +144,38 @@
   text-decoration: none;
 }
 @media (max-width: 767px) {
-  .singup_content {
-    width: 90%;
-    background-color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .input-file {
+    width: 210px;
+  }
+  .input_container {
+    position: none;
+  }
+  .input-select {
+    padding-left: 30px;
+    width: 220px;
+    height: 35px;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+  }
+  .input-field {
+    width: 100%;
+  }
+  .singup_textarea {
+    padding-left: 42px;
+    width: 100%;
+    height: 60px;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+  }
+  .from_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 18px;
   }
   .label {
-    font-size: 12px;
-    width: 150px;
-    margin-right: 20px;
+    display: flex;
+    justify-content: start;
+    font-size: 15px;
+    margin-right: 60px;
   }
   .singup_divider {
     width: 160px;
