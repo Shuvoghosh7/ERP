@@ -849,6 +849,7 @@ th {
 .marketing_expart:hover .expart_name{
   color: #007be5;
 }
+
 /* Media query for small devices */
 @media (max-width: 767px) {
 

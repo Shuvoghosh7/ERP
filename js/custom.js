@@ -15,7 +15,6 @@ $(document).ready(function () {
     $(this).addClass("icon-togle-active")
     $(".icon-table").removeClass("icon-togle-active")
     $('#productContainer').removeClass('table-view').addClass('project-image-folder');
-    $('#productContainer').removeClass('table-view').addClass('project-view-image-folder');
     $('#productContainer .image-container').show();
     $('#productContainer table').remove(); 
   });
@@ -130,7 +129,12 @@ $(document).ready(function () {
 
   
   
-
+  $(".project_zoom_icon").click(function(){
+    $(".zoom_modal").show()
+  })
+  $(".zoom_close_icon").click(function(){
+    $(".zoom_modal").hide()
+  })
 });
 
 
