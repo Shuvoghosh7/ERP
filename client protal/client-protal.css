@@ -11,6 +11,7 @@
 
 .client-right-div {
   overflow: auto;
+  max-width: 100%;
 }
 
 .client-left-div {
@@ -781,22 +782,29 @@ th {
 .table_container {
   background: #f1f4fa;
   min-height: 100vh;
+ 
 }
 
 .marketing_expart_contaner {
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
+
 .marketing_expart {
   height: 100%;
   background: #ffffff;
   border-radius: 10px;
-  padding: 40px 5px;
+  padding: 40px 12px;
   transition: 300ms ease-in-out;
   border: 1px solid transparent;
+  text-align: center;
+  flex: 0 0 calc(25% - 20px);
+
 }
+
+
 .marketing_expart img {
   width: 110px;
   height: 110px;
