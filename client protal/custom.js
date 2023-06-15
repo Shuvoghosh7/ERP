@@ -6,10 +6,14 @@ $(document).ready(function () {
       // make small left nav bar
       $(".client-left-div").hide();
       $(".client-container").css("grid-template-columns", "100%");
+      $(".client-right-div").css("max-width", "100%");
+      $(".client-right-div").css("grid-column", "1 / -1");
     } else {
       // reset left nav bar
       $(".client-left-div").show();
       $(".client-container").css("grid-template-columns", "35% 65%");
+      $(".client-right-div").css("max-width", "none"); 
+      $(".client-right-div").css("grid-column", "2 / -1");
     }
   });
 
