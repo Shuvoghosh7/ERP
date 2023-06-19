@@ -835,7 +835,7 @@
 /* My work css start  */
 .mywork-container {
   display: grid;
-  grid-template-columns: 17% 62% 20%;
+  grid-template-columns:  80% 20%;
   gap: 10px;
   height: 100vh;
 }

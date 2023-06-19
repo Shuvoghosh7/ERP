@@ -14,7 +14,6 @@ $(document).ready(function () {
   $('.icon-picture').click(function () {
     $(this).addClass("icon-togle-active")
     $(".icon-table").removeClass("icon-togle-active")
-  
     $('#productContainer .image-container').show();
     $('#productContainer table').remove(); 
   });
