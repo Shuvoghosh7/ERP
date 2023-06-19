@@ -5,15 +5,17 @@ $(document).ready(function () {
     if (isLeftnavhidden) {
       // make small left nav bar
       $(".client-left-div").hide();
-      $(".client-container").css("grid-template-columns", "100%");
-      $(".client-right-div").css("max-width", "100%");
-      $(".client-right-div").css("grid-column", "1 / -1");
+      $(".client-container").addClass("left-nav-hidden");
+      // $(".client-container").css("grid-template-columns", "100%");
+      // $(".client-right-div").css("max-width", "100%");
+      // $(".client-right-div").css("grid-column", "1 / -1");
     } else {
       // reset left nav bar
       $(".client-left-div").show();
-      $(".client-container").css("grid-template-columns", "35% 65%");
-      $(".client-right-div").css("max-width", "none"); 
-      $(".client-right-div").css("grid-column", "2 / -1");
+      // $(".client-container").css("grid-template-columns", "35% 65%");
+      // $(".client-right-div").css("max-width", "none"); 
+      // $(".client-right-div").css("grid-column", "2 / -1");
+      $(".client-container").removeClass("left-nav-hidden");
     }
   });
 

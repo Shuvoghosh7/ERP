@@ -840,11 +840,23 @@
   height: 100vh;
 }
 
-.mywork-side-details {
+.mywork-side-details1 {
   background-color: white;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.08);
-  padding: 5px;
+  padding: 15px;
+  
+}
+.mywork-side-details2 {
+  background-color: white;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  display: none;
+  
+}
+.mywork-close-button{
+  cursor: pointer;
 }
 
 .mywork-image-folder {
@@ -1624,8 +1636,11 @@
 
   .main-content-part {
     overflow: auto;
+   
   }
-
+.all_project_container{
+  width: 100%;
+}
   .card-contaniner {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

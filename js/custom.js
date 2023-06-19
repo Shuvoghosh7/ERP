@@ -23,12 +23,24 @@ $(document).ready(function () {
     $(this).closest('.image-container').toggleClass('image-container-active');
   });
 
- 
+  $(".project-details-icon").click(function () {
+    $(".project-side-details").fadeIn(500);
+    $(".all-project-container").css("grid-template-columns", "20% 60% 20%")
+    $(".project-image-folder").css('grid-template-columns', 'repeat(3, 1fr)')
+  })
 
   $(".close-button").click(function () {
     $(".project-side-details").hide();
     $(".all-project-container").css("grid-template-columns", "20% 80%")
     $(".project-image-folder").css('grid-template-columns', 'repeat(4, 1fr)')
+  })
+  $(".mywork-details-icon").click(function(){
+    $(".mywork-side-details1").hide()
+    $(".mywork-side-details2").show()
+  })
+  $(".mywork-close-button").click(function(){
+    $(".mywork-side-details1").show()
+    $(".mywork-side-details2").hide()
   })
 
   $(".close-button").click(function () {

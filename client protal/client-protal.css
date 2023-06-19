@@ -911,7 +911,13 @@ th {
     height: 100vh; /* Added height */
   }
 
+  .left-nav-hidden .client-left-div {
+    display: none;
+  }
   
+  .left-nav-hidden .client-container {
+    grid-template-columns: 0% 100%; 
+  }
 
   .dropdown-notification {
     width: 100%;
