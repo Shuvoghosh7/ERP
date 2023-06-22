@@ -78,16 +78,54 @@
       <nav class="navbar navbar-expand-lg navbar-light navbar-menu">
         <a class="navbar-brand d-lg-none" href="#">
           Navbar
-          <button class="btn side-menu-btn">
-            <i class="fas fa-stream"></i>
-          </button>
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <div class=" nav-profile-img d-lg-none" style="display: block;">
+          <div class="dropdown">
+            <a  type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="assets/RICSU 1.png" alt="" class="loging-user" />
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
 
-        </button>
+        </div>
+        
+
+        <div class="nav-notification">
+          <button class="btn side-menu-btn d-lg-none">
+            <i class="fas fa-stream"></i>
+          </button>
+          <div class="mr-lg-3 notification-content d-lg-none" style="display: block;">
+            <a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="assets/vail.png" alt="" />
+              <img src="assets/Vector (1).png" alt="" class="notification-icon" />
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="d-flex justify-content-between notification-item">
+                <div>
+                  <p>Notification <span>(2)</span></p>
+                </div>
+                <div>
+                  <p>total</p>
+                </div>
+              </div>
+              <div class="p-2">
+                <div class="d-lg-flex d-md-flex justify-content-start align-items-center">
+                  <img src="assets/RICSU 1.png" alt="" class="notification-image" />
+                  <p class="pl-lg-3">Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
 
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -147,7 +185,7 @@
               </div>
             </div>
 
-            <div class="position-lg-relative right-3">
+            <div class="position-lg-relative right-3 nav-profile-img">
               <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="assets/RICSU 1.png" alt="" class="loging-user" />
               </a>
@@ -161,6 +199,7 @@
                 </button>
               </div>
             </div>
+
           </div>
         </div>
       </nav>
