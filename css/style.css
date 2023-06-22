@@ -1360,9 +1360,10 @@
 .chat-right-imgage p {
   background-color: rgb(94, 11, 220);
   border-radius: 20px;
-  padding: 4px;
+  padding: 4px 10px;
   color: white;
   margin-top: 18px;
+  text-align: justify;
 }
 
 .chat-right-imgage img {
