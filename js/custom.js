@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-  var isLeftnavhidden = false;
+  /* var isLeftnavhidden = false;
   var leftNavWidth = $(".sidebar-content").outerWidth();
   $(".side-menu-btn").click(function () {
     isLeftnavhidden = !isLeftnavhidden;
@@ -19,8 +19,26 @@ $(document).ready(function () {
       $("#main-content").removeClass("left-nav-hidden");
     }
     
-  });
+  }); */
+  
  
+  $(".side-menu-btn2").click(function () {
+    var leftNavWidth = $(".sidebar-content").outerWidth();
+      // make small left nav bar
+      $(".sidebar-content").animate({ left: -leftNavWidth }, 500, function () {
+        $(this).hide().css("left", 0);
+      }); 
+      $("#main-content").addClass("left-nav-hidden");
+    
+  });
+  $(".side-menu-btn").click(function () {
+    var leftNavWidth = $(".sidebar-content").outerWidth();
+      $(".sidebar-content").css("left", -leftNavWidth).show().animate({ left: 0 }, 500);
+     
+      $("#main-content").removeClass("left-nav-hidden");
+    
+  });
+
 
   //Data Table
   $('#example').DataTable();

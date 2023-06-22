@@ -19,13 +19,24 @@
     <!-- sidebar section  -->
     <section class="sidebar-content">
       <div class="side_nav">
-        <a class="nav-link" href="index.html">
-          <div class="top-link-icon">
-            <img src="assets/image 1.svg" alt="" class="sidebar-icon-image" />
-            <span class="ms-1"> Offshore IT</span>
-          </div>
-        </a>
+
+        <div>
+          <a class="nav-link">
+            <div class="top-link-icon d-flex justify-content-between">
+              <div>
+                <img src="assets/image 1.svg" alt="" class="sidebar-icon-image" />
+                <span class="ms-1"> Offshore IT</span>
+              </div>
+              <div>
+                <p class="side-menu-btn2 d-lg-none">&times;</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
         <hr class="solid-divider" />
+
 
         <a class="nav-link mt-3 nav-sidevar-link active_sidnav" href="#">
           <div class="link-icon">
@@ -75,30 +86,20 @@
     <!-- main content section  -->
     <section class="main-content-part">
       <!-- nav-munu -->
+
       <nav class="navbar navbar-expand-lg navbar-light navbar-menu">
+        <button class="btn side-menu-btn d-lg-none mr-3">
+          <i class="fas fa-stream"></i>
+        </button>
         <a class="navbar-brand d-lg-none" href="#">
-          Navbar
+          Offshore IT
         </a>
 
-        <div class=" nav-profile-img d-lg-none" style="display: block;">
-          <div class="dropdown">
-            <a  type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="assets/RICSU 1.png" alt="" class="loging-user" />
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </div>
 
-        </div>
-        
+
 
         <div class="nav-notification">
-          <button class="btn side-menu-btn d-lg-none">
-            <i class="fas fa-stream"></i>
-          </button>
+
           <div class="mr-lg-3 notification-content d-lg-none" style="display: block;">
             <a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img src="assets/vail.png" alt="" />
@@ -128,7 +129,21 @@
         </div>
 
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse nav-sm-background" id="navbarSupportedContent">
+          <div class="nav-profile-img d-lg-none text-center pt-3" style="display: block;">
+            <div class="dropdown">
+              <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="assets/RICSU 1.png" alt="" class="loging-user" />
+              </a>
+              <div class="dropdown-menu dropdown-menu-center dropdown-menu-custom text-center"
+                aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+
+          </div>
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link active menu-link mr-2" aria-current="page" href="/project.html">Project</a>
