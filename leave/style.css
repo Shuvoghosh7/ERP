@@ -1,3 +1,51 @@
 .leave-main-container{
-    margin: 10px 20px;
+    background: #f1f4fa;
 }
+
+.employee-profile{
+    text-align: center;
+}
+.employee-profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-top: 40px;
+}
+.employee-profile .employee-name{
+    margin-top: 10px;
+}
+.employee-name h3{
+    margin-top: -6px;
+}
+.employee-name p{
+    margin-top: -6px;
+}
+.employee-date-section{
+    background-color: white;
+    display: inline-block;
+    width: 350px;
+    padding: 5px 10px;
+    border: 1px solid rgb(167, 164, 164);
+    border-radius: 10px;
+}
+.employee-profile-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+.employee-profile-date p{
+    margin: 0;
+    font-weight:400;
+}
+.employee-profile-date h6{
+    margin-top: 5px;
+
+}
+.leave-info-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.leave-info-content button{}

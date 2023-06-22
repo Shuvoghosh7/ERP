@@ -1157,7 +1157,16 @@
   height: 100%;
   background-color: rgb(238, 236, 236);
   box-sizing: border-box;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
+}
+.chat_content::-webkit-scrollbar {
+  width: 3px;
+}
+.chat-active-icon{
+ position: relative;
+ right: 25px;
+ top: 20px;
+  
 }
 
 .create-group {
@@ -1251,17 +1260,16 @@
 
 .chat-body {
   height: 100%;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
   margin-top: 20px;
   background: white;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.08);
+  overflow-y: scroll;
+}
+.chat-body::-webkit-scrollbar {
+  width: 3px;
 }
 
-.chat-body::-webkit-scrollbar {
-  width: 0px;
-}
 
 /* .chat-body::-webkit-scrollbar-track {
     background-color: transparent;
@@ -1274,6 +1282,7 @@
   border-radius: 50%;
   width: 50px;
   height: 50px;
+ 
 }
 
 .chat-person-name h6 {
@@ -1356,6 +1365,7 @@
   align-items: center;
   justify-content: center;
 }
+
 
 .chat-right-imgage p {
   background-color: rgb(94, 11, 220);
@@ -1460,6 +1470,7 @@
 
 .chat_person_name {
   padding: 10px;
+ 
 }
 
 .chat_person_name:hover .hover-image {
@@ -1750,13 +1761,14 @@
     width: 100%;
    
   }
-
+ 
   #chat_content {
     position: fixed;
     bottom: 0;
     right: 10px;
     width: 60%;
     height: 100%;
+    
   }
 
   .person-chat-content {
