@@ -1,57 +1,284 @@
-.leave-main-container{
-    background: #f1f4fa;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+.leve-chart-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 5px 20px;
 }
 
-.employee-profile{
-    text-align: center;
+.leave-main-container {
+  background: #f1f4fa;
 }
-.employee-profile img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: contain;
-    margin-top: 40px;
+.leave-page-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
 }
-.employee-profile .employee-name{
-    margin-top: 10px;
+.total-working-number1{
+  color:blue;
+  font-weight: bold;
 }
-.employee-name h3{
-    margin-top: -6px;
+.total-working-number2{
+  color:green;
+  font-weight: bold;
 }
-.employee-name p{
-    margin-top: -6px;
+.employee-profile {
+  text-align: center;
 }
-.employee-date-section{
-    background-color: white;
-    display: inline-block;
-    width: 350px;
-    padding: 5px 10px;
-    border: 1px solid rgb(167, 164, 164);
-    border-radius: 10px;
+.employee-profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-top: 40px;
 }
-.employee-profile-date{
+.employee-profile .employee-name {
+  margin-top: 10px;
+}
+.employee-name h3 {
+  margin-top: -6px;
+}
+.employee-name p {
+  margin-top: -6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.employee-date-section {
+  background-color: white;
+  display: inline-block;
+  width: 350px;
+  padding: 5px 10px;
+  border: 1px solid rgb(167, 164, 164);
+  border-radius: 10px;
+}
+.employee-profile-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+.employee-profile-date p {
+  margin: 0;
+  font-weight: 400;
+  font-family: "Inter";
+  font-style: normal;
+}
+.employee-profile-date h6 {
+  margin-top: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+}
+.leave-info-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.leave-info-content button {
+  background-color: #0f7ec2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px 7px;
+}
+.leave-apply-link {
+  text-decoration: none;
+  color: white;
+}
+.leave-apply-link:hover {
+  text-decoration: none;
+  color: white;
+}
+.notification-icons {
+  position: relative;
+  top: -10px;
+  right: 13px;
+  background-color: #0f7ec2;
+  border-radius: 50%;
+  padding: 2px 3px;
+  color: white;
+  height: 100%;
+}
+.leave-info-content p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+}
+.leave-info-content a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  text-decoration: none;
+}
+.leave-info-content button {
+  margin-top: -5px;
+  margin-left: 10px;
+}
+.leave-table {
+  padding-bottom: 70px;
+}
+.leave-table-headding {
+  background-color: rgb(240, 239, 239);
+}
+.leave-application-title {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  margin-left: 40px;
+}
+.leave-back-icon {
+  text-decoration: none;
+  color: black;
+}
+.leave-back-icon:hover {
+  color: black;
+}
+.leve-application-form {
+  margin: 30px 100px;
+}
+.leave-application-info p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+.leave-application-info-form-conatiner {
+  border: 2px solid rgba(0, 0, 0, 0.08);
+}
+.leave-application-info-form-conatiner p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: rgb(244, 253, 250);
+  margin: 0;
+  padding: 10px;
+}
+.leave-application-info-container{
+  background-color: rgba(80, 78, 78, 0.08);
+}
+.leave-application-info-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+ 
+}
+
+.leave-application-info-form label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}
+.label-require {
+  color: red;
+}
+.input-leave-data {
+  width: 420px;
+  height: 40px;
+  padding-left: 5px;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+}
+.input-leave-data:focus {
+  outline: none;
+}
+.leave-contact-form {
+  padding: 10px;
+  background-color: rgba(80, 78, 78, 0.08);
+}
+.leave-contact-input {
+  width: 100%;
+  height: 75px;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  background-color: white;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.leave-contact-input:focus {
+  outline: none;
+}
+.leave-input-file {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  height: 50px;
+  padding-left: 5px;
+  background-color: white;
+  padding-top: 7px;
+  
+}
+.leave-submit-btn button {
+  width: 100px;
+  height: 47px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+}
+.leave-submit-btn .btn-1 {
+  background-color: #0f7ec2;
+  color: white;
+}
+.leave-submit-btn .btn-2{
+  background-color: #d7d5d5;
+  
+}
+.leave-submit-btn button:focus {
+  outline: none;
+}
+.remaining-Leave-Info {
+  margin: 30px 80px;
+ 
+}
+
+.remaining-Leave-Info p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.remaining-leave-table {
+  table-layout: fixed; 
+}
+
+.remaining-leave-table th,
+.remaining-leave-table td {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .leve-chart-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    margin: 5px 20px;
+  }
+  .leave-info-content {
     display: flex;
+    flex-direction: column;
+  }
+  .employee-date-section {
+    width: 300px;
+  }
+  .leave-application-info-form {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-}
-.employee-profile-date p{
-    margin: 0;
-    font-weight:400;
-}
-.employee-profile-date h6{
-    margin-top: 5px;
-
-}
-.leave-info-content{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.leave-info-content button{
-    background-color: #0f7ec2;
-    color: white;
+  }
+  .input-leave-data {
+    width: 100%;
+    height: 40px;
     border: none;
-    border-radius: 10px;
-    padding: 5px 15px 7px;
+    padding-left: 5px;
+  }
+
 }

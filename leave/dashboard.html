@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -16,138 +17,106 @@
 
 <body>
   <main id="main-content">
-       <!-- sidebar section start -->
-       <section class="sidebar-content">
-        <div class="mx-3 side_nav">
-            <a class="nav-link active" href="index.html">
-                <div class="top-link-icon">
-                    <img src="../assets/image 1.svg" alt="" class="sidebar-icon-image">
-                    <span class="ms-1"> Offshore IT</span>
-                </div>
-            </a>
-            <hr class="solid-divider">
+    <!-- sidebar section  -->
+    <section class="sidebar-content">
+      <div class="side_nav">
 
-            <a class="nav-link mt-3 nav-sidevar-link" href="#">
-                <div class="link-icon">
-                    <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image">
-                    <span class=" ml-2"> Dashboard</span>
-                </div>
-            </a>
-
-
-            <!-- setup dropdown menu start  -->
-            <div class="dropdowns_menu nav-sidevar-link">
-                <a class="nav-link active_sidnav">
-                    <div class="link-icon">
-                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image active-sidebar-icon-image">
-                        <span class="ml-2">
-                            Setup
-                        </span>
-                        <span class="report-icon">
-                            <i class="fa-solid fa-caret-down fa-lg" style="color: #424548;"></i>
-                        </span>
-                    </div>
-                </a>
-
-                <div class="dropdowns_sub_menu mb-3" style="display: block;">
-                    <a class="nav-link active_sidnav" href="ftp_list.html" id="setup-menu-link">
-                        <div class="link-icon ml-3">
-                            <span class="sidebar-link-text ml-2" id="setup-link-text"> FTP List</span>
-                        </div>
-                    </a>
-                  
-                   
-                </div>
-
-
-
+        <div>
+          <a class="nav-link">
+            <div class="top-link-icon d-flex justify-content-between">
+              <div>
+                <img src="../assets/image 1.svg" alt="" class="sidebar-icon-image" />
+                <span class="ms-1"> Offshore IT</span>
+              </div>
+              <div>
+                <p class="side-menu-btn2 d-lg-none">&times;</p>
+              </div>
             </div>
-
-            <!-- setup dropdown menu end  -->
-            <a class="nav-link nav-sidevar-link" href="index.html">
-                <div class="link-icon">
-                    <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image">
-                    <span class="sidebar-link-text ml-2">With Pay Leave List</span>
-                </div>
-            </a>
-            <a class="nav-link nav-sidevar-link" href="index.html">
-                <div class="link-icon">
-                    <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image">
-                    <span class="sidebar-link-text ml-2">Upload File</span>
-                </div>
-            </a>
-            <a class="nav-link nav-sidevar-link" href="uploadImages.html">
-                <div class="link-icon">
-                    <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image">
-                    <span class="sidebar-link-text ml-2">Upload Image</span>
-                </div>
-            </a>
-            <a class="nav-link nav-sidevar-link" href="project_List.html">
-                <div class="link-icon">
-                    <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image">
-                    <span class="sidebar-link-text ml-2">Project List</span>
-                </div>
-            </a>
-            <a class="nav-link nav-sidevar-link" href="index.html">
-                <div class="link-icon">
-                    <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image">
-                    <span class="sidebar-link-text ml-2">Project Billing Quantity</span>
-                </div>
-            </a>
-            <a class="nav-link nav-sidevar-link" href="index.html">
-                <div class="link-icon">
-                    <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image">
-                    <span class="sidebar-link-text ml-2">Payment For Approval</span>
-                </div>
-            </a>
-            <a class="nav-link nav-sidevar-link" href="index.html">
-                <div class="link-icon">
-                    <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image">
-                    <span class="sidebar-link-text ml-2">Project For Invoice</span>
-                </div>
-            </a>
-            <a class="nav-link nav-sidevar-link" href="index.html">
-                <div class="link-icon">
-                    <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image">
-                    <span class="sidebar-link-text ml-2">Invoice List</span>
-                </div>
-            </a>
-
-            <!-- report dropdown memu start  -->
-            <div class="dropdowns_menu nav-sidevar-link">
-                <a class="nav-link">
-                    <div class="link-icon">
-                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image"
-                            id="active-sidebar-icon-image">
-                        <span class="sidebar-link-text ml-2">
-                            Report
-                        </span>
-                        <span class="report-icon">
-                            <i class="fa-solid fa-caret-down fa-lg" style="color: #424548;"></i>
-                        </span>
-                    </div>
-                </a>
-                <div class="dropdowns_sub_menu mb-3">
-                    <a class="nav-link" href="client_project_report_samary.html" id="setup-menu-link">
-                        <div class="link-icon ml-3">
-                            <span class="sidebar-link-text ml-2" id="setup-link-text">Client Summary Report</span>
-                        </div>
-                    </a>
-                    
-
-
-                </div>
-            </div>
-
-            <!-- report dropdown memu end  -->
-
-        </div>
-        <div class="live-chat">
-            <p id="open_chat">Live Chat <span>(10)</span></p>
-            <img src="../assets/animation_500_le8y4owf 1.svg" alt="">
+          </a>
         </div>
 
 
+        <hr class="solid-divider" />
+
+
+        <a class="nav-link mt-3 nav-sidevar-link active_sidnav" href="dashboard.html">
+          <div class="link-icon">
+            <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image active-sidebar-icon-image" />
+            <span class="ml-2"> Dashboard</span>
+          </div>
+        </a>
+        <!-- setup dropdown menu start  -->
+        <div class="dropdowns_menu nav-sidevar-link">
+          <a class="nav-link">
+            <div class="link-icon">
+              <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image ">
+              <span class="ml-2">
+                Setup
+              </span>
+              <span class="report-icon">
+                <i class="fa-solid fa-caret-down fa-lg" style="color: #424548;"></i>
+              </span>
+            </div>
+          </a>
+
+          <div class="dropdowns_sub_menu mb-3">
+            <a class="nav-link active_sidnav" href="#" id="setup-menu-link">
+              <div class="link-icon ml-3">
+                <span class="sidebar-link-text ml-2" id="setup-link-text">Leave Approval Flow</span>
+              </div>
+            </a>
+
+
+          </div>
+
+
+
+        </div>
+        <!-- setup dropdown menu end  -->
+        <a class="nav-link nav-sidevar-link" href="with_Pay_Leave_List.html">
+          <div class="link-icon">
+            <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+            <span class="ml-2">With Pay Leave List</span>
+          </div>
+        </a>
+        <a class="nav-link nav-sidevar-link" href="#">
+          <div class="link-icon">
+            <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+            <span class="ml-2">Without Pay Leave List</span>
+          </div>
+        </a>
+        <a class="nav-link nav-sidevar-link" href="#">
+          <div class="link-icon">
+            <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+            <span class="ml-2">With Pay Leave List</span>
+          </div>
+        </a>
+
+        <a class="nav-link nav-sidevar-link" href="with_pay_approve.html">
+          <div class="link-icon">
+            <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+            <span class="ml-2">With Pay Approve</span>
+          </div>
+        </a>
+        <a class="nav-link nav-sidevar-link" href="#">
+          <div class="link-icon">
+            <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+            <span class="ml-2">without Pay Approve</span>
+          </div>
+        </a>
+        <a class="nav-link nav-sidevar-link" href="#">
+          <div class="link-icon">
+            <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+            <span class="ml-2">Alternative Approve</span>
+          </div>
+        </a>
+
+
+      </div>
+      <div class="live-chat">
+        <p>Live Chat <span>(10)</span></p>
+        <img src="../assets/animation_500_le8y4owf 1.svg" alt="" />
+      </div>
     </section>
     <!-- sidebar section  end-->
 
@@ -161,7 +130,7 @@
 
         <div class=" nav-profile-img d-lg-none" style="display: block;">
           <div class="dropdown">
-            <a  type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img src="../../assets/RICSU 1.png" alt="" class="loging-user" />
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -172,7 +141,7 @@
           </div>
 
         </div>
-        
+
 
         <div class="nav-notification">
           <button class="btn side-menu-btn d-lg-none">
@@ -244,7 +213,7 @@
             <div class="mr-lg-3 notification-content">
               <a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="../../assets/vail.png" alt="" />
-                <img src="../../assets/Vector (1).png" alt="" class="notification-icon" />
+                <span class="notification-icons">12</span>
               </a>
               <div class="dropdown-menu dropdown-menu-right">
                 <div class="d-flex justify-content-between notification-item">
@@ -294,9 +263,9 @@
           </div>
           <div class="mt-2">
             <p class="time-table">Daily</p>
-            <p>Total : <span>28</span></p>
+            <p>Total : <span class="total-working-number1">28</span></p>
           </div>
-         
+
         </div>
 
         <!-- card-2  -->
@@ -307,7 +276,7 @@
           </div>
           <div class="mt-2">
             <p class="time-table">Daily</p>
-            <p>Total : <span>28</span></p>
+            <p>Total : <span class="total-working-number2">28</span></p>
           </div>
         </div>
         <!-- card-3  -->
@@ -318,7 +287,7 @@
           </div>
           <div class="mt-2">
             <p class="time-table">Daily</p>
-            <p>Total : <span>28</span></p>
+            <p>Total : <span class="total-working-number1">28</span></p>
           </div>
         </div>
         <!-- card-3  -->
@@ -329,30 +298,30 @@
           </div>
           <div class="mt-2">
             <p class="time-table">Daily</p>
-            <p>Total : <span>28</span></p>
+            <p>Total : <span class="total-working-number2">28</span></p>
           </div>
         </div>
       </div>
       <!-- card section end -->
 
-           <!-- chart container start -->
-           <div class="leve-chart-container">
-            <div class="chart1">
-            <p>Project History</p>
-            <hr>
-            <canvas id="myChart" style="width: 100%"></canvas>
-            </div>
-            <div class="chart2">
-              <p class="mb-1">Attendance (Monthly)</p>
-              <hr>
-              <canvas id="myPieChart" style="width: 100%"></canvas>
-            </div>
-           
-          </div>
-          <!-- chart container end -->
+      <!-- chart container start -->
+      <div class="leve-chart-container">
+        <div class="chart1">
+          <p>Project History</p>
+          <hr>
+          <canvas id="myChart" style="width: 100%"></canvas>
+        </div>
+        <div class="chart2">
+          <p class="mb-1">Attendance (Monthly)</p>
+          <hr>
+          <canvas id="myPieChart" style="width: 100%"></canvas>
+        </div>
 
-     
-   
+      </div>
+      <!-- chart container end -->
+
+
+
     </section>
   </main>
 
@@ -381,13 +350,13 @@
         legend: { display: true },
         title: {
           display: true,
-          
+
         },
       },
     });
   </script>
 
-<script>
+  <script>
     var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
     var yValues = [55, 49, 44, 24, 15];
     var barColors = ["#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145"];
@@ -409,13 +378,13 @@
         },
         title: {
           display: true,
-         
+
         },
       },
     });
   </script>
 
- 
+
 </body>
 
 </html>

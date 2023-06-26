@@ -1161,6 +1161,7 @@
   height: 100%;
   background-color: rgb(238, 236, 236);
   box-sizing: border-box;
+  z-index: 1111 !important;
   overflow-y: scroll;
 }
 .chat_content::-webkit-scrollbar {
@@ -1704,6 +1705,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .chat_content {
+    width: 100% !important;
+    right: 0px !important;
+  }
+
+  .person-chat-content {
+    left: 0px !important;
+    width: 100% !important;
+  }
   .nav-sm-background{
     background-color: #162141;
    
@@ -1749,7 +1759,7 @@
   }
 
 .menu-link{
-  color: wheat !important;
+  color: white !important;
 }
   #main-content {
     /* display: grid;
@@ -1780,17 +1790,9 @@
     gap: 10px;
     margin: 5px 20px;
   }
-  .leve-chart-container{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-    margin: 5px 20px;
-  }
+ 
 
-  .notification-item {
-    width: 100%;
-   
-  }
+  
  
   #chat_content {
     position: fixed;
@@ -1801,14 +1803,7 @@
     
   }
 
-  .person-chat-content {
-    position: fixed;
-    bottom: 0;
-    right: 10px;
-    width: 60%;
-    height: 100%;
-    overflow-y: scroll;
-  }
+ 
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

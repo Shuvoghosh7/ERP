@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css" />
+</head>
+
+<body>
+    <main id="main-content">
+        <!-- sidebar section  -->
+        <section class="sidebar-content">
+            <div class="side_nav">
+
+                <div>
+                    <a class="nav-link">
+                        <div class="top-link-icon d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/image 1.svg" alt="" class="sidebar-icon-image" />
+                                <span class="ms-1"> Offshore IT</span>
+                            </div>
+                            <div>
+                                <p class="side-menu-btn2 d-lg-none">&times;</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <hr class="solid-divider" />
+
+
+                <a class="nav-link mt-3 nav-sidevar-link" href="#">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2"> Dashboard</span>
+                    </div>
+                </a>
+                <!-- setup dropdown menu start  -->
+                <div class="dropdowns_menu nav-sidevar-link">
+                    <a class="nav-link">
+                        <div class="link-icon">
+                            <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image ">
+                            <span class="ml-2">
+                                Setup
+                            </span>
+                            <span class="report-icon">
+                                <i class="fa-solid fa-caret-down fa-lg" style="color: #424548;"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <div class="dropdowns_sub_menu mb-3">
+                        <a class="nav-link active_sidnav" href="#" id="setup-menu-link">
+                            <div class="link-icon ml-3">
+                                <span class="sidebar-link-text ml-2" id="setup-link-text">Leave Approval Flow</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- setup dropdown menu end  -->
+                <a class="nav-link nav-sidevar-link active_sidnav" href="with_Pay_Leave_List.html">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image active-sidebar-icon-image" />
+                        <span class="ml-2">With Pay Leave List</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="#">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2">Without Pay Leave List</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="#">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2">With Pay Leave List</span>
+                    </div>
+                </a>
+
+                <a class="nav-link nav-sidevar-link" href="#">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2">With Pay Approve</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="#">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2">without Pay Approve</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="#">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2">Alternative Approve</span>
+                    </div>
+                </a>
+
+
+            </div>
+            <div class="live-chat">
+                <p>Live Chat <span>(10)</span></p>
+                <img src="../assets/animation_500_le8y4owf 1.svg" alt="" />
+            </div>
+        </section>
+        <!-- sidebar section  end-->
+
+        <!-- main content section  -->
+        <section class="main-content-part">
+            <!-- nav-munu -->
+
+            <nav class="navbar navbar-expand-lg navbar-light navbar-menu">
+                <button class="btn side-menu-btn d-lg-none mr-3">
+                    <i class="fas fa-stream"></i>
+                </button>
+                <a class="navbar-brand d-lg-none" href="#">
+                    Offshore IT
+                </a>
+
+
+
+
+                <div class="nav-notification">
+
+                    <div class="mr-lg-3 notification-content d-lg-none" style="display: block;">
+                        <a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            <img src="../assets/vail.png" alt="" />
+                            <img src="../assets/Vector (1).png" alt="" class="notification-icon" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="d-flex justify-content-between notification-item">
+                                <div>
+                                    <p>Notification <span>(2)</span></p>
+                                </div>
+                                <div>
+                                    <p>total</p>
+                                </div>
+                            </div>
+                            <div class="p-2">
+                                <div class="d-lg-flex d-md-flex justify-content-start align-items-center">
+                                    <img src="../assets/RICSU 1.png" alt="" class="notification-image" />
+                                    <p class="pl-lg-3">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+
+                <div class="collapse navbar-collapse nav-sm-background" id="navbarSupportedContent">
+                    <div class="nav-profile-img d-lg-none text-center pt-3" style="display: block;">
+                        <div class="dropdown">
+                            <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/RICSU 1.png" alt="" class="loging-user" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center dropdown-menu-custom text-center"
+                                aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page"
+                                href="/project.html">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Accounts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Lead</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Attendance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Human Resource</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Leave</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Payroll</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="mr-lg-3 notification-content">
+                            <a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                <img src="../assets/vail.png" alt="" />
+                                <img src="../assets/Vector (1).png" alt="" class="notification-icon" />
+
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="d-flex justify-content-between notification-item">
+                                    <div>
+                                        <p>Notification <span>(2)</span></p>
+                                    </div>
+                                    <div>
+                                        <p>total</p>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <div class="d-lg-flex d-md-flex justify-content-start align-items-center">
+                                        <img src="../assets/RICSU 1.png" alt="" class="notification-image" />
+                                        <p class="pl-3">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="position-lg-relative right-3 nav-profile-img">
+                            <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/RICSU 1.png" alt="" class="loging-user" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Action</button>
+                                <button class="dropdown-item" type="button">
+                                    Another action
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    Something else here
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+            <!-- nan-munu -->
+
+            <div class="leave-main-container">
+                <div class="mx-3 pt-3">
+                    <p class="leave-page-title">
+                        <span><a href="with_pay_approve.html" class="leave-back-icon"><i
+                                    class="fa-sharp fa-light fa-arrow-left fa-lg mr-3"></i></a></span> View Details
+                    </p>
+                    <hr>
+                    <div>
+                        <div class="employee-profile">
+                            <div>
+                                <img src="../../assets/owp-ppl7-1.jpg" alt="">
+                            </div>
+                            <div class="employee-name">
+                                <small>005</small>
+                                <h3>Lorem ipsum</h3>
+                                <p>Graphic Designer</p>
+                            </div>
+
+                            <div class="employee-date-section">
+                                <div class="employee-profile-date">
+                                    <p>Date</p>
+                                    <h6><span>:</span> 31-May-2023</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr>
+
+                    </div>
+
+                    <div class="remaining-Leave-Info">
+                        <div>
+                            <p>Remaining Leave Info</p>
+                            <table class="table table-bordered table-responsive-sm">
+                                <thead>
+                                    <tr class="leave-table-headding">
+                                        <th scope="col">Leave Type</th>
+                                        <th scope="col">Entitlement</th>
+                                        <th scope="col">Activited</th>
+                                        <th scope="col">Availed</th>
+                                        <th scope="col">Balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+
+                                        <td>Mark</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>@mdo</td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="leave-application-info mt-4">
+                            <p>Leave Application Info</p>
+                            <form>
+
+                                <!-- Leve Info -->
+                                <div class="leave-application-info-form-conatiner">
+                                    <p>Leve Info</p>
+    
+                                    <div class="leave-application-info-form">
+                                        <div>
+                                            <div>
+                                                <label>Leave Type <span class="label-require">*</span></label><br>
+                                                <select name="Status" id="active" class="input-leave-data">
+                                                    <option value="Active" class="select-input">Sick</option>
+                                                    <option value="Inactive" class="select-input">Inactive</option>
+                                                </select>
+                                            </div>
+                                            <div class="mt-4">
+                                                <label>To Date</label> <br>
+                                                <input type="date" name="" id="" class="input-leave-data">
+                                            </div>
+                                            <div class="mt-4">
+                                                <label>Balanch(days)</label><br>
+                                                <input type="text" name="" id="" class="input-leave-data">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <label>From Date</label> <br>
+                                                <input type="date" name="" id="" class="input-leave-data">
+                                            </div>
+                                            <div class="mt-4">
+                                                <label>Durations(days)</label><br>
+                                                <input type="text" name="" id="" class="input-leave-data">
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+
+                                <!-- Contact Info -->
+                                <div class="leave-application-info-form-conatiner mt-4">
+                                    <p>Granted Leave Info</p>
+
+                                    <div class="leave-application-info-form">
+                                        <div>
+                                            <div>
+                                                <label>Select Leave Type <span
+                                                        class="label-require">*</span></label><br>
+                                                <select name="Status" id="active" class="input-leave-data">
+                                                    <option value="Active" class="select-input">Sick</option>
+                                                    <option value="Inactive" class="select-input">Inactive</option>
+                                                </select>
+                                            </div>
+                                            <div class="mt-4">
+                                                <label>From Date</label> <br>
+                                                <input type="date" name="" id="" class="input-leave-data">
+                                            </div>
+                                            <div class="mt-4">
+                                                <label>Balanch(days)</label><br>
+                                                <input type="text" name="" id="" class="input-leave-data">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <label>From Date</label> <br>
+                                                <input type="date" name="" id="" class="input-leave-data">
+                                            </div>
+                                            <div class="mt-4">
+                                                <label>Durations(days)</label><br>
+                                                <input type="text" name="" id="" class="input-leave-data">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Granted Leave Info-->
+                                <div class="leave-application-info-form-conatiner mt-4">
+                                    <p>Contact Info</p>
+
+                                    <div class="leave-contact-form">
+                                        <div>
+                                            <label>Purpose of Leave <span class="label-require">*</span></label> <br>
+                                            <textarea name="" id="" class="leave-contact-input"></textarea>
+
+                                        </div>
+                                        <div class="mt-3">
+                                            <label>Address During Leave <span class="label-require">*</span></label>
+                                            <br>
+                                            <textarea name="" id="" class="leave-contact-input"></textarea>
+                                        </div>
+                                        <div class="mt-3">
+                                            <label>Contact No</label><br>
+                                            <input type="text" name="" id="" class="input-leave-data">
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Next Approve  -->
+                                <div class="leave-application-info-form-conatiner mt-4">
+                                    <p>Next Approve</p>
+
+                                    <div class="leave-application-info-container">
+                                        <div class="leave-application-info-form">
+                                            <div>
+                                                <div>
+                                                    <label>Rec/Approve ID</label> <br>
+                                                    <input type="text" name="" id="" class="input-leave-data">
+                                                </div>
+                                                <div class="mt-4">
+                                                    <label>Designation</label><br>
+                                                    <input type="text" name="" id="" class="input-leave-data">
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div>
+                                                    <label>Name</label> <br>
+                                                    <input type="text" name="" id="" class="input-leave-data">
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="mx-2 pb-2">
+                                            <label>Purpose of Leave <span class="label-require">*</span></label> <br>
+                                            <textarea name="" id="" class="leave-contact-input"></textarea>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                                <!-- Recommender/Approver -->
+                                <div class="leave-application-info-form-conatiner
+                                mt-4">
+                                    <p>Recommender or Approver</p>
+
+                                    <div class="m-3">
+                                        <table class="table table-bordered table-responsive-sm">
+                                            <thead>
+                                                <tr class="leave-table-headding">
+                                                    <th scope="col">Employ Id</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Comment</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+
+                                                    <td>Mark</td>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+
+                                <div class="leave-submit-btn">
+                                    <button class="btn-1">Submit</button>
+                                    <button class="btn-2">Reject</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+
+</html>
