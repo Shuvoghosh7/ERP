@@ -32,7 +32,7 @@
 }
 
 .sidebar-content::-webkit-scrollbar {
-  width: 7px;
+  width: 0px;
 }
 
 /* Track */
@@ -1772,7 +1772,6 @@
 
   .main-content-part {
     overflow: auto;
-   
   }
 .all_project_container{
   width: 100%;
@@ -1791,8 +1790,6 @@
     margin: 5px 20px;
   }
  
-
-  
  
   #chat_content {
     position: fixed;

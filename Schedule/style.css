@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+.schedule-dropdowns-link {
+  font-size: 14px;
+}
+
+.schedule-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.individual-schedule-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-schedule-data {
+  width: 652px;
+  height: 40px;
+  padding-left: 5px;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+}
+.input-schedule-data:focus {
+  outline: none;
+}
+.individual-employee-schedule {
+  width: 652px;
+  display: none;
+}
+.schedule-employee-profile {
+  background: #f1f4fa;
+  text-align: center;
+  padding: 35px;
+}
+.schedule-employee-profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.schedule-employee-profile .employee-name {
+  margin-top: 10px;
+  text-align: center;
+}
+.schedule-employee-profile h3 {
+  margin-top: -6px;
+}
+.schedule-employee-profile p {
+  margin-top: -6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.change-schedule-form {
+  margin-top: 20px;
+  background: #f1f4fa;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.change-schedule-form-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.change-schedule-form-title h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+}
+.change-schedule-form-title h6 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  color: #0f7ec2;
+}
+.change-schedule-date-shift {
+  border: 2px solid rgba(0, 0, 0, 0.08);
+}
+.select-schedule-date-shift {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: rgb(227, 226, 226);
+  padding: 7px;
+}
+.select-schedule-date-shift p {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}
+.change-schedule-form-data {
+  padding: 15px;
+}
+.input-schedule-change-data {
+  width: 260px;
+  height: 35px;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+}
+.input-schedule-change-data:focus {
+  outline: none;
+}
+.change-schedule-form-data p {
+  margin: 0;
+  margin-top: 10px;
+  color: #0f7ec2;
+  font-weight: 600;
+  cursor: pointer;
+}
+.change-schedule-form button {
+  background-color: #0f7ec2;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+.change-schedule-form button:focus {
+  outline: none;
+}
+
+.schedule-overlay-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.schedule-content-info {
+  position: absolute;
+  top: 50%;
+  right: -500px;
+  transform: translate(0, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 100vh;
+  overflow-y: scroll;
+  border: 1px solid rgb(162, 158, 158);
+}
+
+.schedule-exchange-list-profile {
+  text-align: center;
+  padding: 15px;
+}
+.schedule-exchange-list-profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.schedule-exchange-list-profile .employee-name {
+  margin-top: 10px;
+  text-align: center;
+}
+.schedule-exchange-list-profile h3 {
+  margin-top: -6px;
+}
+.schedule-exchange-list-profile p {
+  margin-top: -6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.schedule-table-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  color: #000000;
+}
+.schedule-from-textarea {
+  border: 2px solid rgb(207, 204, 204);
+  width: 100%;
+  height: 70px;
+  padding: 0 10px;
+}
+.schedule-from-input-file {
+  border: 2px solid rgb(207, 204, 204);
+  width: 100%;
+  height: 45px;
+  padding-top: 4px;
+}
+.schedule-submit-btn button {
+  width: 100px;
+  height: 47px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+}
+.schedule-submit-btn .btn-1 {
+  background-color: #0f7ec2;
+  color: white;
+  margin-right: 10px;
+}
+.schedule-submit-btn .btn-2 {
+  background-color: #d7d5d5;
+}
+.schedule-submit-btn button:focus {
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  .input-schedule-data {
+    width: 300px;
+  }
+  .individual-employee-schedule {
+    width: 300px;
+  }
+  .input-schedule-change-data {
+    width: 100px;
+  }
+
+  .schedule-content-info {
+    width: 100%;
+  }
+}
