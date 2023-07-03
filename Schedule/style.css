@@ -188,6 +188,9 @@
   height: 70px;
   padding: 0 10px;
 }
+.schedule-from-textarea:focus{
+ outline: none;
+}
 .schedule-from-input-file {
   border: 2px solid rgb(207, 204, 204);
   width: 100%;
@@ -216,6 +219,31 @@
 .schedule-submit-btn button:focus {
   outline: none;
 }
+
+.sch-approve-overlay-info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 999;
+  overflow: hidden;
+}
+.sch-approve-content-info {
+  position: absolute;
+  top: 50%;
+  right: -500px;
+  transform: translate(0, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 100vh;
+  overflow-y: scroll;
+  border: 1px solid rgb(162, 158, 158);
+}
+
 @media screen and (max-width: 768px) {
   .input-schedule-data {
     width: 300px;

@@ -187,6 +187,7 @@ $(document).ready(function () {
     $(this).closest(".add-new-schedule-form").remove(); 
   });
 
+  // schedule_exchange_list side var 
   $("[data-toggle='schedule-ftp-overlay']").click(function () {
     var target = $(this).data("target");
     $("#" + target).fadeIn(500);
@@ -197,6 +198,19 @@ $(document).ready(function () {
     var target = $(this).closest(".schedule-overlay-info").attr("id");
     $("#" + target).fadeOut(500);
     $("#" + target + " .schedule-content-info").animate({ right: -500 }, 500);
+  });
+
+  // shudele _exchange_approve side var 
+  $("[data-toggle='sch-approve-ftp-overlay']").click(function () {
+    var target = $(this).data("target");
+    $("#" + target).fadeIn(500);
+    $("#" + target + " .sch-approve-content-info").animate({ right: 0 }, 500);
+  });
+
+  $(".sch-approve-overlay-info .ftp-close-content").click(function () {
+    var target = $(this).closest(".sch-approve-overlay-info").attr("id");
+    $("#" + target).fadeOut(500);
+    $("#" + target + " .sch-approve-content-info").animate({ right: -500 }, 500);
   });
 
 });
