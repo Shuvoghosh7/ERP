@@ -194,4 +194,19 @@ $(document).ready(function () {
     $("#" + target + " .sch-approve-content-info").animate({ right: -500 }, 500);
   });
 
+  // individual shudele _exchange_approve side var 
+  $("[data-toggle='individual-sch-ftp-overlay']").click(function () {
+    var target = $(this).data("target");
+    $("#" + target).fadeIn(500);
+    $("#" + target + " .individual-sch-content-info").animate({ right: 0 }, 500);
+  });
+
+  $(".individual-sch-overlay-info .ftp-close-content").click(function () {
+    var target = $(this).closest(".individual-sch-overlay-info").attr("id");
+    $("#" + target).fadeOut(500);
+    $("#" + target + " .individual-sch-content-info").animate({ right: -500 }, 500);
+  });
+
+
+
 });

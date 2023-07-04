@@ -79,6 +79,7 @@
   font-weight: 700;
   font-size: 15px;
   color: #0f7ec2;
+  cursor: pointer;
 }
 .change-schedule-date-shift {
   border: 2px solid rgba(0, 0, 0, 0.08);
@@ -285,6 +286,30 @@
   font-weight: 500;
   font-size: 16px;
 }
+
+.individual-sch-overlay-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 999;
+  overflow: hidden;
+}
+.individual-sch-content-info {
+  position: absolute;
+  top: 50%;
+  right: -500px;
+  transform: translate(0, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 100vh;
+  overflow-y: scroll;
+  border: 1px solid rgb(162, 158, 158);
+}
 @media screen and (max-width: 768px) {
   #sch-employee-table td,
   #sch-employee-table th {
@@ -301,6 +326,12 @@
   }
 
   .schedule-content-info {
+    width: 100%;
+  }
+  .sch-approve-content-info {
+    width: 100%;
+  }
+  .individual-sch-content-info{
     width: 100%;
   }
 }

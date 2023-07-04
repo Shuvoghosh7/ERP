@@ -308,13 +308,13 @@
                         <div>
                             <label>Select Employee</label><br>
                             <select name="Status" id="active" class="input-schedule-data">
-                                 <option value="Active" class="select-input">Select</option>
-                               
+                                <option value="Active" class="select-input">Select</option>
+
                             </select>
-       
+
                         </div>
 
-                        <div class="individual-employee-schedule">
+                        <div class="individual-employee-schedule mt-4">
                             <div class="schedule-employee-profile">
                                 <div>
                                     <img src="../../assets/owp-ppl7-1.jpg" alt="">
@@ -330,7 +330,8 @@
                             <div class="change-schedule-form">
                                 <div class="change-schedule-form-title">
                                     <h5>Change Schedule Form</h5>
-                                    <h6>Schedule Details</h6>
+                                    <h6 data-toggle="individual-sch-ftp-overlay"
+                                    data-target="individual-sch-ftp-info" >Schedule Details</h6>
                                 </div>
                                 <div class="change-schedule-date-shift">
                                     <div class="select-schedule-date-shift">
@@ -338,7 +339,8 @@
                                         <p>Select Shift</p>
                                     </div>
                                     <div class="change-schedule-form-data">
-                                        <div class="d-flex justify-content-between align-items-center add-new-schedule-form">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center add-new-schedule-form">
                                             <div>
                                                 <input type="date" name="" id="" class="input-schedule-change-data">
                                             </div>
@@ -357,7 +359,7 @@
                                 </div>
                                 <button>Submit</button>
                             </div>
-                            
+
                         </div>
 
                     </div>
@@ -365,7 +367,93 @@
             </div>
 
 
+            <!--add Schedule Exchange List-->
+            <div class="individual-sch-overlay-info" id="individual-sch-ftp-info">
+                <div class="individual-sch-content-info">
+                    <div class="d-flex justify-content-between align-items-center title">
+                        <div>Schedule Details</div>
+                        <div class="ftp-close-content">
+                            <i class="fa-solid fa-xmark close-icon"></i>
+                        </div>
+                    </div>
+                   
+                    <div class="table-style mx-3">
+                        <table id="sch-employee-table" class="mt-4">
+                            <tr>
+                                <th>Day</th>
+                                <th> Shift Name</th>
+                               
+                            </tr>
+                            <tr>
+                                <td> 01-may-2023</td>
+                                <td>
+                                    <span>
+                                        <i class="fa-solid fa-circle fa-2xs" style="color:#FFFF00"></i>
+                                    </span>
+                                    <span class="ml-1">Holyday</span>
+                                </td>
+                               
+                            </tr>
+                            <tr>
+                                <td> 01-may-2023 </td>
+                                <td>
+                                    <span>
+                                        <i class="fa-solid fa-circle fa-2xs" style="color:#897790"></i>
+                                    </span>
+                                    <span>11:00 PM - 7:00 AM (N)</span>
+                                </td>
+                               
+                            </tr>
+                            <tr>
+                                <td> 01-may-2023 </td>
+                                <td>
+                                    <span>
+                                        <i class="fa-solid fa-circle fa-2xs" style="color:#FF0000"></i>
+                                    </span>
+                                    <span class="ml-1">Weekend</span>
+                                </td>
+                               
+                            </tr>
+                            <tr>
+                                <td> 01-may-2023 </td>
+                                <td>
+                                    <span>
+                                        <i class="fa-solid fa-circle fa-2xs" style="color:#9C8868"></i>
+                                    </span>
+                                    <span >03:00 PM - 11:00 PM (E)</span>
+                                </td>
+                               
+                            </tr>
+                            <tr>
+                                <td> 01-may-2023 </td>
+                                <td>
+                                    <span>
+                                        <i class="fa-solid fa-circle fa-2xs" style="color:#FF0000"></i>
+                                    </span>
+                                    <span class="ml-1">Weekend</span>
+                                </td>
+                               
+                            </tr>
+                            <tr>
+                                <td> 01-may-2023 </td>
+                                <td>
+                                    <span>
+                                        <i class="fa-solid fa-circle fa-2xs" style="color:#74D4E6"></i>
+                                    </span>
+                                    <span>7:00 AM - 3:00 PM (M)</span>
+                                </td>
+                               
+                            </tr>
 
+
+
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- add Schedule Exchange List -->
 
 
 
