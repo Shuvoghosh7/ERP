@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="style.css" />
 
+
     <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -40,9 +41,9 @@
                 <hr class="solid-divider" />
 
 
-                <a class="nav-link mt-3 nav-sidevar-link" href="#">
+                <a class="nav-link mt-3 nav-sidevar-link active_sidnav" href="#">
                     <div class="link-icon">
-                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image " />
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image active-sidebar-icon-image" />
                         <span class="ml-2"> Dashboard</span>
                     </div>
                 </a>
@@ -77,13 +78,13 @@
                 <a class="nav-link nav-sidevar-link" href="#">
                     <div class="link-icon">
                         <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
-                        <span class="ml-2">Fix Sch. Assign</span>
+                        <span class="ml-2">Employee List</span>
                     </div>
                 </a>
                 <a class="nav-link nav-sidevar-link" href="#">
                     <div class="link-icon">
                         <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
-                        <span class="ml-2">Rotate Sch. Assign</span>
+                        <span class="ml-2">Warning Letter</span>
                     </div>
                 </a>
                 <a class="nav-link nav-sidevar-link" href="#">
@@ -93,22 +94,22 @@
                     </div>
                 </a>
 
-                <a class="nav-link nav-sidevar-link active_sidnav" href="#">
+                <a class="nav-link nav-sidevar-link " href="#">
                     <div class="link-icon">
-                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image active-sidebar-icon-image" />
-                        <span class="ml-2">Individual Sche. Change</span>
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2">Waiting For Probation</span>
                     </div>
                 </a>
                 <a class="nav-link nav-sidevar-link" href="#">
                     <div class="link-icon">
                         <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
-                        <span class="ml-2">Sch. Exchange List</span>
+                        <span class="ml-2">Waiting for Permanent</span>
                     </div>
                 </a>
                 <a class="nav-link nav-sidevar-link" href="#">
                     <div class="link-icon">
                         <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
-                        <span class="ml-2">Sch. Exchange Approve</span>
+                        <span class="ml-2">Evalution Date Entry</span>
                     </div>
                 </a>
                 <!-- Reportdropdown menu start  -->
@@ -128,14 +129,26 @@
                     <div class="dropdowns_sub_menu mb-3">
                         <a class="nav-link " href="#" id="setup-menu-link">
                             <div class="link-icon ml-3">
-                                <span class="sidebar-link-text schedule-dropdowns-link" id="setup-link-text">Schedule
-                                    Exchange Report</span>
+                                <span class="sidebar-link-text schedule-dropdowns-link" id="setup-link-text">All
+                                    Employee Report</span>
                             </div>
                         </a>
                         <a class="nav-link" href="#" id="setup-menu-link">
                             <div class="link-icon ml-3">
-                                <span class="sidebar-link-text schedule-dropdowns-link" id="setup-link-text">Shift Wise
-                                    Employee Report</span>
+                                <span class="sidebar-link-text schedule-dropdowns-link" id="setup-link-text">Employee
+                                    Individual Report</span>
+                            </div>
+                        </a>
+                        <a class="nav-link" href="#" id="setup-menu-link">
+                            <div class="link-icon ml-3">
+                                <span class="sidebar-link-text schedule-dropdowns-link" id="setup-link-text">Employee
+                                    Evluation Report</span>
+                            </div>
+                        </a>
+                        <a class="nav-link" href="#" id="setup-menu-link">
+                            <div class="link-icon ml-3">
+                                <span class="sidebar-link-text schedule-dropdowns-link" id="setup-link-text">Activity
+                                    Report</span>
                             </div>
                         </a>
 
@@ -217,10 +230,8 @@
                         </div>
 
                     </div>
-                   
+
                     <ul class="navbar-nav mr-auto">
-                        <i class="fa-solid fa-less-than fa-xs" id="previous"></i>
-                 
                         <li class="nav-item">
                             <a class="nav-link active menu-link mr-2" aria-current="page"
                                 href="/project.html">Project</a>
@@ -251,10 +262,10 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Payroll</a>
-                        </li> 
-                        <i class="fa-solid fa-greater-than fa-sm d-flex" id="next"></i>
+                        </li>
+
                     </ul>
-                   
+
 
                     <div class="d-flex align-items-center justify-content-center">
                         <div class="mr-lg-3 notification-content">
@@ -303,22 +314,126 @@
             <!-- nan-munu -->
 
 
+            <div>
+                <!-- card section start -->
+                <div class="card-contaniner">
+                    <!-- card-1  -->
+                    <div class="human-card-content">
+                        <div class="d-flex justify-content-start">
+                            <img src="../../assets/card/Frame 629447.png" alt="" class="card-icom-img" />
+                            <p class="card-title">All Employees</p>
+                        </div>
+                        <div class="mt-2">
+                            <p class="time-table">317</p>
+                            <p>Total : <span class="total-employee">28</span></p>
+                        </div>
+
+                    </div>
+
+                    <!-- card-2  -->
+                    <div class="human-card-content">
+                        <div class="d-flex justify-content-start">
+                            <img src="../../assets/card/Frame2.png" alt="" class="card-icom-img" />
+                            <p class="card-title">Total Probation</p>
+                        </div>
+                        <div class="mt-2">
+                            <p class="time-table">3</p>
+                            <p>Total : <span class="total-employee">0</span></p>
+                        </div>
+                    </div>
+                    <!-- card-3  -->
+                    <div class="human-card-content">
+                        <div class="d-flex justify-content-start">
+                            <img src="../../assets/card/Frame3.png" alt="" class="card-icom-img" />
+                            <p class="card-title">Waiting Pernanent</p>
+                        </div>
+                        <div class="mt-2">
+                            <p class="time-table">5</p>
+                            <p>Total : <span class="working-pernaent">28</span></p>
+                        </div>
+                    </div>
+                    <!-- card-4  -->
+                    <div class="human-card-content">
+                        <div class="d-flex justify-content-start">
+                            <img src="../../assets/card/Frame3.png" alt="" class="card-icom-img" />
+                            <p class="card-title">Total Resign this Month</p>
+                        </div>
+                        <div class="mt-2">
+                            <p class="time-table">0</p>
+                          
+                            <div class="select-container">
+                                <select name="Status" id="active" class="client_select">
+                                  <option value="Total_Client" class="select-input">
+                                    Total Invoice Sent
+                                  </option>
+                                  <option value="Active_Client" class="select-input">
+                                    Total Payment Received
+                                  </option>
+                                  <option value="Inactive_Client" class="select-input">
+                                    Total Payment pending
+                                  </option>
+                                </select>
+              
+                                <div class="card-bottom-icon">
+                                  <img src="../assets/Manager-deshboard/Medium.png" alt="" />
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card section end -->
+
+                <div class="mx-4 mb-5">
+                    <div class="chart1">
+                        <p>Employee Status</p>
+                        <hr>
+                        <canvas id="myChart" style="width: 100%"></canvas>
+                      </div>
+                </div>
+  
+            </div>
+
 
 
 
 
 
         </section>
+
     </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
     <script src="../js/custom.js"></script>
-    <script src="scheCustom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
     <script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 
+    <script>
+        var xValues = ["A","B","C","D","E","F","G","H"];
+        var yValues = [55, 49, 44, 24, 15,22,18,19];
+        var barColors = ["red", "green", "blue", "orange", "brown","red", "green", "blue","red"];
+    
+        new Chart("myChart", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [
+              {
+                backgroundColor: barColors,
+                data: yValues,
+              },
+            ],
+          },
+          options: {
+            legend: { display: true },
+            title: {
+              display: true,
+    
+            },
+          },
+        });
+      </script>
 
 
 </body>

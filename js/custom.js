@@ -153,7 +153,7 @@ $(document).ready(function () {
 
   // Schdule jquary code
   $(".input-schedule-data").click(function () {
-    $(".individual-employee-schedule").slideToggle();
+    $(".individual-employee-schedule").slideToggle(500);
   });
 
   $(".add-more").click(function () {
@@ -207,6 +207,11 @@ $(document).ready(function () {
     $("#" + target + " .individual-sch-content-info").animate({ right: -500 }, 500);
   });
 
+
+    // HR jquary code
+    $(".input-hr-data").click(function () {
+      $(".hr-individual-report-conatainer").slideToggle(500);
+    });
 
 
 });

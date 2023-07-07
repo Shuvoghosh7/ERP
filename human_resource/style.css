@@ -1,0 +1,105 @@
+.human-card-content {
+  padding: 15px 10px;
+  gap: 16px;
+  box-sizing: border-box;
+  background: white;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  width: 100%;
+  height: 165px;
+  border-radius: 10px;
+}
+.total-employee {
+  color: blue;
+}
+.working-pernaent {
+  color: green;
+}
+
+.hr-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.individual-hr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-hr-data {
+  width: 600px;
+  height: 40px;
+  padding-left: 5px;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+}
+.input-hr-data:focus {
+  outline: none;
+}
+
+.hr-employee-profile {
+  text-align: center;
+  padding: 35px;
+}
+.hr-employee-profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.hr-employee-profile .employee-name {
+  margin-top: 10px;
+  text-align: center;
+}
+.hr-employee-profile h3 {
+  margin-top: -6px;
+}
+.hr-employee-profile p {
+  margin-top: -6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.hr-basic-info {
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  margin: 0 100px;
+}
+.hr-basic-info p{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: rgb(244, 253, 250);
+  margin: 0;
+  padding: 10px;
+}
+
+.basic-info-grid small{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.basic-info-grid h6{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+.custom-file-button{
+  cursor: pointer;
+}
+#file-input {
+  display: none;
+}
+.hr-individual-report-conatainer{
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hr-basic-info {
+    margin: 0 20px;
+  }
+  .input-hr-data {
+    width: 300px;
+  }
+}
