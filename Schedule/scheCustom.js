@@ -8,7 +8,7 @@ $(document).ready(function () {
     var showItems = function () {
       var startIndex = currentItem;
       var endIndex = startIndex + itemsPerPage;
-      $(".navbar-nav li").hide().slice(startIndex, endIndex).show();
+      $(".navbar-nav li").hide().slice(startIndex, endIndex).fadeIn("slow");
     };
     // Show the items for the initial page
     showItems();
@@ -29,3 +29,4 @@ $(document).ready(function () {
     });
   }
 });
+
