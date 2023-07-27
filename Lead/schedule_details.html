@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="lead.css" />
+
+
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css" />
+</head>
+
+<body>
+    <div>
+        <!-- nav-munu -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-menu">
+            <button class="btn side-menu-btn d-lg-none mr-3">
+                <i class="fas fa-stream"></i>
+            </button>
+            <a class="navbar-brand d-lg-none" href="#">
+                Offshore IT
+            </a>
+
+
+
+
+            <div class="nav-notification">
+
+                <div class="mr-lg-3 notification-content d-lg-none" style="display: block;">
+                    <a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                        <img src="../assets/vail.png" alt="" />
+                        <img src="../assets/Vector (1).png" alt="" class="notification-icon" />
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="d-flex justify-content-between notification-item">
+                            <div>
+                                <p>Notification <span>(2)</span></p>
+                            </div>
+                            <div>
+                                <p>total</p>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div class="d-lg-flex d-md-flex justify-content-start align-items-center">
+                                <img src="../assets/RICSU 1.png" alt="" class="notification-image" />
+                                <p class="pl-lg-3">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+
+            <div class="collapse navbar-collapse nav-sm-background" id="navbarSupportedContent">
+                <div class="nav-profile-img d-lg-none text-center pt-3" style="display: block;">
+                    <div class="dropdown">
+                        <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="../assets/RICSU 1.png" alt="" class="loging-user" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-center dropdown-menu-custom text-center"
+                            aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active menu-link mr-2" aria-current="page" href="/project.html">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Client</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menu-link mr-2" aria-current="page" href="#">User</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Accounts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Lead</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Attendance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Human Resource</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Leave</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Payroll</a>
+                    </li>
+
+                </ul>
+
+
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="mr-lg-3 notification-content">
+                        <a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            <img src="../assets/vail.png" alt="" />
+                            <img src="../assets/Vector (1).png" alt="" class="notification-icon" />
+
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="d-flex justify-content-between notification-item">
+                                <div>
+                                    <p>Notification <span>(2)</span></p>
+                                </div>
+                                <div>
+                                    <p>total</p>
+                                </div>
+                            </div>
+                            <div class="p-2">
+                                <div class="d-lg-flex d-md-flex justify-content-start align-items-center">
+                                    <img src="assets/RICSU 1.png" alt="" class="notification-image" />
+                                    <p class="pl-3">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="position-lg-relative right-3 nav-profile-img">
+                        <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="../assets/RICSU 1.png" alt="" class="loging-user" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">
+                                Another action
+                            </button>
+                            <button class="dropdown-item" type="button">
+                                Something else here
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <!-- nan-munu -->
+
+        <div>
+            <p class="leave-application-title m-4"><span><a href="schedule.html" class="leave-back-icon"><i
+                            class="fa-sharp fa-light fa-arrow-left fa-lg mr-3"></i></a></span> View Pending Lead
+                Schedule</p>
+            <hr>
+
+            <div class="lead-shedule-details">
+                <div class="leave-application-info">
+
+                    <!-- basic Info -->
+                    <div class="basic-info-lead-conatiner">
+                        <p>Basic Info</p>
+                        <div class="basic-info-lead-grid mx-4 mt-3">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <small>Lead Source</small>
+                                    <h6>Linkedin</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Lead Id</small>
+                                    <h6>W6073885</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>First Name</small>
+                                    <h6>lorem</h6>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <small>Last Name</small>
+                                    <h6>lorem</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Phone</small>
+                                    <h6>300000000022</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Personal Phone</small>
+                                    <h6>-</h6>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <small>Age</small>
+                                    <h6>22</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Gender</small>
+                                    <h6>-</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Email</small>
+                                    <h6>sjssjsj@gmail.com</h6>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row  mb-3">
+                                <div class="col-lg-4">
+                                    <small>Designation</small>
+                                    <h6>Online Marketing Manager</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Stock Symbol</small>
+                                    <h6>-</h6>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Company Info-->
+                    <div class="basic-info-lead-conatiner mt-4">
+                        <p>Company Info</p>
+                        <div class="basic-info-lead-grid mx-4 mt-3">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <small>Company Name</small>
+                                    <h6>loremn</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Company Url</small>
+                                    <h6>Lorem, ipsum.</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Company Web</small>
+                                    <h6>lorem</h6>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <small>Company Domain</small>
+                                    <h6>lorem</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Company LinkedIn</small>
+                                    <h6>300000000022</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Industry</small>
+                                    <h6>-</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Address Info  -->
+                    <div class="basic-info-lead-conatiner mt-4">
+                        <p>Address Info</p>
+                        <div class="basic-info-lead-grid mx-4 mt-3">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <small>Country</small>
+                                    <h6>loremn</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>city</small>
+                                    <h6>Lorem, ipsum.</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>State</small>
+                                    <h6>lorem</h6>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <small>Zip code</small>
+                                    <h6>lorem</h6>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Info  -->
+                    <div class="basic-info-lead-conatiner mt-4">
+                        <p>Address Info</p>
+                        <div class="basic-info-lead-grid mx-4 mt-3">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <small>Facebook User Id</small>
+                                    <h6>loremn</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>LinkedIn Url</small>
+                                    <h6>Lorem, ipsum.</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Twitter Id</small>
+                                    <h6>lorem</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Status  -->
+                    <div class="basic-info-lead-conatiner mt-4">
+                        <p>Address Info</p>
+                        <div class="basic-info-lead-grid mx-4 mt-3">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <small>Status</small>
+                                    <h6>loremn</h6>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small>Lead Status</small>
+                                    <h6>Lorem, ipsum.</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action List  -->
+                    <div class="basic-info-lead-conatiner mt-4">
+                        <div class="basic-info-lead-title px-3">
+                            <p>Address Info</p>
+                            <button data-toggle="lead-ftp-overlay" data-target="schedule-ftp-info">Add
+                                Action</button>
+                        </div>
+                        <div class="basic-info-lead-grid">
+                            <div class="mx-3 leave-table">
+                                <table class="table table-bordered table-responsive-sm">
+                                    <thead>
+                                        <tr class="leave-table-headding">
+                                            <th scope="col">SL</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Time</th>
+                                            <th scope="col">Note</th>
+                                            <th scope="col">Attachment</th>
+                                            <th scope="col">Client</th>
+                                            <th scope="col">Feedback</th>
+                                            <th scope="col">Comment</th>
+                                            <th scope="col">Schedule</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Time</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td>Mark</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--add Schedule Exchange List-->
+            <div class="lead-overlay-info" id="schedule-ftp-info">
+                <div class="lead-content-info">
+                    <div class="d-flex justify-content-between align-items-center title">
+                        <div>Add Action</div>
+                        <div class="ftp-close-content">
+                            <i class="fa-solid fa-xmark close-icon"></i>
+                        </div>
+                    </div>
+                    <div class="from-content">
+                        <form>
+                            <div>
+                                <label for="">Date<span class="text-danger">*</span></label> <br>
+                                <input type="date" name="" id="" class="from-input">
+                            </div>
+                            <div class="mt-3">
+                                <label for="">Time<span class="text-danger">*</span></label> <br>
+                                <input type="text" name="" id="" class="from-input">
+                            </div>
+                            <div class="mt-3">
+                                <label for="">Note Type<span class="text-danger">*</span></label> <br>
+                                <select name="Status" id="active" class="from-input">
+                                    <option value="Active" class="select-input">Select</option>
+                                    <option value="Inactive" class="select-input">Inactive</option>
+                                </select>
+                            </div>
+                            <div class="mt-3">
+                                <label for="">Attachment</label> <br>
+                                <input type="file" name="" id="" class="from-input">
+                            </div>
+
+                            <div class="mt-3">
+                                <label for="">Client Feedback<span class="text-danger">*</span></label> <br>
+                               <textarea name="" id="" class="lead-textarea"></textarea>
+                            </div>
+                            <div class="mt-3">
+                                <label for="">Comment<span class="text-danger">*</span></label> <br>
+                               <textarea name="" id="" class="lead-textarea"></textarea>
+                            </div>
+                            <div class="lead-submit-btn">
+                                <div class="d-flex justify-content-end">
+                                    <button class="btn-1">Submit</button>
+                                    <button class="btn-2">Cencle</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- add Schedule Exchange List -->
+        </div>
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

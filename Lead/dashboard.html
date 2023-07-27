@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="lead.css" />
+
+
+
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css" />
+</head>
+
+<body>
+    <main id="main-content">
+        <!-- sidebar section  -->
+        <section class="sidebar-content">
+            <div class="side_nav">
+
+                <div>
+                    <a class="nav-link">
+                        <div class="top-link-icon d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/image 1.svg" alt="" class="sidebar-icon-image" />
+                                <span class="ms-1"> Offshore IT</span>
+                            </div>
+                            <div>
+                                <p class="side-menu-btn2 d-lg-none">&times;</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <hr class="solid-divider" />
+
+
+                <a class="nav-link mt-3 nav-sidevar-link active_sidnav" href="#">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image active-sidebar-icon-image" />
+                        <span class="ml-2"> Dashboard</span>
+                    </div>
+                </a>
+                <!-- setup dropdown menu start  -->
+                <div class="dropdowns_menu nav-sidevar-link">
+                    <a class="nav-link">
+                        <div class="link-icon">
+                            <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image ">
+                            <span class="ml-2">
+                                Setup
+                            </span>
+                            <span class="report-icon">
+                                <i class="fa-solid fa-caret-down fa-lg" style="color: #424548;"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <div class="dropdowns_sub_menu mb-3">
+                        <a class="nav-link active_sidnav" href="#" id="setup-menu-link">
+                            <div class="link-icon ml-3">
+                                <span class="sidebar-link-text ml-2" id="setup-link-text">Leave Approval Flow</span>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+
+
+                </div>
+                <!-- setup dropdown menu end  -->
+                <a class="nav-link nav-sidevar-link" href="#">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2">Employee List</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="#">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2">Warning Letter</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="#">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2">Employee Sch. Setup</span>
+                    </div>
+                </a>
+
+                <a class="nav-link nav-sidevar-link " href="#">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2">Waiting For Probation</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="#">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2">Waiting for Permanent</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="#">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2">Evalution Date Entry</span>
+                    </div>
+                </a>
+                <!-- Reportdropdown menu start  -->
+                <div class="dropdowns_menu nav-sidevar-link">
+                    <a class="nav-link">
+                        <div class="link-icon">
+                            <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image ">
+                            <span class="ml-2">
+                                Report
+                            </span>
+                            <span class="report-icon">
+                                <i class="fa-solid fa-caret-down fa-lg" style="color: #424548;"></i>
+                            </span>
+                        </div>
+                    </a>
+
+                    <div class="dropdowns_sub_menu mb-3">
+                        <a class="nav-link " href="#" id="setup-menu-link">
+                            <div class="link-icon ml-3">
+                                <span class="sidebar-link-text schedule-dropdowns-link" id="setup-link-text">All
+                                    Employee Report</span>
+                            </div>
+                        </a>
+                        <a class="nav-link" href="#" id="setup-menu-link">
+                            <div class="link-icon ml-3">
+                                <span class="sidebar-link-text schedule-dropdowns-link" id="setup-link-text">Employee
+                                    Individual Report</span>
+                            </div>
+                        </a>
+                        <a class="nav-link" href="#" id="setup-menu-link">
+                            <div class="link-icon ml-3">
+                                <span class="sidebar-link-text schedule-dropdowns-link" id="setup-link-text">Employee
+                                    Evluation Report</span>
+                            </div>
+                        </a>
+                        <a class="nav-link" href="#" id="setup-menu-link">
+                            <div class="link-icon ml-3">
+                                <span class="sidebar-link-text schedule-dropdowns-link" id="setup-link-text">Activity
+                                    Report</span>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+
+
+                </div>
+                <!-- Report dropdown menu end  -->
+
+            </div>
+            <div class="live-chat">
+                <p>Live Chat <span>(10)</span></p>
+                <img src="../assets/animation_500_le8y4owf 1.svg" alt="" />
+            </div>
+        </section>
+        <!-- sidebar section  end-->
+
+        <!-- main content section  -->
+        <section class="main-content-part">
+            <!-- nav-munu -->
+            <nav class="navbar navbar-expand-lg navbar-light navbar-menu">
+                <button class="btn side-menu-btn d-lg-none mr-3">
+                    <i class="fas fa-stream"></i>
+                </button>
+                <a class="navbar-brand d-lg-none" href="#">
+                    Offshore IT
+                </a>
+
+
+
+
+                <div class="nav-notification">
+
+                    <div class="mr-lg-3 notification-content d-lg-none" style="display: block;">
+                        <a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            <img src="../assets/vail.png" alt="" />
+                            <img src="../assets/Vector (1).png" alt="" class="notification-icon" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="d-flex justify-content-between notification-item">
+                                <div>
+                                    <p>Notification <span>(2)</span></p>
+                                </div>
+                                <div>
+                                    <p>total</p>
+                                </div>
+                            </div>
+                            <div class="p-2">
+                                <div class="d-lg-flex d-md-flex justify-content-start align-items-center">
+                                    <img src="../assets/RICSU 1.png" alt="" class="notification-image" />
+                                    <p class="pl-lg-3">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+
+                <div class="collapse navbar-collapse nav-sm-background" id="navbarSupportedContent">
+                    <div class="nav-profile-img d-lg-none text-center pt-3" style="display: block;">
+                        <div class="dropdown">
+                            <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/RICSU 1.png" alt="" class="loging-user" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center dropdown-menu-custom text-center"
+                                aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page"
+                                href="/project.html">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Accounts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Lead</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Attendance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Human Resource</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Leave</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Payroll</a>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="mr-lg-3 notification-content">
+                            <a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                <img src="../assets/vail.png" alt="" />
+                                <img src="../assets/Vector (1).png" alt="" class="notification-icon" />
+
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="d-flex justify-content-between notification-item">
+                                    <div>
+                                        <p>Notification <span>(2)</span></p>
+                                    </div>
+                                    <div>
+                                        <p>total</p>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <div class="d-lg-flex d-md-flex justify-content-start align-items-center">
+                                        <img src="assets/RICSU 1.png" alt="" class="notification-image" />
+                                        <p class="pl-3">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="position-lg-relative right-3 nav-profile-img">
+                            <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/RICSU 1.png" alt="" class="loging-user" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Action</button>
+                                <button class="dropdown-item" type="button">
+                                    Another action
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    Something else here
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+            <!-- nan-munu -->
+
+
+            <div>
+                <!-- card section start -->
+                <div class="card-contaniner">
+                    <!-- card-1  -->
+                    <div class="lead-card-content">
+                        <div class="d-flex justify-content-start">
+                            <img src="../../assets/card/Frame3.png" alt="" class="card-icom-img" />
+                            <p class="card-title">Leads</p>
+                        </div>
+                        <div class="mt-2">
+                            <p class="time-table">12,020</p>
+
+                            <div class="select-container">
+                                <select name="Status" id="active" class="client_select">
+                                    <option value="Total_Client" class="select-input">
+                                        Total Invoice Sent
+                                    </option>
+                                    <option value="Active_Client" class="select-input">
+                                        Total Payment Received
+                                    </option>
+                                    <option value="Inactive_Client" class="select-input">
+                                        Total Payment pending
+                                    </option>
+                                </select>
+
+                                <div class="card-bottom-icon">
+                                    <img src="../assets/Manager-deshboard/Medium.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-2  -->
+                    <div class="lead-card-content">
+                        <div class="d-flex justify-content-start">
+                            <img src="../../assets/card/Frame3.png" alt="" class="card-icom-img" />
+                            <p class="card-title">Email Send</p>
+                        </div>
+                        <div class="mt-2">
+                            <p class="time-table">150</p>
+
+                            <div class="select-container">
+                                <select name="Status" id="active" class="client_select">
+                                    <option value="Total_Client" class="select-input">
+                                        Total Invoice Sent
+                                    </option>
+                                    <option value="Active_Client" class="select-input">
+                                        Total Payment Received
+                                    </option>
+                                    <option value="Inactive_Client" class="select-input">
+                                        Total Payment pending
+                                    </option>
+                                </select>
+
+                                <div class="card-bottom-icon">
+                                    <img src="../assets/Manager-deshboard/Medium.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-3  -->
+                    <div class="lead-card-content">
+                        <div class="d-flex justify-content-start">
+                            <img src="../../assets/card/Frame3.png" alt="" class="card-icom-img" />
+                            <p class="card-title">Social Media Campaign</p>
+                        </div>
+                        <div class="mt-2">
+                            <p class="time-table">150</p>
+
+                            <div class="select-container">
+                                <select name="Status" id="active" class="client_select">
+                                    <option value="Total_Client" class="select-input">
+                                        Total Invoice Sent
+                                    </option>
+                                    <option value="Active_Client" class="select-input">
+                                        Total Payment Received
+                                    </option>
+                                    <option value="Inactive_Client" class="select-input">
+                                        Total Payment pending
+                                    </option>
+                                </select>
+
+                                <div class="card-bottom-icon">
+                                    <img src="../assets/Manager-deshboard/Medium.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-4  -->
+                    <div class="lead-card-content">
+                        <div class="d-flex justify-content-start">
+                            <img src="../../assets/card/Frame3.png" alt="" class="card-icom-img" />
+                            <p class="card-title">Employee Activity</p>
+                        </div>
+                        <div class="mt-2">
+                            <p class="time-table">120</p>
+
+                            <div class="select-container">
+                                <select name="Status" id="active" class="client_select">
+                                    <option value="Total_Client" class="select-input">
+                                        Total Invoice Sent
+                                    </option>
+                                    <option value="Active_Client" class="select-input">
+                                        Total Payment Received
+                                    </option>
+                                    <option value="Inactive_Client" class="select-input">
+                                        Total Payment pending
+                                    </option>
+                                </select>
+
+                                <div class="card-bottom-icon">
+                                    <img src="../assets/Manager-deshboard/Medium.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card section end -->
+
+                <div class="mx-4 mb-5">
+                    <div class="chart1">
+                        <p>Lead by Source</p>
+                        <hr>
+                        <canvas id="myChart" style="width: 100%"></canvas>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <script>
+        var xValues = ["A", "B", "C", "D", "E", "F", "G", "H"];
+        var yValues = [55, 49, 44, 24, 15, 22, 18, 19];
+        var barColors = ["red", "green", "blue", "orange", "brown", "red", "green", "blue", "red"];
+
+        new Chart("myChart", {
+            type: "bar",
+            data: {
+                labels: xValues,
+                datasets: [
+                    {
+                        backgroundColor: barColors,
+                        data: yValues,
+                    },
+                ],
+            },
+            options: {
+                legend: { display: true },
+                title: {
+                    display: true,
+
+                },
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>

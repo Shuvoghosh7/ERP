@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-
   $(".side-menu-btn2").click(function () {
     var leftNavWidth = $(".sidebar-content").outerWidth();
     // make small left nav bar
@@ -158,17 +156,17 @@ $(document).ready(function () {
 
   $(".add-more").click(function () {
     var newItem = $(".add-new-schedule-form").first().clone();
-    newItem.find(".input-schedule-change-data").val(""); 
+    newItem.find(".input-schedule-change-data").val("");
     newItem.insertBefore($(this)).css("margin-top", "10px");
     newItem.insertBefore($(this));
   });
 
   // Remove item when "Cancel" is clicked
   $(document).on("click", ".cancle", function () {
-    $(this).closest(".add-new-schedule-form").remove(); 
+    $(this).closest(".add-new-schedule-form").remove();
   });
 
-  // schedule_exchange_list side var 
+  // schedule_exchange_list side var
   $("[data-toggle='schedule-ftp-overlay']").click(function () {
     var target = $(this).data("target");
     $("#" + target).fadeIn(500);
@@ -181,7 +179,7 @@ $(document).ready(function () {
     $("#" + target + " .schedule-content-info").animate({ right: -500 }, 500);
   });
 
-  // shudele _exchange_approve side var 
+  // shudele _exchange_approve side var
   $("[data-toggle='sch-approve-ftp-overlay']").click(function () {
     var target = $(this).data("target");
     $("#" + target).fadeIn(500);
@@ -191,57 +189,94 @@ $(document).ready(function () {
   $(".sch-approve-overlay-info .ftp-close-content").click(function () {
     var target = $(this).closest(".sch-approve-overlay-info").attr("id");
     $("#" + target).fadeOut(500);
-    $("#" + target + " .sch-approve-content-info").animate({ right: -500 }, 500);
+    $("#" + target + " .sch-approve-content-info").animate(
+      { right: -500 },
+      500
+    );
   });
 
-  // individual shudele _exchange_approve side var 
+  // individual shudele _exchange_approve side var
   $("[data-toggle='individual-sch-ftp-overlay']").click(function () {
     var target = $(this).data("target");
     $("#" + target).fadeIn(500);
-    $("#" + target + " .individual-sch-content-info").animate({ right: 0 }, 500);
+    $("#" + target + " .individual-sch-content-info").animate(
+      { right: 0 },
+      500
+    );
   });
 
   $(".individual-sch-overlay-info .ftp-close-content").click(function () {
     var target = $(this).closest(".individual-sch-overlay-info").attr("id");
     $("#" + target).fadeOut(500);
-    $("#" + target + " .individual-sch-content-info").animate({ right: -500 }, 500);
+    $("#" + target + " .individual-sch-content-info").animate(
+      { right: -500 },
+      500
+    );
+  });
+
+  // HR jquary code
+  $(".input-hr-data").click(function () {
+    $(".hr-individual-report-conatainer").slideToggle(500);
+  });
+
+  // nav bar slider
+  if ($(window).width() >= 768) {
+    var itemsPerPage = 8;
+    var currentItem = 0;
+    // Hide all menu items
+    $(".navbar-nav li").hide();
+    // Show the items for the current page
+    var showItems = function () {
+      var startIndex = currentItem;
+      var endIndex = startIndex + itemsPerPage;
+      $(".navbar-nav li").hide().slice(startIndex, endIndex).fadeIn("slow");
+    };
+    // Show the items for the initial page
+    showItems();
+    // Show next item when the "Next" button is clicked
+    $("#next").click(function () {
+      var totalItems = $(".navbar-nav li").length;
+      if (currentItem + itemsPerPage < totalItems) {
+        currentItem++;
+        showItems();
+      }
+    });
+    // Show previous item when the "Previous" button is clicked
+    $("#previous").click(function () {
+      if (currentItem > 0) {
+        currentItem--;
+        showItems();
+      }
+    });
+  }
+
+  // lead tabs 
+  $(".tabcontent").hide();
+  $(".tabcontent").eq(0).show();
+
+  $(".tablinks").click(function () {
+    var index = $(this).index();
+    console.log(index)
+
+    $(".tabcontent").hide();
+    $(".tablinks").removeClass("active");
+
+    $(".tabcontent").eq(index).show();
+    $(this).addClass("active");
+  });
+ 
+  // Lead list side var
+  $("[data-toggle='lead-ftp-overlay']").click(function () {
+    var target = $(this).data("target");
+    $("#" + target).fadeIn(500);
+    $("#" + target + " .lead-content-info").animate({ right: 0 }, 500);
+  });
+
+  $(".lead-overlay-info .ftp-close-content").click(function () {
+    var target = $(this).closest(".lead-overlay-info").attr("id");
+    $("#" + target).fadeOut(500);
+    $("#" + target + " .lead-content-info").animate({ right: -500 }, 500);
   });
 
 
-    // HR jquary code
-    $(".input-hr-data").click(function () {
-      $(".hr-individual-report-conatainer").slideToggle(500);
-    });
-
-
-    // nav bar slider 
-    if ($(window).width() >= 768) {
-      var itemsPerPage = 8;
-      var currentItem = 0;
-      // Hide all menu items
-      $(".navbar-nav li").hide();
-      // Show the items for the current page
-      var showItems = function () {
-        var startIndex = currentItem;
-        var endIndex = startIndex + itemsPerPage;
-        $(".navbar-nav li").hide().slice(startIndex, endIndex).fadeIn("slow");
-      };
-      // Show the items for the initial page
-      showItems();
-      // Show next item when the "Next" button is clicked
-      $("#next").click(function () {
-        var totalItems = $(".navbar-nav li").length;
-        if (currentItem + itemsPerPage < totalItems) {
-          currentItem++;
-          showItems();
-        }
-      });
-      // Show previous item when the "Previous" button is clicked
-      $("#previous").click(function () {
-        if (currentItem > 0) {
-          currentItem--;
-          showItems();
-        }
-      });
-    }
 });

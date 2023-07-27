@@ -1,0 +1,132 @@
+.lead-container {
+  border: 1px solid rgb(208, 206, 206);
+  padding: 10px;
+  margin-top: 20px;
+}
+.tablinks {
+  border: none;
+  background-color: rgb(227, 226, 226);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.tablinks:focus {
+  outline: none;
+}
+.tablinks.active {
+  color: blue;
+}
+.tabcontent {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+.lead-shedule-details {
+  margin: 30px 150px;
+}
+
+.basic-info-lead-conatiner {
+  border: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+.basic-info-lead-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: rgb(244, 253, 250);
+  margin: 0;
+  padding: 10px;
+}
+
+.basic-info-lead-grid small {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.basic-info-lead-grid h6 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+}
+.basic-info-lead-conatiner button {
+  background-color: #0f7ec2;
+  color: white;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 10px;
+}
+.basic-info-lead-conatiner button:focus {
+  outline: none;
+}
+
+.lead-overlay-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* display: none; */
+  z-index: 999;
+  overflow: hidden;
+}
+
+.lead-content-info {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translate(0, 0);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 100%;
+  overflow-y: scroll;
+  border: 1px solid rgb(162, 158, 158);
+}
+
+.lead-textarea {
+  border: 2px solid rgb(207, 204, 204);
+  width: 100%;
+  height: 80px;
+  padding: 0 10px;
+}
+.lead-textarea:focus{
+    outline: none;
+}
+.lead-submit-btn button {
+    width: 100px;
+    height: 47px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .lead-submit-btn .btn-1 {
+    background-color: #0f7ec2;
+    color: white;
+    margin-right: 10px;
+  }
+  .lead-submit-btn .btn-2 {
+    background-color: #d7d5d5;
+  }
+
+  .lead-card-content{
+    padding: 15px 10px;
+    gap: 16px;
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+  }
+@media screen and (max-width: 768px) {
+  .lead-shedule-details {
+    margin: 30px 50px;
+  }
+}
