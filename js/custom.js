@@ -278,5 +278,60 @@ $(document).ready(function () {
     $("#" + target + " .lead-content-info").animate({ right: -500 }, 500);
   });
 
+  // Accounts side var 
+  //side var 1
+
+  $("[data-toggle='accounts-ftp-overlay']").click(function () {
+    var target = $(this).data("target");
+    $("#" + target).fadeIn(500);
+    $("#" + target + " .accounts-content-info").animate({ right: 0 }, 500);
+  });
+
+  $(".accounts-overlay-info .ftp-close-content").click(function () {
+    var target = $(this).closest(".accounts-overlay-info").attr("id");
+    $("#" + target).fadeOut(500);
+    $("#" + target + " .accounts-content-info").animate({ right: -500 }, 500);
+  });
+
+    //side var 2
+
+    $("[data-toggle='accounts-tab2-ftp-overlay']").click(function () {
+      var target = $(this).data("target");
+      $("#" + target).fadeIn(500);
+      $("#" + target + " .accounts-content-info").animate({ right: 0 }, 500);
+    });
+  
+    $(".accounts-overlay-info .ftp-close-content").click(function () {
+      var target = $(this).closest(".accounts-overlay-info").attr("id");
+      $("#" + target).fadeOut(500);
+      $("#" + target + " .accounts-content-info").animate({ right: -500 }, 500);
+    });
+    //side var 3
+
+    $("[data-toggle='accounts-tab3-ftp-overlay']").click(function () {
+      var target = $(this).data("target");
+      $("#" + target).fadeIn(500);
+      $("#" + target + " .accounts-content-info").animate({ right: 0 }, 500);
+    });
+  
+    $(".accounts-overlay-info .ftp-close-content").click(function () {
+      var target = $(this).closest(".accounts-overlay-info").attr("id");
+      $("#" + target).fadeOut(500);
+      $("#" + target + " .accounts-content-info").animate({ right: -500 }, 500);
+    });
+
+      //side var 4
+
+      $("[data-toggle='accounts-tab4-ftp-overlay']").click(function () {
+        var target = $(this).data("target");
+        $("#" + target).fadeIn(500);
+        $("#" + target + " .accounts-content-info").animate({ right: 0 }, 500);
+      });
+    
+      $(".accounts-overlay-info .ftp-close-content").click(function () {
+        var target = $(this).closest(".accounts-overlay-info").attr("id");
+        $("#" + target).fadeOut(500);
+        $("#" + target + " .accounts-content-info").animate({ right: -500 }, 500);
+      });
 
 });

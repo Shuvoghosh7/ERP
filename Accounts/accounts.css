@@ -1,0 +1,144 @@
+.account-card-content{
+    padding: 15px 10px;
+    gap: 16px;
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+}
+.accounts-chart-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 5px 20px;
+  }
+  .tab-content{
+    border-right: 2px solid rgb(221, 220, 220);
+    border-left: 2px solid rgb(221, 220, 220);
+    border-bottom: 2px solid rgb(221, 220, 220);
+    padding: 10px 15px;
+  }
+  .dropdown-menu:hover a{
+    background-color: #0F7EC2 !important;
+}
+.accounts-overlay-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 999;
+    overflow: hidden;
+  }
+  
+  .accounts-content-info {
+    position: absolute;
+    top: 50%;
+    right: -500px;
+    transform: translate(0, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    height: 100vh;
+    overflow-y: scroll;
+    border: 1px solid rgb(162, 158, 158);
+  }
+  .leave-table-headding {
+    background-color: rgb(240, 239, 239);
+  }
+  #sch-employee-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #sch-employee-table td,
+  #sch-employee-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  #sch-employee-table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  /* #customers tr:hover {background-color: #ddd;} */
+  .table-style {
+    overflow-x: auto;
+  }
+  #sch-employee-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f2f2f2;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .search-container input{
+    height: 35px;
+    width: 300px;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    padding: 5px;
+  }
+  .search-container input:focus{
+    outline: none;
+  }
+  .search-container {
+    position: relative;
+  }
+  
+  #search {
+    padding-right: 30px; /* Adjust this value to control the distance between the input and the icon */
+  }
+  
+  #search-icon {
+    position: absolute;
+    right: 10px; /* Adjust this value to position the icon where you want it */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .account-submit-btn button {
+    width: 100px;
+    height: 47px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .account-submit-btn .btn-1 {
+    background-color: #0f7ec2;
+    color: white;
+    margin-right: 10px;
+  }
+  .account-submit-btn .btn-2 {
+    background-color: #d7d5d5;
+  }
+  .account-submit-btn button:focus {
+    outline: none;
+  }
+  @media screen and (max-width: 768px) {
+    .leve-chart-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+      margin: 5px 20px;
+    }
+    .search-container input{
+        width: 100%;  
+      }
+}
