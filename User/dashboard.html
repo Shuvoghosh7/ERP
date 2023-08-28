@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css" />
+</head>
+
+<body>
+    <main id="main-content">
+        <!-- sidebar section  -->
+        <section class="sidebar-content">
+            <div class="side_nav">
+
+                <div>
+                    <a class="nav-link">
+                        <div class="top-link-icon d-flex justify-content-between">
+                            <div>
+                                <img src="../assets/image 1.svg" alt="" class="sidebar-icon-image" />
+                                <span class="ms-1"> Offshore IT</span>
+                            </div>
+                            <div>
+                                <p class="side-menu-btn2 d-lg-none">&times;</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <hr class="solid-divider" />
+
+
+                <a class="nav-link mt-3 nav-sidevar-link active_sidnav" href="dashboard.html">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image active-sidebar-icon-image" />
+                        <span class="ml-2"> Dashboard</span>
+                    </div>
+                </a>
+
+                <a class="nav-link nav-sidevar-link" href="with_Pay_Leave_List.html">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2">Role List</span>
+                    </div>
+                </a>
+                <a class="nav-link nav-sidevar-link" href="with_Pay_Leave_List.html">
+                    <div class="link-icon">
+                        <img src="../assets/Shape.svg" alt="" class="sidebar-icon-image" />
+                        <span class="ml-2">User List</span>
+                    </div>
+                </a>
+
+
+
+
+            </div>
+            <div class="live-chat">
+                <p>Live Chat <span>(10)</span></p>
+                <img src="../assets/animation_500_le8y4owf 1.svg" alt="" />
+            </div>
+        </section>
+        <!-- sidebar section  end-->
+
+        <!-- main content section  -->
+        <section class="main-content-part">
+            <!-- nav-munu -->
+            <nav class="navbar navbar-expand-lg navbar-light navbar-menu">
+                <button class="btn side-menu-btn d-lg-none mr-3">
+                    <i class="fas fa-stream"></i>
+                </button>
+                <a class="navbar-brand d-lg-none" href="#">
+                    Offshore IT
+                </a>
+
+
+
+
+                <div class="nav-notification">
+
+                    <div class="mr-lg-3 notification-content d-lg-none" style="display: block;">
+                        <a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            <img src="../assets/vail.png" alt="" />
+                            <img src="../assets/Vector (1).png" alt="" class="notification-icon" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="d-flex justify-content-between notification-item">
+                                <div>
+                                    <p>Notification <span>(2)</span></p>
+                                </div>
+                                <div>
+                                    <p>total</p>
+                                </div>
+                            </div>
+                            <div class="p-2">
+                                <div class="d-lg-flex d-md-flex justify-content-start align-items-center">
+                                    <img src="../assets/RICSU 1.png" alt="" class="notification-image" />
+                                    <p class="pl-lg-3">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+
+                <div class="collapse navbar-collapse nav-sm-background" id="navbarSupportedContent">
+                    <div class="nav-profile-img d-lg-none text-center pt-3" style="display: block;">
+                        <div class="dropdown">
+                            <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/RICSU 1.png" alt="" class="loging-user" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center dropdown-menu-custom text-center"
+                                aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page"
+                                href="/project.html">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Accounts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Lead</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Attendance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Human Resource</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Leave</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-link mr-2" aria-current="page" href="#">Payroll</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="mr-lg-3 notification-content">
+                            <a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                <img src="../assets/vail.png" alt="" />
+                                <img src="../assets/Vector (1).png" alt="" class="notification-icon" />
+
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="d-flex justify-content-between notification-item">
+                                    <div>
+                                        <p>Notification <span>(2)</span></p>
+                                    </div>
+                                    <div>
+                                        <p>total</p>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <div class="d-lg-flex d-md-flex justify-content-start align-items-center">
+                                        <img src="assets/RICSU 1.png" alt="" class="notification-image" />
+                                        <p class="pl-3">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="position-lg-relative right-3 nav-profile-img">
+                            <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/RICSU 1.png" alt="" class="loging-user" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Action</button>
+                                <button class="dropdown-item" type="button">
+                                    Another action
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    Something else here
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+            <!-- nan-munu -->
+
+
+
+            <!-- chart container start -->
+            <div class="user-chart-container">
+                <div class="user_content">
+                    <h3>Sessions</h3>
+                    <div class="sessions_container">
+                        <div >
+                            <div class="sessions_content">
+                                <span><i class="fa-solid fa-user fa-xl" style="color: #fafafa;"></i></span>
+                                <h4 class="mt-2">2</h2>
+                            </div>
+                        </div>
+                        <p>User Currently Online</p>
+                    </div>
+
+                    
+                </div>
+                <div class="user_content">
+                    <h3>User Type Breakdown</h3>
+                    <canvas id="myPieChart" style="width: 100%"></canvas>
+                </div>
+                <div class="user_content">
+                    <h3>Customer Activity</h3>
+                    <div class="customer_activity">
+                        <p>Activity Customer</p>
+                        <h2>211</h3>
+                    </div>
+                    <hr class="padded">
+                    <div class="customer_activity">
+                        <p>In-activity Customer</p>
+                        <h2>44</h3>
+                    </div>
+                    <hr class="padded">
+                    <div class="customer_activity">
+                        <p>Currently Online</p>
+                        <h2>2</h3>
+                    </div>
+            
+                </div>
+
+            </div>
+            <!-- chart container end -->
+
+
+
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+        var yValues = [55, 49, 44, 24, 15];
+        var barColors = ["red", "green", "blue", "orange", "brown"];
+
+        new Chart("myChart", {
+            type: "pie",
+            data: {
+                labels: xValues,
+                datasets: [
+                    {
+                        backgroundColor: barColors,
+                        data: yValues,
+                    },
+                ],
+            },
+            options: {
+                legend: { display: true },
+                title: {
+                    display: true,
+
+                },
+            },
+        });
+    </script>
+
+    <script>
+        var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+        var yValues = [55, 49, 44, 24, 15];
+        var barColors = ["#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145"];
+
+        new Chart("myPieChart", {
+            type: "pie",
+            data: {
+                labels: xValues,
+                datasets: [
+                    {
+                        backgroundColor: barColors,
+                        data: yValues,
+                    },
+                ],
+            },
+            options: {
+                legend: {
+                    display: true,
+                },
+                title: {
+                    display: true,
+
+                },
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>
